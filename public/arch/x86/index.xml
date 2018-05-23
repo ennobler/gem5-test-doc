@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>X86 on gem5</title>
+    <link>http://localhost/arch/x86/</link>
+    <description>Recent content in X86 on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 May 2018 17:04:23 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/arch/x86/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Address space</title>
+      <link>http://localhost/arch/x86/address_space/</link>
+      <pubDate>Sun, 13 May 2018 18:14:38 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/address_space/</guid>
+      <description>X86_64 is defined to support physical memory addresses up to 52 bits long. Because M5 uses 64 bit integers for addresses, every physical address has 12 extra bits which aren&amp;rsquo;t directly accessible to the software running on the simulated CPU. M5 uses those bits to differentiate between different physical address spaces which are allocated for various purposes. In order to maximize the space given to the actual address portion of the address, the bits that select the address space grown down from the MSB as they&amp;rsquo;re allocated.</description>
+    </item>
+    
+    <item>
+      <title>Decoder</title>
+      <link>http://localhost/arch/x86/decoder/</link>
+      <pubDate>Sun, 13 May 2018 18:15:42 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/decoder/</guid>
+      <description>Requirements The decoder must handle:
+ Variable length instructions Misaligned instructions Instructions that span fetch buffer/cache line/page boundaries Microcoded instructions Instructions longer than native data types Self modifying code Externally modified memory and page mappings Instructions beginning &amp;ldquo;inside&amp;rdquo; other instructions  Current Design The decoder process will happen in several stages.
+First, the native variable length instructions will be translated into &amp;ldquo;fixed width&amp;rdquo; instructions. These instructions will be too large to represent with native data types, so they will be stored as structures.</description>
+    </item>
+    
+    <item>
+      <title>Instruction decoding</title>
+      <link>http://localhost/arch/x86/instruction_decoding/</link>
+      <pubDate>Sun, 13 May 2018 17:06:33 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/instruction_decoding/</guid>
+      <description>Overview http://m5sim.org/graphics/InstructionExecution.png
+X86 instruction encodings have several unique characteristics which make them harder to deal with than the encodings for the other ISAs M5 supports. Despite that, x86 is decoded using the same basic mechanisms as the other ISAs.
+At the lowest level, instructions can take any number of bytes (up to a maximum) and can have any alignment. That means that when a CPU brings in bytes of memory to decode, it may contain several instructions, the end of one and the start of the next, the middle of an instruction, etc.</description>
+    </item>
+    
+    <item>
+      <title>Micro Code</title>
+      <link>http://localhost/arch/x86/micro-code/</link>
+      <pubDate>Sun, 13 May 2018 18:16:25 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/micro-code/</guid>
+      <description>Microop Parameter Specialization Microops are not, in general, written in an absolute sense. They are templates which provide an implementation for a macroop, but need to be specialized using the arguments of the original instruction. In hardware, this appears to be handled in two different ways depending on the origin of the microop. In the case of combinationally generated microops, the instructions are actually generated with the correct parameters in place.</description>
+    </item>
+    
+    <item>
+      <title>Micro-op ISA</title>
+      <link>http://localhost/arch/x86/micro-op-isa/</link>
+      <pubDate>Sun, 13 May 2018 18:17:13 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/micro-op-isa/</guid>
+      <description>Register Ops These microops typically take two sources and produce one result. Most have a version that operates on only registers and a version which operates on registers and an immediate value. Some optionally set flags according to their operation. Some of them can be predicated.
+Add Addition.
+add Dest, Src1, Src2 Dest = Dest &amp;lt;- Src1 + Src2
+Adds the contents of the Src1 and Src2 registers and puts the result in the Dest register.</description>
+    </item>
+    
+    <item>
+      <title>Segmentation</title>
+      <link>http://localhost/arch/x86/segmentation/</link>
+      <pubDate>Sun, 13 May 2018 18:17:58 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/segmentation/</guid>
+      <description>Segment bases When computing an address for a load or store, the segment base is added in before the address is sent to the CPU to actually perform the access. This has several advantages. First, because there are no alignment restrictions on segment bases, the virtual (pre-segmentation) address for an access could be aligned but produce an unaligned linear (post-segmentation) address. The opposite could also happen where an unaligned access becomes aligned.</description>
+    </item>
+    
+    <item>
+      <title>Todo list</title>
+      <link>http://localhost/arch/x86/todo/</link>
+      <pubDate>Sun, 13 May 2018 17:08:16 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/todo/</guid>
+      <description>This todo list is likely out-of-date
+ Highest priority Flesh out and debug 64-bit modern ISA (what&amp;rsquo;s needed by users) FS-mode core timing issues Debug TimingSimpleCPU issues? In-order pipeline core model support Out-of-order core model (O3) support  Multiprocessor timing support: need to enforce atomicity of locked load/op/store sequences in timing cache models Ruby and M5 classic?  Performance correlation With real hardware and/or existing correlated simulator Micro-op counts for functional implementation Timing for out-of-order core (requires O3 support)  Complete x87 support AVX support  Useful but not strictly necessary Split up ISA output for faster compiling Improve ISA description language support for x86  To do eventually but not right away ACPI support KVM-based fast functional CPU model Virtualization extensions support (AMD SVM, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost/getting-started/intro/</loc>
+    <lastmod>2018-05-12T22:49:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/contributing/high-level/</loc>
+    <lastmod>2018-05-12T21:26:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/build-system/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/debugging/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tutorials/isca-2018/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/benchmarks/spec-2000/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/arch/x86/address_space/</loc>
+    <lastmod>2018-05-13T18:14:38-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tutorials/dist-gem5/</loc>
+    <lastmod>2018-05-13T17:02:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/arch/arm/</loc>
+    <lastmod>2018-05-13T16:53:48-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/gem5-101/hello_world/</loc>
+    <lastmod>2018-05-12T23:00:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/contributing/cloning/</loc>
+    <lastmod>2018-05-12T21:27:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/getting-started/dependencies/</loc>
+    <lastmod>2018-05-12T21:14:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/getting-started/</loc>
+    <lastmod>2018-05-12T21:08:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/cpu-models/inorder/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/benchmarks/spec-2006/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/arch/x86/decoder/</loc>
+    <lastmod>2018-05-13T18:15:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/gem5-101/adding_an_instruction/</loc>
+    <lastmod>2018-05-12T23:00:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/contributing/changes/</loc>
+    <lastmod>2018-05-12T21:27:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/gem5-101/</loc>
+    <lastmod>2018-05-12T21:16:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/dependencies/</loc>
+    <lastmod>2018-05-12T21:14:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/getting-started/source-code/</loc>
+    <lastmod>2018-05-12T21:14:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/getting-started/config-script/</loc>
+    <lastmod>2018-05-12T22:42:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/arch/x86/instruction_decoding/</loc>
+    <lastmod>2018-05-13T17:06:33-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/gem5-101/cpu_models/</loc>
+    <lastmod>2018-05-12T23:01:03-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/contributing/posting-review/</loc>
+    <lastmod>2018-05-12T21:27:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/contributing/</loc>
+    <lastmod>2018-05-12T21:26:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/getting-started/build/</loc>
+    <lastmod>2018-05-12T21:14:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/getting-started/running/</loc>
+    <lastmod>2018-05-12T22:42:18-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/arch/x86/micro-code/</loc>
+    <lastmod>2018-05-13T18:16:25-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/arch/</loc>
+    <lastmod>2018-05-13T16:52:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/gem5-101/branch_prediction/</loc>
+    <lastmod>2018-05-12T23:01:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/getting-started/adding-cache/</loc>
+    <lastmod>2018-05-12T22:42:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/contributing/reviewing-patches/</loc>
+    <lastmod>2018-05-12T21:27:38-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/getting-started/stats/</loc>
+    <lastmod>2018-05-12T22:42:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/cpu-models/</loc>
+    <lastmod>2018-05-13T18:33:20-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/arch/x86/micro-op-isa/</loc>
+    <lastmod>2018-05-13T18:17:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/arch/x86/</loc>
+    <lastmod>2018-05-13T17:04:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/gem5-101/caches/</loc>
+    <lastmod>2018-05-12T23:01:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/getting-started/default-configs/</loc>
+    <lastmod>2018-05-12T22:42:59-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/</loc>
+    <lastmod>2018-05-12T21:16:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/</loc>
+    <lastmod>2018-05-13T20:26:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/faq/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/arch/x86/segmentation/</loc>
+    <lastmod>2018-05-13T18:17:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/benchmarks/</loc>
+    <lastmod>2018-05-13T16:52:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/gem5-101/multi-core/</loc>
+    <lastmod>2018-05-12T23:01:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/contributing/committing/</loc>
+    <lastmod>2018-05-12T21:27:47-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/getting-started/asking-for-help/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/arch/x86/todo/</loc>
+    <lastmod>2018-05-13T17:08:16-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/getting-started/mailing-lists/</loc>
+    <lastmod>2018-05-12T22:50:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tutorials/isca-2015/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/getting-started/adding-functionality/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/adding-cpu-model/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tutorials/micro-2012/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/workload-automation/</loc>
+    <lastmod>2018-05-13T18:31:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tutorials/</loc>
+    <lastmod>2018-05-13T17:00:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tutorials/isca-2011/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tutorials/isca-2006/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/</loc>
+    <lastmod>2018-05-13T18:43:03-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tutorials/arm-summit-2017/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tutorials/asplos-2008/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/extras/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/alpha-dependencies/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/benchmarks/android-mashmellow/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/arch-state/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/benchmarks/bbench/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/bad-names/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/branch-delay-slots/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/cache-coherence-protocols/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/cache-replacement-policies/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/checker-cpu/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/checkpoints/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/classic-memory-system/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/classic-mem-system/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/coding-style/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/compiling-linux/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/compiling-m5/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/compiling-workloads/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/scripts/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/dacapo/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/debugging-simulated/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/debugging-gdb/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/defining-cpu-models/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/defining-isa/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/memory-components/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/submitting-contributions/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/publications/projects/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/directed-tests/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/disk-images/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/events/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/execution-basics/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/execution-tracing/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/gems-transition/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/gpu/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/garnet/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/garnet-2/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/garnet-standalone/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/contributing/governance/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/hetrogenous/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/new-isa/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/isa-code-parsing/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/isa-description-system/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/isa-parser/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tutorials/ics-2018/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/cpu-models/inorder/inst-schedules/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/integrating-m5-gems/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/interconnection-network/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/introduction/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/legacy-arm-files/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/linux-kernel/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/linux-dist/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/mesi-two-level/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/mi-example/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/moesi-cmp-directory/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/moesi-cmp-token/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/moesi-hammer/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/memory-system/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/mercurial-queues/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/microcode-assembler/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/benchmarks/moby/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/modular-coherence/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/multi-programmed-workloads/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/nic-devices/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/nates-wish-list/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/network-test/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/new-regression/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/old-documentation/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/packet-command-attribute/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/parallelize/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/cpu-models/inorder/pipeline-stages/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/publications/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/python-params/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/ref-counting/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/register-indexing/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/register-windows/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/regression/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/cpu-models/inorder/resource-request-model/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/ruby/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/ruby-network-test/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/ruby-random-test/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/running/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/running/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/scons/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/slicc/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/ruby/simple/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/simple-thread/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/scripts/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/cpu-models/inorder/todo/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/thread-context/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/thread-state/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/cpu-models/inorder/tutorial/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/m5ops/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/m5term/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tutorials/asplos-2017/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/benchmarks/android-kitkat/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/doxygen/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/dyn-inst/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/ubuntu-disk/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/future-serialization/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/isa/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/todo/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/benchmarks/parsec/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/sparc/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/spec-omp/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/serialization/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/sim-objects/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/simple-cpu/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/simpoints/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/splash/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/static-inst/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/source-code/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/non-default-python/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/streamline/</loc>
+    <lastmod>2018-05-13T18:51:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/statistics/</loc>
+    <lastmod>2018-05-13T18:43:03-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/utility/</loc>
+    <lastmod>2018-05-13T18:43:03-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/cpu-models/o3/visualization/</loc>
+    <lastmod>2018-05-13T18:33:49-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/cpu-models/tracecpu/</loc>
+    <lastmod>2018-05-13T18:33:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/cpu-models/o3/</loc>
+    <lastmod>2018-05-13T18:33:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/arch/arm/linux_kernel/</loc>
+    <lastmod>2018-05-13T16:54:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/useful-external/</loc>
+    <lastmod>2018-05-13T16:51:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/software_not_in_git/</loc>
+    <lastmod>2018-05-12T21:19:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/docs/alternate_source/</loc>
+    <lastmod>2018-05-12T21:16:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/</loc>
+    <lastmod>2018-05-12T22:49:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/deprecated/code-locations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost/developer/io/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developer Documentation on gem5</title>
+    <link>http://localhost/developer/</link>
+    <description>Recent content in Developer Documentation on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 May 2018 18:43:03 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/developer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Checker CPU</title>
+      <link>http://localhost/developer/checker-cpu/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/checker-cpu/</guid>
+      <description>The Checker allows for dynamic verification of any CPUs that use DynInst. Currently it does not support SMT or MP systems. Extending the Checker for those systems should not be difficult, but makes it impossible to verify memory value of loads.
+What it verifies The Checker can verify:
+ Correct instruction path Correct fetched instruction Correct execution results Correct PC redirection due to branches, faults, or PC events  What it can&amp;rsquo;t verify The Checker cannot verify:</description>
+    </item>
+    
+    <item>
+      <title>Classic Memory System</title>
+      <link>http://localhost/developer/classic-memory-system/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/classic-memory-system/</guid>
+      <description>MemObjects Caches The default cache is a non-blocking cache with MSHR (miss status holding register) and WB (Write Buffer) for read and write misses. The Cache can also be enabled with prefetch (typically in the last level of cache). The default replacement policy for the cache lines is LRU (least recently used).
+Hooking them up test
+Parameters Interconnects Crossbars The two types of traffic in the crossbar are memory-mapped packets and snooping packets.</description>
+    </item>
+    
+    <item>
+      <title>Coding Sytle</title>
+      <link>http://localhost/developer/coding-style/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/coding-style/</guid>
+      <description>We strive to maintain a consistent coding style in the M5 source code to make the source more readable and maintainable. This necessarily involves compromise among the multiple developers who work on this code. We feel that we have been successful in finding such a compromise, as each of the primary M5 developers is annoyed by at least one of the rules below. We ask that you abide by these guidelines as well if you develop code that you would like to contribute back to M5.</description>
+    </item>
+    
+    <item>
+      <title>Defining CPU models</title>
+      <link>http://localhost/developer/defining-cpu-models/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/defining-cpu-models/</guid>
+      <description>Overview First, make sure you have basic understanding of how the CPU models function within the M5 framework. A good start is the CPU Models page.
+This brief tutorial will show you how to create a custom CPU model called &amp;lsquo;MyCPU&amp;rsquo;, which will just be a renamed version of the AtomicSimpleCPU. After you learn how to compile and build &amp;lsquo;MyCPU&amp;rsquo;, then you have the liberty to edit the &amp;lsquo;MyCPU&amp;rsquo; code at your heart&amp;rsquo;s content without worrying about breaking any existing M5 CPU Models.</description>
+    </item>
+    
+    <item>
+      <title>Defining an ISa</title>
+      <link>http://localhost/developer/defining-isa/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/defining-isa/</guid>
+      <description>Overview First, make sure you have basic understanding of how an ISA description generates instructions within the M5 framework. A good start is the The M5 ISA description language page.
+For this example, we will be constructing an ISA called MyISA which will just be a renamed version of the MIPS ISA. We will go through the steps of creating the files and configuration opions for an M5 ISA description.</description>
+    </item>
+    
+    <item>
+      <title>Events</title>
+      <link>http://localhost/developer/events/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/events/</guid>
+      <description>This page provides some high-level information about Events in M5 including how to create, schedule, and remove them.
+The simplest way to use events is to create an EventWrapper which lets you wrap an arbitrary function (that is based on a SimObject with an event that can occur). An illustrative example is probably the easiest way to describe the issue:
+class Bar : public SimObject { void foo(); EventWrapper&amp;lt;Bar, &amp;amp;Bar::foo&amp;gt; fooEvent; };  When the class Bar is constructed the SimObject (this) pointer must be passed to the fooEvent initializer.</description>
+    </item>
+    
+    <item>
+      <title>Execution Basics</title>
+      <link>http://localhost/developer/execution-basics/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/execution-basics/</guid>
+      <description>Predecoding StaticInsts The StaticInst provides all static information and methods for a binary instruction.
+It holds the following information/methods:
+ Flags to tell what kind of instruction it is (integer, floating point, branch, memory barrier, etc.) The op class of the instruction The number of source and destination registers The number of integer and FP registers used Method to decode a binary instruction into a StaticInst Virtual function execute(), which defines how the specific architectural actions taken for an instruction (e.</description>
+    </item>
+    
+    <item>
+      <title>Execution Tracing</title>
+      <link>http://localhost/developer/execution-tracing/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/execution-tracing/</guid>
+      <description>Tracing Interface Each cpu/thread has a &amp;ldquo;tracer&amp;rdquo; sim object. This defaults to an object which will write to the the same file descriptor as DPRINTFs. If you want, you can nullify the tracer to disable tracing for that cpu/thread. For output you want to be interleaved, use the same trace object (or maybe file?) You could also set up several different files to catch information from each cpu/thread.
+There would be other tracer objects you could use instead if you wanted to do something else at each instruction boundary.</description>
+    </item>
+    
+    <item>
+      <title>How to create an ISA</title>
+      <link>http://localhost/developer/new-isa/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/new-isa/</guid>
+      <description>arguments.hh Move out of isa?
+faults.hh ISA specific fault classes to be used in the ISA.
+Functions I&amp;rsquo;d like to get rid of
+ genMachineCheckFault genAlignmentFault  interrupts.hh Interrupts class Interrupt Level Shouldn&amp;rsquo;t be capitalized. Gets a request to set the interrupt level and returns what the interrupt level was actually set to.
+post Request that an interrupt happen. Like asserting the interrupt line.
+clear Request that an interrupt not happen.</description>
+    </item>
+    
+    <item>
+      <title>ISA code parsing</title>
+      <link>http://localhost/developer/isa-code-parsing/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/isa-code-parsing/</guid>
+      <description>To a large extent, the power and flexibility of the ISA description mechanism stem from the fact that the mapping from a brief instruction definition provided in the decode block to the resulting C++ code is performed in a general-purpose programming language (Python). (This function is performed by the &amp;ldquo;instruction format&amp;rdquo; definition described above in Format definitions.) Technically, the ISA description language allows any arbitrary Python code to perform this mapping.</description>
+    </item>
+    
+    <item>
+      <title>ISA description system</title>
+      <link>http://localhost/developer/isa-description-system/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/isa-description-system/</guid>
+      <description>The purpose of the M5 ISA description system is to generate a decoder function that takes a binary machine instruction and returns a C++ object representing that instruction. The returned object encapsulates all of the information (data and code) needed by the M5 simulator related to that specific machine instruction. By making the object as specific as possible to the machine instruction, the decoding overhead is paid only once; throughout the rest of the simulator, the object makes the needed instruction characteristics accessible easily and with low overhead.</description>
+    </item>
+    
+    <item>
+      <title>ISA parser</title>
+      <link>http://localhost/developer/isa-parser/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/isa-parser/</guid>
+      <description>The M5 ISA description language is a custom language designed specifically for generating the class definitions and decoder function needed by M5. This section provides a practical, informal overview of the language itself. A formal grammar for the language is embedded in the &amp;ldquo;yacc&amp;rdquo; portion of the parser (look for the functions starting with p_ in isa_parser.py). A second major component of the parser processes C-like code specifications to extract instruction characteristics; this aspect is covered in the section Code parsing.</description>
+    </item>
+    
+    <item>
+      <title>Micro-code assembler</title>
+      <link>http://localhost/developer/microcode-assembler/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/microcode-assembler/</guid>
+      <description>Syntax The assembler is responsible for taking listings similar to traditional assembly and processing it into a set of python objects. The listing is broken into sections which represent macroops or sections of a microcode ROM. In each section, there can be assembler directives and microops. Microops can be preceeded with labels which may be local, or in the case of the ROM, global. The distinction is to allow local labels to be duplicated between sections, but global labels to globally mark a position to, for instance, branch into the ROM or amongst sections of the ROM.</description>
+    </item>
+    
+    <item>
+      <title>Packet command attributes</title>
+      <link>http://localhost/developer/packet-command-attribute/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/packet-command-attribute/</guid>
+      <description>Each packet contains a command, which consists of an a set of attributes. The following table indicates per command type, the type of response required (or InvalidCmd if none), and a set of flags. The contents of this table is based on src/mem/packet.hh (containing all command types) and src/mem/packet.cc (defining attributes per command type).
+                        Command response IsRead IsWrite IsUpgrade IsInvalidate NeedsExclusive IsRequest IsResponse NeedsResponse IsSWPrefetch IsHWPrefetch IsLlsc HasData IsError IsPrint IsFlush   InvalidCmd InvalidCmd                  ReadReq ReadResp IsRead     IsRequest  NeedsResponse          ReadResp InvalidCmd IsRead      IsResponse     HasData      ReadRespWithInvalidate InvalidCmd IsRead   IsInvalidate   IsResponse     HasData      WriteReq WriteResp  IsWrite   NeedsExclusive IsRequest  NeedsResponse    HasData      WriteResp InvalidCmd  IsWrite   NeedsExclusive  IsResponse           Writeback InvalidCmd  IsWrite   NeedsExclusive IsRequest      HasData      SoftPFReq SoftPFResp IsRead     IsRequest  NeedsResponse IsSWPrefetch         HardPFReq HardPFResp IsRead     IsRequest  NeedsResponse  IsHWPrefetch        SoftPFResp InvalidCmd IsRead      IsResponse  IsSWPrefetch   HasData      HardPFResp InvalidCmd IsRead      IsResponse   IsHWPrefetch  HasData      UpgradeReq UpgradeResp   IsUpgrade IsInvalidate NeedsExclusive IsRequest  NeedsResponse          SCUpgradeReq UpgradeResp   IsUpgrade IsInvalidate NeedsExclusive IsRequest  NeedsResponse   IsLlsc       UpgradeResp InvalidCmd   IsUpgrade  NeedsExclusive  IsResponse           SCUpgradeFailReq UpgradeFailResp    IsInvalidate NeedsExclusive IsRequest  NeedsResponse   IsLlsc       UpgradeFailResp InvalidCmd     NeedsExclusive  IsResponse           ReadExReq ReadExResp IsRead   IsInvalidate NeedsExclusive IsRequest  NeedsResponse          ReadExResp InvalidCmd IsRead    NeedsExclusive  IsResponse     HasData      LoadLockedReq ReadResp IsRead     IsRequest  NeedsResponse   IsLlsc       StoreCondReq StoreCondResp  IsWrite   NeedsExclusive IsRequest  NeedsResponse   IsLlsc HasData      StoreCondFailReq StoreCondResp  IsWrite   NeedsExclusive IsRequest  NeedsResponse   IsLlsc HasData      StoreCondResp InvalidCmd  IsWrite   NeedsExclusive  IsResponse    IsLlsc       SwapReq SwapResp IsRead IsWrite   NeedsExclusive IsRequest  NeedsResponse    HasData      SwapResp InvalidCmd IsRead IsWrite   NeedsExclusive  IsResponse     HasData      IntReq MessageResp  IsWrite    IsRequest  NeedsResponse    HasData      IntResp InvalidCmd  IsWrite     IsResponse           NetworkNackError InvalidCmd       IsResponse      IsError     InvalidDestError InvalidCmd       IsResponse      IsError     BadAddressError InvalidCmd       IsResponse      IsError     FunctionalReadError InvalidCmd IsRead      IsResponse      IsError     FunctionalWriteError InvalidCmd  IsWrite     IsResponse      IsError     PrintReq InvalidCmd      IsRequest        IsPrint    Flush Request InvalidCmd     NeedsExclusive IsRequest         IsFlush   Invalidation Request InvalidCmd    IsInvalidate NeedsExclusive IsRequest             </description>
+    </item>
+    
+    <item>
+      <title>Python Parameter Types</title>
+      <link>http://localhost/developer/python-params/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/python-params/</guid>
+      <description>The information below came from src/python/m5/params.py and src/python/m5/util/convert.py. Reference those files for the most up to date information.
+  Python Type Name
+ C++ Type
+ Format
+ Notes
+    String
+ std::string
+    Int
+ int
+  32 bits
+  Unsigned
+ unsigned
+  32 bits
+  Int8
+ int8_t
+    UInt8
+ uint8_t
+    Int16</description>
+    </item>
+    
+    <item>
+      <title>Refcounted Pointers</title>
+      <link>http://localhost/developer/ref-counting/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/ref-counting/</guid>
+      <description>I&amp;rsquo;m putting this in a wiki because I keep asking Nate and I keep forgetting his answer.
+Question: Which STL structures might have problems with calling ref counted pointer destructors? Or is it just certain operations like clear()?
+Answer: It&amp;rsquo;s with operations like clear. There may be references on them, or when you remove an element from a datastructure like a deque or a queue. If they&amp;rsquo;re implemented in terms of vector, they don&amp;rsquo;t get freed until they&amp;rsquo;re reallocated.</description>
+    </item>
+    
+    <item>
+      <title>Register Indexing</title>
+      <link>http://localhost/developer/register-indexing/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/register-indexing/</guid>
+      <description>CPU register indexing in gem5 is a complicated by the need to support multiple ISAs with sometimes very different register semantics (register windows, condition codes, mode-based alternate register sets, etc.). In addition, this support has evolved gradually as new ISAs have been added, so older code may not take advantage of newer features or terminology.
+Types of Register Indices There are three types of register indices used internally in the CPU models: relative, unified, and flattened.</description>
+    </item>
+    
+    <item>
+      <title>Register Windows</title>
+      <link>http://localhost/developer/register-windows/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/register-windows/</guid>
+      <description>Register windows prove to be a bit problematic with the current model of StaticInsts and the read/write register methods. The issue is that based on the register&amp;rsquo;s index, it is possible that it will be one of the registers whose actual index is determined by a combination of its index and the Current Window Pointer (CWP). In SPARC, r0-r7 are non-windowed registers, while r8-r31 are windowed registers.
+StaticInst Register windows provide a form of dynamic renaming that is troublesome with our current StaticInst.</description>
+    </item>
+    
+    <item>
+      <title>Regression Tests</title>
+      <link>http://localhost/developer/regression/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/regression/</guid>
+      <description>Running Regressions Running the M5 regression tests is the recommended way to make sure that any changes to the simulator still comply with M5. Regression Testing is performed using SCons to help guide which tests are run. All current tests are located in the: tests/ directory. The command for running regression tests has the following
+format: % scons build/&amp;lt;arch&amp;gt;/tests/&amp;lt;binary_type&amp;gt;/&amp;lt;test_directory&amp;gt;/&amp;lt;mode&amp;gt;/&amp;lt;test directory&amp;gt;/&amp;lt;ISA&amp;gt;/linux/&amp;lt;config script&amp;gt;  Here is an example of running all of the &amp;lsquo;quick&amp;rsquo; regression tests for the ALPHA architecture in syscall-emulation (SE) mode.</description>
+    </item>
+    
+    <item>
+      <title>SCons</title>
+      <link>http://localhost/developer/scons/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/scons/</guid>
+      <description>This page provides some tips on using M5&amp;rsquo;s build system.
+M5&amp;rsquo;s build system uses SCons, a powerful replacement for make (and autoconf, and ccache). SCons uses standard Python to describe the software build process, enabling some very sophisticated &amp;amp; complex build procedures.
+This page is not an attempt to fully document the build system. Because many people aren&amp;rsquo;t familiar with SCons, and because gem5&amp;rsquo;s build system in some areas takes advantage of the complexity that SCons enables, this page tries to collect useful pointers that might not otherwise be obvious.</description>
+    </item>
+    
+    <item>
+      <title>SimpleThread</title>
+      <link>http://localhost/developer/simple-thread/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/simple-thread/</guid>
+      <description>The SimpleThread class derives from the ThreadState class, and is used to provide all architectural state for models that don&amp;rsquo;t need anything more complex. It is basically the context of a hardware thread, and provides all necessary functions needed to access it as defined by the ThreadContext class. However, SimpleThread does not actually derive from ThreadContext, but rather uses a proxy class to forward all ThreadContext function calls to its own functions.</description>
+    </item>
+    
+    <item>
+      <title>ThreadContext</title>
+      <link>http://localhost/developer/thread-context/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/thread-context/</guid>
+      <description>ThreadContext is the interface to all state of a thread for anything outside of the CPU. It provides methods to read or write state that might be needed by external objects, such as the PC, next PC, integer and FP registers, and IPRs. It also provides functions to get pointers to important thread-related classes, such as the ITB, DTB, System, kernel statistics, and memory ports. It is an abstract base class; the CPU must create its own ThreadContext by either deriving from it, or using the templated ProxyThreadContext class.</description>
+    </item>
+    
+    <item>
+      <title>ThreadState</title>
+      <link>http://localhost/developer/thread-state/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/thread-state/</guid>
+      <description>The ThreadState class is used to hold thread state that is common across CPU models, such as the thread ID, thread status, kernel statistics, memory port pointers, and some statistics of number of instructions completed. Each CPU model can derive from ThreadState and build upon it, adding in thread state that is deemed appropriate. An example of this is SimpleThread, where all of the thread&amp;rsquo;s architectural state has been added in.</description>
+    </item>
+    
+    <item>
+      <title>Future Serialization</title>
+      <link>http://localhost/developer/future-serialization/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/future-serialization/</guid>
+      <description>The current serialization system uses a .ini file format. Each section refers to a specific object instance, and the values within a section are the serialized data for that instance. The section heading is the name() of the object and all hierarchy is essentially flattened.
+During the serialization process, the file is directly written out as objects are serialized, without any intermediate buffering. The serialization proceeds by doing the global serialization then by serializing each SimObject.</description>
+    </item>
+    
+    <item>
+      <title>ISA Description</title>
+      <link>http://localhost/developer/isa/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/isa/</guid>
+      <description>The gem5 ISA description language is a custom language designed specifically for generating the class definitions and decoder function needed by M5. This section provides a practical, informal overview of the language itself. A formal grammar for the language is embedded in the &amp;ldquo;yacc&amp;rdquo; portion of the parser (look for the functions starting with p_ in isa_parser.py). A second major component of the parser processes C-like code specifications to extract instruction characteristics; this aspect is covered in the section Code parsing.</description>
+    </item>
+    
+    <item>
+      <title>Looking to help? </title>
+      <link>http://localhost/developer/todo/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/todo/</guid>
+      <description>This page contains ideas for projects to work on during the gem5 coding sprint held in conjunction with HPCA 2017. For more information on the sprint, see: http://learning.gem5.org/tutorial/index.html.
+Below are three categories of projects: small, medium, and large. I expect that only the &amp;ldquo;small&amp;rdquo; can be easily completed in an afternoon. For medium projects, you should be able to get a good start on them in an afternoon and finish up with a few extra hours of work after the sprint.</description>
+    </item>
+    
+    <item>
+      <title>SPARC Curiousities</title>
+      <link>http://localhost/developer/sparc/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/sparc/</guid>
+      <description>Ancillary State Registers  Floating-Point State Register (FSR) - holds 4 sets of condition codes, exception status, trap enable, rounding direction, etc. Which means we need to rename it, but we need to copy parts of the previous state into it every time.   Y Register - Why ohh why did the make this register. Holds upper 32 bits for some multiple/div operations. For multiply the upper 32 bits of the result is placed in here and the entire result is placed in the dest register.</description>
+    </item>
+    
+    <item>
+      <title>Serialization</title>
+      <link>http://localhost/developer/serialization/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/serialization/</guid>
+      <description>Saving/Restoring object state Dealing with Events Handling SimObject Pointers Phases of Object Initialization If restoring from a checkpoint, loadState(ckpt) is called on each SimObject. The default implementation simply calls unserialize() if there is a corresponding checkpoint section, so we get backward compatibility for existing objects. However, objects can override loadState() to get other behaviors, e.g., doing other programmed initializations after unserialize(), or complaining if no checkpoint section is found. (Note that the default warning for a missing checkpoint section is now gone.</description>
+    </item>
+    
+    <item>
+      <title>SimObjects</title>
+      <link>http://localhost/developer/sim-objects/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/sim-objects/</guid>
+      <description>SimObjects The python side Param types Inheritance Special attribute names Rules for importing - how to get what Pro tips - avoiding cycles, always descend from root, etc. The C++ side create functions Stages of initialization The basic order of C++ SimObject construction and initialization is controlled by the instantiate() and simulate() Python functions in src/python/m5/simulate.py. This process was revised in changeset 3f6413fc37a2. This page documents the process as of that changeset.</description>
+    </item>
+    
+    <item>
+      <title>SimpleCPU</title>
+      <link>http://localhost/developer/simple-cpu/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/simple-cpu/</guid>
+      <description>The SimpleCPU is a purely functional, in-order model that is suited for cases where a detailed model is not necessary. This can include warm-up periods, client systems that are driving a host, or just testing to make sure a program works.
+It has recently been re-written to support the new memory system, and is now broken up into three classes.
+BaseSimpleCPU The BaseSimpleCPU serves several purposes:
+ Holds architected state, stats common across the SimpleCPU models.</description>
+    </item>
+    
+    <item>
+      <title>StaticInst</title>
+      <link>http://localhost/developer/static-inst/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/static-inst/</guid>
+      <description>This section describes the static instruction objects. These objects are what a decoder function instantiates for each machine instruction fetched during simulation. It has information such as opcode, source and destination register, immediate value, of the machine instruction it was generated from.
+The definitive documentation for these objects is associated with the source code (particularly in static_inst.hh). The purpose of this section is to provide an overview of the static instruction class hierarchy and how it is used to factor the common portions of instruction descriptions.</description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>http://localhost/developer/statistics/</link>
+      <pubDate>Sun, 13 May 2018 18:43:03 -0400</pubDate>
+      
+      <guid>http://localhost/developer/statistics/</guid>
+      <description>If you&amp;rsquo;re looking at this page, we&amp;rsquo;ll assume you sort of know the ins and outs of the simulator and are looking to instrument it in some way that is not already there. In that case, we have a nice stats package built into the simulator for you. One really good place to look for examples of usage is src/unittest/stattest.cc. This has lots of examples of every type of stat.</description>
+    </item>
+    
+    <item>
+      <title>Utility Code</title>
+      <link>http://localhost/developer/utility/</link>
+      <pubDate>Sun, 13 May 2018 18:43:03 -0400</pubDate>
+      
+      <guid>http://localhost/developer/utility/</guid>
+      <description>Bitfield functions BitUnion classes FastAlloc FastAlloc has been removed from the code base since late May 2012. Instead the build scripts will pick up tcmalloc (a malloc() version used also at Google), the observed performance gain of replacing tcmalloc over fastalloc is around 6%.
+IntMath panic, fatal, warn, inform, hack: which? There are error and warning functions defined in src/base/misc.hh: panic(), fatal(), warn(), inform(), and hack(). The first two functional have nearly the same effect (printing an error message and terminating the simulation), and the latter three print a message and continue.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/developer/io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/developer/io/</guid>
+      <description>title: &amp;ldquo;I/O Base Classes&amp;rdquo; date: 2018-05-13T18:51:37-04:00
+draft: false The base classes in src/dev/io_device.* allow devices to be created with reasonable ease. The classes and virtual functions that must be implemented are listed below. Before reading the following it will help to be familiar with the Memory_System.
+PioPort The PioPort class is a programmed I/O port that all devices that are sensitive to an address range use. The port takes all the memory access types and roles them into one read() and write() call that the device must respond to.</description>
+    </item>
+    
+  </channel>
+</rss>

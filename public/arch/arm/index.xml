@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arm on gem5</title>
+    <link>http://localhost/arch/arm/</link>
+    <description>Recent content in Arm on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 May 2018 16:53:48 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/arch/arm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux Kernel</title>
+      <link>http://localhost/arch/arm/linux_kernel/</link>
+      <pubDate>Sun, 13 May 2018 16:54:44 -0400</pubDate>
+      
+      <guid>http://localhost/arch/arm/linux_kernel/</guid>
+      <description>This page contains instructions for building up-to-date kernels for gem5 running on ARM.
+Prerequisites These instructions are for running headless systems. That is a more &amp;ldquo;server&amp;rdquo; style system where there is no frame-buffer. The description has been created using the latest known-working tag in the repositories linked below, however the tables in each section list previous tags that are known to work. To built the kernels on an x86 host you&amp;rsquo;ll need ARM cross compilers and the device tree compiler.</description>
+    </item>
+    
+  </channel>
+</rss>

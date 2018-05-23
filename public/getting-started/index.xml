@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on gem5</title>
+    <link>http://localhost/getting-started/</link>
+    <description>Recent content in Getting Started on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 May 2018 21:08:02 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost/getting-started/intro/</link>
+      <pubDate>Sat, 12 May 2018 22:49:29 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/intro/</guid>
+      <description>gem5 is a modular discrete event driven computer system simulator platform. That means that:
+ gem5&amp;rsquo;s components can be rearranged, parameterized, extended or replaced easily to suit your needs. It simulates the passing of time as a series of discrete events. Its intended use is to simulate one or more computer systems in various ways. It&amp;rsquo;s more than just a simulator; it&amp;rsquo;s a simulator platform that lets you use as many of its premade components as you want to build up your own simulation system.</description>
+    </item>
+    
+    <item>
+      <title>Dependencies</title>
+      <link>http://localhost/getting-started/dependencies/</link>
+      <pubDate>Sat, 12 May 2018 21:14:19 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/dependencies/</guid>
+      <description>Building gem5 requires the following components to be installed. Ubuntu 16.04 and newer includes the required versions:
+ git g++ or clang scons python swig protbuf  sudo apt install git build-essential scons python-dev swig sudo apt install libprotobuf-dev python-protobuf protobuf-compiler libgoogle-perftools-dev  While gem5 runs on Linux and Mac OS X, these instructions are written assuming Ubuntu 16.04 or newer. For installing the required dependencies for other platforms see Dependencies.</description>
+    </item>
+    
+    <item>
+      <title>Source Code</title>
+      <link>http://localhost/getting-started/source-code/</link>
+      <pubDate>Sat, 12 May 2018 21:14:19 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/source-code/</guid>
+      <description>Official git repository Steps for getting a copy of the source code:
+ Install git. This is available in the git package on Ubuntu and Redhat and OS X macports or home-brew.
+ Clone the development repository git clone https://gem5.googlesource.com/public/gem5
+ After you clone the repository you can update it by typing git pull. Read the documentation on this page for more info on using git.
+  More general Git and Gerrit information:  https://git-scm.</description>
+    </item>
+    
+    <item>
+      <title>Configuration Scripts</title>
+      <link>http://localhost/getting-started/config-script/</link>
+      <pubDate>Sat, 12 May 2018 22:42:14 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/config-script/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building</title>
+      <link>http://localhost/getting-started/build/</link>
+      <pubDate>Sat, 12 May 2018 21:14:19 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/build/</guid>
+      <description>Let’s start by building a basic x86 system. Currently, you must compile gem5 separately for every ISA that you want to simulate. Additionally, if using ruby, you have to have separate compilations for every cache coherence protocol.
+To build gem5, we will use SCons. SCons uses the SConstruct file (gem5/SConstruct) to set up a number of variables and then uses the SConscript file in every subdirectory to find and compile all of the gem5 source.</description>
+    </item>
+    
+    <item>
+      <title>Running</title>
+      <link>http://localhost/getting-started/running/</link>
+      <pubDate>Sat, 12 May 2018 22:42:18 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/running/</guid>
+      <description> Modes \= System-call Emulation (SE) mode is one of the two modes of gem5 and the most basic. gem5 simulates your program and traps any system calls made to the host then emulates them. In the older versions of gem5, only statically linked binaries were allowed to be simulated in SE mode however, gem5 2.0 now supports dynamically linked binaries. Not all architecutres support dynamically linked binaries
+ </description>
+    </item>
+    
+    <item>
+      <title>Adding cache</title>
+      <link>http://localhost/getting-started/adding-cache/</link>
+      <pubDate>Sat, 12 May 2018 22:42:45 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/adding-cache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stats</title>
+      <link>http://localhost/getting-started/stats/</link>
+      <pubDate>Sat, 12 May 2018 22:42:51 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/stats/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Default Configuration Files</title>
+      <link>http://localhost/getting-started/default-configs/</link>
+      <pubDate>Sat, 12 May 2018 22:42:59 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/default-configs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asking for help</title>
+      <link>http://localhost/getting-started/asking-for-help/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/asking-for-help/</guid>
+      <description>Many of the people on the gem5-users mailing list are happy to help when someone has a problem or something doesn&amp;rsquo;t work. However, please keep in mind that it&amp;rsquo;s not our job to help. We all have other commitments, so before we spend time helping someone we like to see that they have put some effort into solving the problem themselves.
+ Before posting a question to the list, please check if the question is already answered.</description>
+    </item>
+    
+    <item>
+      <title>Mailing Lists</title>
+      <link>http://localhost/getting-started/mailing-lists/</link>
+      <pubDate>Sat, 12 May 2018 22:50:45 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/mailing-lists/</guid>
+      <description>gem5 has two main mailing lists where you can ask for help or advice. Before posting a problem to the mailing list please read Reporting Problems and follow the guidelines listed. Doing so will get your question answered far faster and more precisely.
+There are two mailing lists for gem5 hosted on gem5.org:
+ gem5-dev (subscribe) - gem5-dev is for developers who are working on the main version of gem5.</description>
+    </item>
+    
+    <item>
+      <title>Adding Functionality</title>
+      <link>http://localhost/getting-started/adding-functionality/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/adding-functionality/</guid>
+      <description>This section needs to be updated; no mercurial; should reference Contribuing
+ If you find the need to modify or extend gem5, you may be tempted to just start editing files in your local gem5 repository. While this approach will work initially, it will cause problems if/when you decide to update your copy of gem5 with changes that have been made since you originally cloned the repository. It&amp;rsquo;s very likely that you will want to update your code to get bug fixes and new features.</description>
+    </item>
+    
+  </channel>
+</rss>

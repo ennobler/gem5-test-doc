@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on gem5</title>
+    <link>http://localhost/docs/</link>
+    <description>Recent content in Documentation on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 May 2018 21:16:22 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Build System</title>
+      <link>http://localhost/docs/build-system/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/build-system/</guid>
+      <description>Build System gem5&amp;rsquo;s build system is based on SCons, an open source build system implemented in Python. You can find more information about scons at http://www.scons.org. The main scons file is called SConstruct and is found in the root of the source tree. Additional scons files are named SConscript and are found throughout the tree, usually near the files they&amp;rsquo;re associated with.
+Build targets In gem5, scons build targets are of the form //.</description>
+    </item>
+    
+    <item>
+      <title>Debugging</title>
+      <link>http://localhost/docs/debugging/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/debugging/</guid>
+      <description>Introduction The simplest method of debugging is to have gem5 print out traces of what it&amp;rsquo;s doing. The simulator contains many DPRINTF statements that print trace messages describing potentially interesting events. Each DPRINTF is associated with a debug flag (e.g., Bus, Cache, Ethernet, Disk, etc.). To turn on the messages for a particular flag, use the --debug-flags command line argument. Multiple flags can be specified by giving a list of strings, e.</description>
+    </item>
+    
+    <item>
+      <title>Dependencies</title>
+      <link>http://localhost/docs/dependencies/</link>
+      <pubDate>Sat, 12 May 2018 21:14:19 -0400</pubDate>
+      
+      <guid>http://localhost/docs/dependencies/</guid>
+      <description>gem5 runs on Linux and Mac OS X, but should be easily portable to other Unix-like OSes. At times in the past gem5 has worked on OpenBSD and Microsoft Windows (under Cygwin), but these platforms are not regularly tested. Cygwin in particular is no longer actively supported; if you must run on a Windows host, we recommend installing Linux (e.g., Ubuntu Server) under a VM and running gem5 there. Free virtualization solutions such as VirtualBox and VMware Player work well for this usage.</description>
+    </item>
+    
+    <item>
+      <title>Howto add a CPU model</title>
+      <link>http://localhost/docs/adding-cpu-model/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/adding-cpu-model/</guid>
+      <description>should be updated for gem5
+ Overview First, make sure you have basic understanding of how the CPU models function within the M5 framework. A good start is the CPU Models page.
+This brief tutorial will show you how to create a custom CPU model called &amp;lsquo;MyCPU&amp;rsquo;, which will just be a renamed version of the AtomicSimpleCPU. After you learn how to compile and build &amp;lsquo;MyCPU&amp;rsquo;, then you have the liberty to edit the &amp;lsquo;MyCPU&amp;rsquo; code at your heart&amp;rsquo;s content without worrying about breaking any existing M5 CPU Models.</description>
+    </item>
+    
+    <item>
+      <title>Workload Automation</title>
+      <link>http://localhost/docs/workload-automation/</link>
+      <pubDate>Sun, 13 May 2018 18:31:30 -0400</pubDate>
+      
+      <guid>http://localhost/docs/workload-automation/</guid>
+      <description>It&amp;rsquo;s not clear if this is still up-to-date
+ To run workloads in gem5, we advise you to use Workload Automation (WA). This framework allows you to run workloads automatically on Android and Linux platforms. More information can be found here: https://github.com/ARM-software/workload-automation
+What do I need? To use WA together with gem5 you will need to make changes to the host system and the guest system. These changes will enable 9P over virtio, which will allow for files to be transported into the simulation.</description>
+    </item>
+    
+    <item>
+      <title>Adding Files to Build</title>
+      <link>http://localhost/docs/extras/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/extras/</guid>
+      <description>The EXTRAS SCons option is a way to add functionality in gem5 without adding your files to the gem5 source tree. Specifically, it allows you to identify one or more directories that will get compiled in with gem5 as if they appeared under the &amp;lsquo;src&amp;rsquo; part of the gem5 tree, without requiring the code to be actually located under &amp;lsquo;src&amp;rsquo;. It&amp;rsquo;s present to allow user to compile in additional functionality (typically additional SimObject classes) that isn&amp;rsquo;t or can&amp;rsquo;t be distributed with gem5.</description>
+    </item>
+    
+    <item>
+      <title>Architectural State</title>
+      <link>http://localhost/docs/arch-state/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/arch-state/</guid>
+      <description>Registers Register types - float, int, misc Indexing - register spaces stuff See Register Indexing for a more thorough treatment.
+A &amp;ldquo;nickle tour&amp;rdquo; of flattening and register indexing in the CPU models.
+First, an instruction has identified that it needs register such and such as determined by its encoding (or the fact that it always uses a certain register, or &amp;hellip;). For the sake of argument, lets say we&amp;rsquo;re talking about SPARC, the register is %g1, and the second bank of globals is active.</description>
+    </item>
+    
+    <item>
+      <title>Branch-delay slots</title>
+      <link>http://localhost/docs/branch-delay-slots/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/branch-delay-slots/</guid>
+      <description>Since MIPS and SPARC use branch delay slots, we&amp;rsquo;re faced with an interesting issue on how to implement them correctly. There are two issues: basic support for branch delay slots, and support for conditionally executed delay-slot instructions (SPARC &amp;ldquo;annulled&amp;rdquo; delay slots).
+Basic functionality In the context of M5 instruction execution, PC is the current instruction&amp;rsquo;s PC and NPC is the PC of the next instruction. Conventional non-delayed branches (as in Alpha) write to NPC to change the next instruction executed.</description>
+    </item>
+    
+    <item>
+      <title>Cache Replacement Policies</title>
+      <link>http://localhost/docs/cache-replacement-policies/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/cache-replacement-policies/</guid>
+      <description>gem5 has multiple implemented replacement policies. Each one uses its specific replacement data to determine a replacement victim on evictions.
+All of the replacement policies prioritize victimizing invalid blocks.
+Altough most of the replacement policies don&amp;rsquo;t need a counter of the number of references to an entry, or the insertion timestamp, they are by default updated by every replacement policy, due to their usage in the statistics.
+Random The simplest replacement policy; it does not need replacement data, as it randomly selects a victim among the candidates.</description>
+    </item>
+    
+    <item>
+      <title>Checkpoints</title>
+      <link>http://localhost/docs/checkpoints/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/checkpoints/</guid>
+      <description>Checkpoints Checkpoints are essentially snapshops of a simulation. You would want to use a checkpoint when your simulation takes an extremely long time (which is almost always the case) so you can resume from that checkpoint at a later time with the DerivO3CPU.
+Creation First of all, you need to create a checkpoint. Each checkpoint as saved in a new directory named &amp;lsquo;cpt.TICKNUMBER&amp;rsquo;, where TICKNUMBER refers to the tick value at which this checkpoint was created.</description>
+    </item>
+    
+    <item>
+      <title>Classic memory system</title>
+      <link>http://localhost/docs/classic-mem-system/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/classic-mem-system/</guid>
+      <description>M5&amp;rsquo;s new memory system (introduced in the first 2.0 beta release) was designed with the following goals:
+ Unify timing and functional accesses in timing mode. With the old memory system the timing accesses did not have data and just accounted for the time it would take to do an operation. Then a separate functional access actually made the operation visible to the system. This method was confusing, it allowed simulated components to accidentally cheat, and prevented the memory system from returning timing-dependent values, which isn&amp;rsquo;t reasonable for an execute-in-execute CPU model.</description>
+    </item>
+    
+    <item>
+      <title>Debugging simulated code</title>
+      <link>http://localhost/docs/debugging-simulated/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/debugging-simulated/</guid>
+      <description>gem5 has built-in support for gdb&amp;rsquo;s remote debugger interface. If you are interested in monitoring what the code on the simulated machine is doing&amp;mdash;the kernel (in FS mode) or program (in SE mode)&amp;mdash;you can fire up gdb on the host platform and have it talk to the simulated gem5 system as if it were a real machine/process (only better, since gem5 executions are deterministic and gem5&amp;rsquo;s remote debugger interface is guaranteed not to perturb execution on the simulated system).</description>
+    </item>
+    
+    <item>
+      <title>Debugging w/gdb</title>
+      <link>http://localhost/docs/debugging-gdb/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/debugging-gdb/</guid>
+      <description>If traces alone are not sufficient, you&amp;rsquo;ll need to inspect what gem5 is doing in detail using a debugger (e.g., gdb). You definitely want to use the gem5.debug binary if you reach this point. Ideally, looking at traces should at least allow you to narrow down the range of cycles in which you think something is going wrong. The fastest way to reach that point is to use a DebugEvent, which goes on gem5&amp;rsquo;s event queue and forces entry into the debugger when the specified cycle is reached by sending the process a SIGTRAP signal.</description>
+    </item>
+    
+    <item>
+      <title>Disk images</title>
+      <link>http://localhost/docs/disk-images/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/disk-images/</guid>
+      <description>Background   Disk image basics A disk device in gem5 gets its initial contents from a file called a disk image. This file stores all the bytes present on the disk just as you would find them on an actual device. Some other systems also use disk images which are in more complicated formats and which provide compression, encryption, etc. gem5 currently only supports raw images, so if you have an image in one of those other formats, you&amp;rsquo;ll have to convert it into a raw image before you can use it in a simulation.</description>
+    </item>
+    
+    <item>
+      <title>GPU Models</title>
+      <link>http://localhost/docs/gpu/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/gpu/</guid>
+      <description>AMD&amp;rsquo;s Compute-GPU Model MICRO-48 Tutoral A tutorial was held in conjunction with MICRO-48. We have made the slides available from our 2015 tutorial titled: The AMD gem5 APU Simulator: Modeling Heterogeneous Systems in gem5.
+Compute GPU Workloads Emualted CL Runtime  Download the emulated OpenCL runtime.  OpenCL Compiler CLOC is used to compile OpenCL kernels for use with gem5&amp;rsquo;s GPU compute model. The most recent revision of CLOC that is known to work with gem5 is:</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost/docs/introduction/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/introduction/</guid>
+      <description>What is gem5? gem5 is a modular discrete event driven computer system simulator platform. That means that:
+ gem5&amp;rsquo;s components can be rearranged, parameterized, extended or replaced easily to suit your needs. It simulates the passing of time as a series of discrete events. Its intended use is to simulate one or more computer systems in various ways. It&amp;rsquo;s more than just a simulator; it&amp;rsquo;s a simulator platform that lets you use as many of its premade components as you want to build up your own simulation system.</description>
+    </item>
+    
+    <item>
+      <title>Memory system</title>
+      <link>http://localhost/docs/memory-system/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/memory-system/</guid>
+      <description>gem5&amp;rsquo;s memory system was designed to enable:
+ Modularity and compartmentalisation through standard interfaces. Suitable interfaces for loosely-timed, approximately-timed and untimed transaction-level modelling. Flexibility to allow other memory interconnects besides a crossbar. A comprehensive set of building blocks, ranging from caches, crossbars, to full-blown DRAM controllers.  Ports system MemObjects All objects within a memory system inherit from MemObject. This class adds the pure virtual functions getMasterPort(const std::string &amp;amp;name) and getSlavePort(const std::string &amp;amp;name) which returns a port corresponding to the given name.</description>
+    </item>
+    
+    <item>
+      <title>Multi-programmed workloads</title>
+      <link>http://localhost/docs/multi-programmed-workloads/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/multi-programmed-workloads/</guid>
+      <description>Running In SE mode, simply create a system with multiple CPUs and assign a different workload object to each CPU&amp;rsquo;s workload parameter. If you&amp;rsquo;re using the O3 model, you can also assign a vector of workload objects to one CPU, in which case the CPU will run all of the workloads concurrently in SMT mode. Note that SE mode has no thread scheduling; if you need a scheduler, run in FS mode and use the fine scheduler built into the Linux kernel.</description>
+    </item>
+    
+    <item>
+      <title>NIC devices</title>
+      <link>http://localhost/docs/nic-devices/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/nic-devices/</guid>
+      <description>The gem5 simulator has two different Network Interface Cards (NICs) devices that can be used to connect together two simulation instances over a simulated ethernet link.
+Getting an list of packets on the ethernet link You can get a list of the packet on the ethernet link by creating a Etherdump object, setting it&amp;rsquo;s file parameter, and setting the dump parameter on the EtherLink to it. This is easily accomplished with our fs.</description>
+    </item>
+    
+    <item>
+      <title>Running gem5</title>
+      <link>http://localhost/docs/running/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/running/</guid>
+      <description>Usage The gem5 command line has four parts, the gem5 binary, options for the binary, a simulation script, and options for the script. The options that are passed to the gem5 binary and those passed to the script are handled separately, so be sure any options you use are being passed to the right component.
+% &amp;lt;gem5 binary&amp;gt; [gem5 options] &amp;lt;simulation script&amp;gt; [script options]  gem5 Options Running gem5 with the &amp;ldquo;-h&amp;rdquo; flag prints a help message that includes all of the supported simulator options.</description>
+    </item>
+    
+    <item>
+      <title>Simulation Scripts</title>
+      <link>http://localhost/docs/scripts/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/scripts/</guid>
+      <description>Simulation scripts control the configuration and execution of gem5 simulations. The gem5 simulator itself is basically passive; on invoking gem5, it simply executes the user&amp;rsquo;s simulation script, and performs actions only when called by the script.
+Simulation scripts are written in Python and executed by the Python interpreter. Currently, the interpreter is linked into the gem5 executable, but for most purposes the script&amp;rsquo;s execution should be indistinguishable from invoking the Python interpreter directly.</description>
+    </item>
+    
+    <item>
+      <title>m5ops</title>
+      <link>http://localhost/docs/m5ops/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/m5ops/</guid>
+      <description>This page explains the special opcodes that can be used in M5 to do checkpoints etc. The m5 utility program (on our disk image and in util/m5/*) provides some of this functionality on the command line. In many cases it is best to insert the operation directly in the source code of your application of interest. You should be able to link with the appropriate m5op_ARCH.o file and the m5op.</description>
+    </item>
+    
+    <item>
+      <title>m5term</title>
+      <link>http://localhost/docs/m5term/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/m5term/</guid>
+      <description>The m5term program allows the user to connect to the simulated console interface that full-system m5 provides. Simply change into the util/term directory and build m5term:
+ % cd m5/util/term % make gcc -o m5term term.c % make install sudo install -o root -m 555 m5term /usr/local/bin  The usage of m5term is:
+ ./m5term &amp;lt;host&amp;gt; &amp;lt;port&amp;gt; &amp;lt;host&amp;gt; is the host that is running m5 &amp;lt;port&amp;gt; is the console port to connect to.</description>
+    </item>
+    
+    <item>
+      <title>Doxygen Code Documentation</title>
+      <link>http://localhost/docs/doxygen/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/doxygen/</guid>
+      <description>Introduction Doxygen allows users to quickly create documentation for our code by extracting the relavent information from the code and comments. It is able to document all the code structures including classes, namespaces, files, members, defines, etc. Most of these are quite simple to document, you only need to place a special documentation block before the declaration. The Doxygen documentation within gem5 is processed every night and the following web pages are generated: Doxygen</description>
+    </item>
+    
+    <item>
+      <title>DynInst</title>
+      <link>http://localhost/docs/dyn-inst/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/dyn-inst/</guid>
+      <description>The DynInst is used to hold dynamic information about instructions. This is necessary for more detailed models or out-of-order models, both of which may need extra information beyond the StaticInst in order to correctly execute instructions.
+Some of the dynamic information that it stores includes:
+ The PC of the instruction The renamed register indices of the source and destination registers The predicted next-PC The instruction result The thread number of the instruction The CPU the instruction is executing on Whether or not the instruction is squashed  Additionally the DynInst provides the ExecContext interface.</description>
+    </item>
+    
+    <item>
+      <title>Simpoints w/gem5</title>
+      <link>http://localhost/docs/simpoints/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/simpoints/</guid>
+      <description>Steps to profile, generate, and use SimPoints with gem5:
+Profiling and Generating BBV To profile a workload and generate a SimPoint BBV file, use the following
+command: % build/ARM/gem5.opt &amp;lt;base options&amp;gt; configs/example/fs.py --simpoint-profile [--simpoint-interval &amp;lt;interval length&amp;gt;] &amp;lt;rest of fs.py options&amp;gt;  This will generate a SimPoint Basic Block Vector file (named simpoint.bb.gz) in the gem5 run folder. SimPoint profiling should be run with a single AtomicSimpleCPU configuration and fastmem. Multicore simulation is not supported.</description>
+    </item>
+    
+    <item>
+      <title>Splash</title>
+      <link>http://localhost/docs/splash/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/splash/</guid>
+      <description>It is possible to run the SPLASH-2 benchmarks on M5 in two different ways, each with their own caveats.
+Using full-system mode The most robust approach is to compile the benchmarks using a Pthreads implementation of the PARMACS macros, then link with the standard Linux Pthreads library and run this binary on M5 under full-system mode.
+Advantages:
+ Realistic: you&amp;rsquo;re getting the actual Linux thread scheduler to schedule your threads Robust (in contrast to current SE-mode approaches&amp;hellip; see below) You can build a cross-compiler to compile the binaries on non-Alpha platforms (see Using linux-dist to Create Disk Images and Kernels for M5&amp;hellip; note that you don&amp;rsquo;t need to build a kernel, just the cross-compiler).</description>
+    </item>
+    
+    <item>
+      <title>Tour of sourcecode</title>
+      <link>http://localhost/docs/source-code/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/source-code/</guid>
+      <description>Source Browsing Tools The gem5 source code is browsable online via several methods. You can browse the latest version or the developmen history in our Mercurial repository, search the code using our OpenGrok installation, or look at the Doxygen-generated documentation (note that the class list is perhaps the most useful starting point).
+Once you have your own local copy of the tree, you use other tools to index and search that copy.</description>
+    </item>
+    
+    <item>
+      <title>Using a non-default Python</title>
+      <link>http://localhost/docs/non-default-python/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/non-default-python/</guid>
+      <description>The particular installation of the Python interpreter that executes the SCons build scripts is also linked with M5 to execute runtime Python simulation scripts. (This correspondence is necessary since some Python code is shared between the build process and runtime execution.) As a result, you can get M5 to link with a non-default installation of the Python interpreter by using that instance of the interpreter to execute the SCons scripts.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing w/Streamline</title>
+      <link>http://localhost/docs/streamline/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/streamline/</guid>
+      <description>What is Streamline? ARM Streamline™ Performance Analyzer, is a component of ARM Development Studio 5, DS-5™, intended to provide in-depth visibilities to the software execution of the system and counters/statistics. Streamline can be used to visualize a gem5 simulation, with Linux/Android process information and gem5 statistics, with the help of some post-processing.
+How do I get Streamline? ARM provides a Community Edition of Streamline to all active members of the gem5 community, as long as they agree to use it for analyzing gem5 outputs only and not use the license for commercial purposes.</description>
+    </item>
+    
+    <item>
+      <title>Useful external docs</title>
+      <link>http://localhost/docs/useful-external/</link>
+      <pubDate>Sun, 13 May 2018 16:51:05 -0400</pubDate>
+      
+      <guid>http://localhost/docs/useful-external/</guid>
+      <description>External ARM Documents  ARM Assembly Reference Sheet Thumb Assembler Reference Sheet GNU assembler Reference Sheet  External X86 documentation  AMD documentation Intel documentation Sandpile.org &amp;ndash; Handy collection of documentation about x86 INT 15h,AX=E820 &amp;ndash; Information about the INT 15h,AX=E820 BIOS service routine  External SPARC documentation  SPARCV9.pdf &amp;ndash; SPARC v9 architecture manual UA2005-current-draft-HP-EXT.pdf &amp;ndash; UltraSPARC Architecture 2005, Hyperprivileged edition UA2005-current-draft-P-EXT.pdf &amp;ndash; UltraSPARC Architecture 2005, Privileged edition T1 Specific Docs UA2007-current-draft-HP-EXT.</description>
+    </item>
+    
+    <item>
+      <title>Software not in git</title>
+      <link>http://localhost/docs/software_not_in_git/</link>
+      <pubDate>Sat, 12 May 2018 21:19:58 -0400</pubDate>
+      
+      <guid>http://localhost/docs/software_not_in_git/</guid>
+      <description>Full-System Stuff You would need one or more of the following files to full system simulations using gem5. If you download these files, read this page for instructions on how to install these files.
+ ARM  ARM Full-System Files &amp;ndash; Pre-compiled kernel and disk images for 32-bit and 64-bit ARM simulation. Updated October 2014. There kernels all support PCIe devices and the 64-bit kernels support &amp;gt;2GB of DRAM. Legacy ARM Full System Files &amp;ndash; A collection of previous ARM files that have been distributed.</description>
+    </item>
+    
+    <item>
+      <title>Alternate Sources</title>
+      <link>http://localhost/docs/alternate_source/</link>
+      <pubDate>Sat, 12 May 2018 21:16:55 -0400</pubDate>
+      
+      <guid>http://localhost/docs/alternate_source/</guid>
+      <description>The latest gem5 source code is available via our Git repository host at https://gem5.googlesource.com. It is strongly recommend that you get a copy of gem5 by using git. You can get more info about the repository and git here. In additional to the main git repository, there is a mirror on GitHub (we can&amp;rsquo;t currently accept pull requests on GitHub) and a Mercurial mirror. Keep in mind that the mirrors are read only.</description>
+    </item>
+    
+  </channel>
+</rss>

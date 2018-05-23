@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CPU Models on gem5</title>
+    <link>http://localhost/cpu-models/</link>
+    <description>Recent content in CPU Models on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 May 2018 18:33:20 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/cpu-models/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby Memory System on gem5</title>
+    <link>http://localhost/ruby/</link>
+    <description>Recent content in Ruby Memory System on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 May 2018 20:26:58 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cache Coherence Protocols</title>
+      <link>http://localhost/ruby/cache-coherence-protocols/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/cache-coherence-protocols/</guid>
+      <description>Common Notations and Data Structures Coherence Messages These are described in the &amp;lt;protocol-name&amp;gt;-msg.sm file for each protocol.
+   Message Description     ACK/NACK positive/negative acknowledgement for requests that wait for the direction of resolution before deciding on the next action. Examples are writeback requests, exclusive requests.   GETS request for shared permissions to satisfy a CPU&amp;rsquo;s load or IFetch.   GETX request for exclusive access.</description>
+    </item>
+    
+    <item>
+      <title>Deprecated</title>
+      <link>http://localhost/ruby/memory-components/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/memory-components/</guid>
+      <description>System This is a high level container for few of the important components of the Ruby which may need to be accessed from various parts and components of Ruby. Only ONE instance of this class is created. The instance of this class is globally available through a pointer named g_system_ptr. It holds pointer to the Ruby&amp;rsquo;s profiler object. This allows any component of Ruby to get hold of the profiler and collect statistics in a central location by accessing it though g_system_ptr.</description>
+    </item>
+    
+    <item>
+      <title>Directed tests</title>
+      <link>http://localhost/ruby/directed-tests/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/directed-tests/</guid>
+      <description>The Directed Tester is for generating a stream of requests, where two consecutive requests are separated by a fixed number of bytes. The requests can be a mix of reads and writes, or they can be invalidations. This can be useful in testing a prefetcher or for generally testing a coherence protocol implemented in Ruby. The source files related to the tester are present in the directory src/cpu/testers/directedtest. The file configs/examples/ruby_direct_test.</description>
+    </item>
+    
+    <item>
+      <title>GEMS transition to gem5</title>
+      <link>http://localhost/ruby/gems-transition/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/gems-transition/</guid>
+      <description>This page covers the relevant changes that have been made to SLICC since the last and final GEMS release (2.1). It can be used as a guide to port SLICC protocols that formerly worked in GEMS to gem5.
+Reasoning Most changes to the SLICC language were made in order to support new features of gem5, including the parameterized object model (SimObject), atomic instruction support, and others. All syntactic changes are relatively simple and mechanical.</description>
+    </item>
+    
+    <item>
+      <title>Garnet</title>
+      <link>http://localhost/ruby/garnet/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/garnet/</guid>
+      <description>More details of the gem5 Ruby Interconnection Network are here.
+Garnet Network Model &amp;rdquo;&amp;lsquo;Note: This model of garnet is no longer supported in gem5. The updated model is garnet2.0.
+Garnet is a detailed interconnection network model inside gem5. The details can be found in the ISPASS 2009 Paper.
+If your use of Garnet contributes to a published paper, please cite the following paper:
+@inproceedings{garnet, title={GARNET: A detailed on-chip network model inside a full-system simulator}, author={Agarwal, Niket and Krishna, Tushar and Peh, Li-Shiuan and Jha, Niraj K}, booktitle={Performance Analysis of Systems and Software, 2009.</description>
+    </item>
+    
+    <item>
+      <title>Garnet 2.0</title>
+      <link>http://localhost/ruby/garnet-2/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/garnet-2/</guid>
+      <description>More details of the gem5 Ruby Interconnection Network are here.
+Garnet2.0: An On-Chip Network Model for Heterogeneous SoCs Garnet2.0 is a detailed interconnection network model inside gem5. It is in active development, and patches with more features will be periodically pushed into gem5. Additional garnet-related patches and tool support under development (not part of the repo) can be found at the Garnet page at Georgia Tech.
+Garnet2.0 builds upon the original Garnet model which was published in 2009.</description>
+    </item>
+    
+    <item>
+      <title>Garnet standalone</title>
+      <link>http://localhost/ruby/garnet-standalone/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/garnet-standalone/</guid>
+      <description>This is a dummy cache coherence protocol that is used to operate Garnet in a standalone manner. This protocol works in conjunction with the Garnet Synthetic Traffic injector.
+Related Files  src/mem/protocols  Garnet_standalone-cache.sm: cache controller specification Garnet_standalone-dir.sm: directory controller specification Garnet_standalone-msg.sm: message type specification Garnet_standalone.slicc: container file   Cache Hierarchy This protocol assumes a 1-level cache hierarchy. The role of the cache is to simply send messages from the cpu to the appropriate directory (based on the address), in the appropriate virtual network (based on the message type).</description>
+    </item>
+    
+    <item>
+      <title>Interconnection network</title>
+      <link>http://localhost/ruby/interconnection-network/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/interconnection-network/</guid>
+      <description>The various components of the interconnection network model inside gem5&amp;rsquo;s ruby memory system are described here.
+How to invoke the network Simple Network:
+./build/ALPHA/gem5.debug \ configs/example/ruby_random_test.py \ --num-cpus=16 \ --num-dirs=16 \ --network=simple --topology=Mesh_XY \ --mesh-rows=4  The default network is simple, and the default topology is crossbar.
+Garnet network:
+./build/ALPHA/gem5.debug \ configs/example/ruby_random_test.py \ --num-cpus=16 \ --num-dirs=16 \ --network=garnet2.0 \ --topology=Mesh_XY \ --mesh-rows=4  Topology The connection between the various controllers are specified via python files.</description>
+    </item>
+    
+    <item>
+      <title>MESI two level</title>
+      <link>http://localhost/ruby/mesi-two-level/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/mesi-two-level/</guid>
+      <description>Protocol Overview  This protocol models two-level cache hierarchy. The L1 cache is private to a core, while the L2 cache is shared among the cores. L1 Cache is split into Instruction and Data cache. Inclusion is maintained between the L1 and L2 cache. At high level the protocol has four stable states, M, E, S and I. A block in M state means the blocks is writable (i.e. has exclusive permission) and has been dirtied (i.</description>
+    </item>
+    
+    <item>
+      <title>MI example</title>
+      <link>http://localhost/ruby/mi-example/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/mi-example/</guid>
+      <description>Protocol Overview  This is a simple cache coherence protocol that is used to illustrate protocol specification using SLICC. This protocol assumes a 1-level cache hierarchy. The cache is private to each node. The caches are kept coherent by a directory controller. Since the hierarchy is only 1-level, there is no inclusion/exclusion requirement. This protocol does not differentiate between loads and stores. This protocol cannot implement the semantics of LL/SC instructions, because external GETS requests that hit a block within a LL/SC sequence steal exclusive permissions, thus causing the SC instruction to fail.</description>
+    </item>
+    
+    <item>
+      <title>MOESI CMP directory</title>
+      <link>http://localhost/ruby/moesi-cmp-directory/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/moesi-cmp-directory/</guid>
+      <description>Protocol Overview  TODO: cache hierarchy   In contrast with the MESI protocol, the MOESI protocol introduces an additional Owned state. The MOESI protocol also includes many coalescing optimizations not available in the MESI protocol.  Related Files  src/mem/protocols  MOESI_CMP_directory-L1cache.sm: L1 cache controller specification MOESI_CMP_directory-L2cache.sm: L2 cache controller specification MOESI_CMP_directory-dir.sm: directory controller specification MOESI_CMP_directory-dma.sm: dma controller specification MOESI_CMP_directory-msg.sm: message type specification MOESI_CMP_directory.slicc: container file   L1 Cache Controller  Stable States and Invariants     States Invariants     MM The cache block is held exclusively by this node and is potentially modified (similar to conventional &amp;ldquo;M&amp;rdquo; state).</description>
+    </item>
+    
+    <item>
+      <title>MOESI CMP token</title>
+      <link>http://localhost/ruby/moesi-cmp-token/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/moesi-cmp-token/</guid>
+      <description>Protocol Overview  This protocol also models a 2-level cache hierarchy.   It maintains coherence permission by explicitly exchanging and counting tokens.   A fix number of token are assigned to each cache block in the beginning, the number of token remains unchanged.   To write a block, the processor must have all the token for that block. For reading at least one token is required.   The protocol also has a persistent message support to avoid starvation.</description>
+    </item>
+    
+    <item>
+      <title>MOESI hammer</title>
+      <link>http://localhost/ruby/moesi-hammer/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/moesi-hammer/</guid>
+      <description>This is an implementation of AMD&amp;rsquo;s Hammer protocol, which is used in AMD&amp;rsquo;s Hammer chip (also know as the Opteron or Athlon 64). The protocol implements both the original a HyperTransport protocol, as well as the more recent ProbeFilter protocol. The protocol also includes a full-bit directory mode.
+Related Files  src/mem/protocols  MOESI_hammer-cache.sm: cache controller specification MOESI_hammer-dir.sm: directory controller specification MOESI_hammer-dma.sm: dma controller specification MOESI_hammer-msg.sm: message type specification MOESI_hammer.</description>
+    </item>
+    
+    <item>
+      <title>Modular coherence</title>
+      <link>http://localhost/ruby/modular-coherence/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/modular-coherence/</guid>
+      <description>Introduction We need a way to add/extend/replace cache coherence protocols in a modular fashion. The original cache module had coherence factored out into a separate object, but the interface was totally inadequate for doing anything interesting. The redesigned memory system from 2.0 integrated coherence back in to the cache module as a temporary step to eliminate the useless bloat caused by the original separation. It&amp;rsquo;s now time to go back and re-introduce this modularity, but to do it right this time.</description>
+    </item>
+    
+    <item>
+      <title>Network test</title>
+      <link>http://localhost/ruby/network-test/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/network-test/</guid>
+      <description>This is a dummy cache coherence protocol that is used to operate the ruby network tester. The details about running the network tester can be found here.
+Related Files  src/mem/protocols  Network_test-cache.sm: cache controller specification Network_test-dir.sm: directory controller specification Network_test-msg.sm: message type specification Network_test.slicc: container file   Cache Hierarchy This protocol assumes a 1-level cache hierarchy. The role of the cache is to simply send messages from the cpu to the appropriate directory (based on the address), in the appropriate virtual network (based on the message type).</description>
+    </item>
+    
+    <item>
+      <title>Ruby</title>
+      <link>http://localhost/ruby/ruby/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/ruby/</guid>
+      <description>High level components of Ruby Ruby implements a detailed simulation model for the memory subsystem. It models inclusive/exclusive cache hierarchies with various replacement policies, coherence protocol implementations, interconnection networks, DMA and memory controllers, various sequencers that initiate memory requests and handle responses. The models are modular, flexible and highly configurable. Three key aspects of these models are:
+ Separation of concerns &amp;ndash; for example, the coherence protocol specifications are separate from the replacement policies and cache index mapping, the network topology is specified separately from the implementation.</description>
+    </item>
+    
+    <item>
+      <title>Ruby Network Tester</title>
+      <link>http://localhost/ruby/ruby-network-test/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/ruby-network-test/</guid>
+      <description>The Ruby Network Tester provides a framework for simulating the interconnection network with controlled inputs. This is useful for network testing/debugging, or for network-only simulations with synthetic traffic (especially with the garnet network). The tester works in conjunction with the Network_test coherence protocol.
+Related Files  configs/example/ruby_network_test.py: file to invoke the network tester src/cpu/testers/networktest: files implementing the tester.  NetworkTest.py networktest.hh networktest.cc   How to run First build gem5 with the Network_test coherence protocol:</description>
+    </item>
+    
+    <item>
+      <title>Ruby Random Tester</title>
+      <link>http://localhost/ruby/ruby-random-test/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/ruby-random-test/</guid>
+      <description>A cache coherence protocol usually has several different types of state machines, with state machine having several different states. For example, the MESI CMP directory protocol has four different state machines (L1, L2, directory, dma). Testing such a protocol for functional correctness is a challenging task. gem5 provides a random tester for testing coherence protocols. It is called the Ruby Random Tester. The source files related to the tester are present in the directory src/cpu/testers/rubytest.</description>
+    </item>
+    
+    <item>
+      <title>SLICC</title>
+      <link>http://localhost/ruby/slicc/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/slicc/</guid>
+      <description>SLICC is a domain specific language for specifying cache coherence protocols. The SLICC compiler generates C++ code for different controllers, which can work in tandem with other parts of Ruby. The compiler also generates an HTML specification of the protocol. HTML generation is turned off by default. To enable HTML output, pass the option &amp;ldquo;SLICC_HTML=True&amp;rdquo; to scons when compiling.
+Input To the Compiler The SLICC compiler takes, as input, files that specify the controllers involved in the protocol.</description>
+    </item>
+    
+    <item>
+      <title>Simple</title>
+      <link>http://localhost/ruby/simple/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/simple/</guid>
+      <description>More details of the gem5 Ruby Interconnection Network are here.
+Simple Network The default network model in Ruby is the simple network.
+ Related Files:  src/mem/ruby/network/Network.py src/mem/ruby/network/simple src/mem/ruby/network/simple/SimpleNetwork.py   Configuration Simple network uses the generic network parameters in Network.py:
+ - number_of_virtual_networks: This is the maximum number of virtual networks. The actual number of active virtual networks is determined by the protocol.  control_msg_size: The size of control messages in bytes.</description>
+    </item>
+    
+  </channel>
+</rss>

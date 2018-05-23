@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on gem5</title>
+    <link>http://localhost/publications/</link>
+    <description>Recent content in Publications on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 May 2018 18:51:37 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/publications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Derivative projects</title>
+      <link>http://localhost/publications/projects/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/publications/projects/</guid>
+      <description>Below is a list of projects that are based on gem5, are extensions of gem5, or use gem5.
+MV5  MV5 is a reconfigurable simulator for heterogeneous multicore architectures. It is based on M5v2.0 beta 4. Typical usage: simulating data-parallel applications on SIMT cores that operate over directory-based cache hierarchies. You can also add out-of-order cores to have a heterogeneous system, and all different types of cores can operate under the same address space through the same cache hierarchy.</description>
+    </item>
+    
+  </channel>
+</rss>

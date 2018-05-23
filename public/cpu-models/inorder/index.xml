@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>In Order on gem5</title>
+    <link>http://localhost/cpu-models/inorder/</link>
+    <description>Recent content in In Order on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 May 2018 18:51:37 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/cpu-models/inorder/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Instruction schedules &amp; pipeline definition</title>
+      <link>http://localhost/cpu-models/inorder/inst-schedules/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/cpu-models/inorder/inst-schedules/</guid>
+      <description>Instruction Schedules &amp;amp; Pipeline Definitions Overview At the heart of the InOrderCPU model is the concept of Instruction Schedules (IS). Instruction schedules create the generic framework that allow for developer&amp;rsquo;s to make a custom pipeline. A pipeline definition can be seen as a collection of instruction schedules that govern what an instruction will do in any given stage and what stage that instruction will go to next.
+In general, each instruction has a stage-by-stage list of tasks that need to be accomplished before moving on to the next stage.</description>
+    </item>
+    
+    <item>
+      <title>Pipeline stages</title>
+      <link>http://localhost/cpu-models/inorder/pipeline-stages/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/cpu-models/inorder/pipeline-stages/</guid>
+      <description>Overview Pipeline stages in the InOrder CPU are implemented as abstract implementations of what a pipeline stage would be in any CPU model. Typically, one would imagine a particularly pipeline stage being responsible for:
+(1) Performing specific operations such as &amp;ldquo;Decode&amp;rdquo; or &amp;ldquo;Execute&amp;rdquo; and either
+(2a) Sending that instruction to the next stage if that operation was successful and the next stage&amp;rsquo;s buffer has room for incoming instructions
+or</description>
+    </item>
+    
+    <item>
+      <title>Resource request model</title>
+      <link>http://localhost/cpu-models/inorder/resource-request-model/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/cpu-models/inorder/resource-request-model/</guid>
+      <description>Overview Resources consists of any CPU object that an instruction wants to access. This could be a branch predictor, a cache, a execution unit, etc. In the InOrder CPU model we abstract what a resource is into a generic &amp;ldquo;Resource&amp;rdquo; class that all specific resources must derive from. In any given pipeline stage, an instruction will request that a resource perform a specific operation on it&amp;rsquo;s behalf. If an instruction can complete all it&amp;rsquo;s resource requests for a given stage, then it may pass to the next stage.</description>
+    </item>
+    
+    <item>
+      <title>TODO</title>
+      <link>http://localhost/cpu-models/inorder/todo/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/cpu-models/inorder/todo/</guid>
+      <description>Python Configurability  Resource Configuration - How can we specify what resources are instantiated via the Python config files?  ResourceType - Type of resource (Enum type)  ResourceParams - Parameters for this type of resource Request - List of requests for this type of resource (Enum type)  Latency - operation latency and issue latency (intra/inter thread)  Count - Number of such resource type     Pipeline Description  InstSchedule - Instruction schedule specified as a vector of InstClassSchedule  InstClassSchedule - Vector of schedules per instruction class - load/store, Int execute, FP execute, specialized inst, etc.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost/cpu-models/inorder/tutorial/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/cpu-models/inorder/tutorial/</guid>
+      <description>From Instruction Fetch to Instruction Graduation TBD</description>
+    </item>
+    
+  </channel>
+</rss>

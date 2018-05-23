@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Benchmarks w/gem5 on gem5</title>
+    <link>http://localhost/benchmarks/</link>
+    <description>Recent content in Benchmarks w/gem5 on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 May 2018 16:52:26 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/benchmarks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SPEC2000</title>
+      <link>http://localhost/benchmarks/spec-2000/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/spec-2000/</guid>
+      <description>This is a work in-progress. Everyone should feel free to extend this page with their experiences to help new users get started.
+ cpu2000.py Input sets and Binaries Several of the cpu2000 benchmarks for our regression tests. Unfortunately because of licensing restrictions we can&amp;rsquo;t provide the binaries or input files, however to make this a bit easier we have created cpu2000.py. Currently the script is tailored to our particular organization of the binaries and input files.</description>
+    </item>
+    
+    <item>
+      <title>SPECcpu2006</title>
+      <link>http://localhost/benchmarks/spec-2006/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/spec-2006/</guid>
+      <description>This is a work in-progress. Everyone should feel free to extend this page with their experiences to help new users get started.
+ Input sets and Binaries We can&amp;rsquo;t provide the binaries or input files because of licensing restrictions, but It&amp;rsquo;s not hard to build the binaries by yourself. In this short article, we will share our experiences about what we have done so far.
+Build the cross-compiler for alpha machine It is suggested that you use crosstool-ng available here, a new tool based on Dan Kegel&amp;rsquo;s cross tool that is more up to date.</description>
+    </item>
+    
+    <item>
+      <title>Android Marshmallow</title>
+      <link>http://localhost/benchmarks/android-mashmellow/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/android-mashmellow/</guid>
+      <description>These instructions expect that the user will be using ARM support of gem5
+ Overview To successfully run Android in gem5, an image, a compatible kernel and a device tree blob .dtb) file configured for the simulator are necessary. This guide shows how to build Android Marshmallow 32bit version using a 3.14 kernel with Mali support. An extra section will be added in the future on how to build the 4.</description>
+    </item>
+    
+    <item>
+      <title>BBench</title>
+      <link>http://localhost/benchmarks/bbench/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/bbench/</guid>
+      <description>Note that the ICS images are deprecated. Please see the instructions for running Android on gem5 and how to use workload automation.
+Tips for Making Your Disk Image gem5 Friendly Speeding Up the Boot Process When a fresh Android image is booted it generates a lot of files and does a lot of JIT compiling; this can slow down the boot process significantly. gem5 uses a copy-on-write (COW) layer between the simulator and the actual disk image, because of this COW layer none of the changes are stored to the disk image.</description>
+    </item>
+    
+    <item>
+      <title>Moby</title>
+      <link>http://localhost/benchmarks/moby/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/moby/</guid>
+      <description>AsimBench is renamed as Moby!
+ This page describes all the necessary files and modifications to run Android and Moby on gem5 using the ARM ISA. BBench-gem5 introduces more detailed information about how to set Android running on gem5, and how to build Android File System and Kernel.
+Android Full-System Files These files contain everything you need to get Android, and Moby, up and running on gem5.
+All these files can be downloaded from here.</description>
+    </item>
+    
+    <item>
+      <title>Android KitKat</title>
+      <link>http://localhost/benchmarks/android-kitkat/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/android-kitkat/</guid>
+      <description>Building Android KitKat for gem5 Overview The easiest way to build Android for gem5 is to base the system on a the emulated Goldfish device. The main difference between the actual qemu-based Goldfish model and gem5 is a small number of gem5-specific configuration files. These files are mainly related to differences in block device naming and scripts to start use gem5&amp;rsquo;s pseudo-op interface to start experiments.
+Build Instructions Follow the directions on Android Open Source to download and build Android.</description>
+    </item>
+    
+    <item>
+      <title>PARSEC</title>
+      <link>http://localhost/benchmarks/parsec/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/parsec/</guid>
+      <description>PARSEC v2.1 The PARSEC benchmarks have been built to run in the gem5 full-system simulation mode. The following section details references and the process for building and running the suite.
+Download Pre-built M5 Disk Image PARSEC has been built to run on gem5 with the ALPHA ISA, and disk images are available at Running PARSEC 2.1 on M5 from The University of Texas. You can download a disk image there and unzip it.</description>
+    </item>
+    
+  </channel>
+</rss>

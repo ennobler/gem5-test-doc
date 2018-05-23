@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deprecated on gem5</title>
+    <link>http://localhost/deprecated/</link>
+    <description>Recent content in Deprecated on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 May 2018 18:51:37 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/deprecated/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alpha Dependencies</title>
+      <link>http://localhost/deprecated/alpha-dependencies/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/alpha-dependencies/</guid>
+      <description>Purpose The purpose of this page is to list the areas where M5 is dependent on the alpha architecture, and discuss ways to remove or quarantine the dependencies.
+Dependencies VPtr class The VPtr class uses the page size for Alpha in an assert which determines whether or not to an access spans page boundaries. Other than this, this file is not alpha specific, and can be moved somewhere else. My suggestion is that it moves to sim.</description>
+    </item>
+    
+    <item>
+      <title>Bad names</title>
+      <link>http://localhost/deprecated/bad-names/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/bad-names/</guid>
+      <description>We may have a couple of classes, variables, and functions that aren&amp;rsquo;t named too well. Some are too long, aren&amp;rsquo;t descriptive, etc. List the things that you don&amp;rsquo;t like here, and try to give some suggestions for alternates.
+Function names  setMiscRegWithEffect - setMiscReg (will have to rename current setMiscReg to setMiscRegNoEffect or something similar); setMisc readMiscRegWithEffect - same as above  Class names Variable names Command to replace string find .</description>
+    </item>
+    
+    <item>
+      <title>Compiling Linux</title>
+      <link>http://localhost/deprecated/compiling-linux/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/compiling-linux/</guid>
+      <description>If you&amp;rsquo;re interested in ARM Linux kernels, please see this page: ARM Linux Kernel
+We supply a repository of patches against the Linux kernel that enables some M5 features and provides default configuration files that work with M5. The repository is a Mercurial Queue (MQ) that is intended to be applied on top of a Linux repository. To compile a kernel using our patches repository you&amp;rsquo;ll need to get a copy of the linux-2.</description>
+    </item>
+    
+    <item>
+      <title>Compiling M5</title>
+      <link>http://localhost/deprecated/compiling-m5/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/compiling-m5/</guid>
+      <description>gem5 runs on Linux and Mac OS X, but should be easily portable to other Unix-like OSes. At times in the past gem5 has worked on OpenBSD and Microsoft Windows (under Cygwin), but these platforms are not regularly tested. Cygwin in particular is no longer actively supported; if you must run on a Windows host, we recommend installing Linux (e.g., Ubuntu Server) under a VM and running gem5 there. Free virtualization solutions such as VirtualBox and VMware Player work well for this usage.</description>
+    </item>
+    
+    <item>
+      <title>Compiling Workloads</title>
+      <link>http://localhost/deprecated/compiling-workloads/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/compiling-workloads/</guid>
+      <description>Cross Compilers A cross compiler is a compiler set up to run on one ISA but generate binaries which run on another. You may need one if you intend to simulate a system which uses a particular ISA, Alpha for instance, but don&amp;rsquo;t have access to actual Alpha hardware. There are various sources for cross compilers, listed here in roughly recommended order:
+ Some architectures have professionally build cross-compilers available from Code Sourcery.</description>
+    </item>
+    
+    <item>
+      <title>Config scripts ideas</title>
+      <link>http://localhost/deprecated/scripts/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/scripts/</guid>
+      <description>Background The configurations we have work, but are really hard to learn and the code is getting harder and harder to effectively maintain
+Issues A extensible configuration system is one of the road blocks to a better regression system Asymmetric configurations are problematic with the current system as we need to come up with a way to set CPUID information for each cluster and size them independently Having clocks to emulate some sort of DVFS (just frequency scaling) is hard.</description>
+    </item>
+    
+    <item>
+      <title>DaCapo</title>
+      <link>http://localhost/deprecated/dacapo/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/dacapo/</guid>
+      <description>This page describes how to get the Oracle-Sun JRE version 7 working on a disk image for use with ARM gem5. This will allow you to use the DaCapo benchmarks, which are on the Ubuntu image for gem5 ARM in the /benchmarks/dacapo directory.
+Installing Oracle-Sun Java on an Ubuntu Image for ARM gem5 Download the standard edition(SE) of Java 7; the SE version is the free version of Java available from Oracle.</description>
+    </item>
+    
+    <item>
+      <title>Deprecated submitting contributions</title>
+      <link>http://localhost/deprecated/submitting-contributions/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/submitting-contributions/</guid>
+      <description>OLD CONTRIBUTION DOCUMENTATION All of the contribution details have been moved into the gem5 source tree. The information below is out of date!
+If you&amp;rsquo;ve made changes to gem5 that might benefit others, we strongly encourage you to contribute those changes to the public gem5 repository. There are several reasons to do this:
+ Once your changes are part of the main repo, you no longer have to merge them back in every time you update your local repo.</description>
+    </item>
+    
+    <item>
+      <title>Heterogenous Systems</title>
+      <link>http://localhost/deprecated/hetrogenous/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/hetrogenous/</guid>
+      <description>(from Gabe)
+I was thinking about how to set up m5 to support other architectures, and decision which has a major impact on that is whether we want to support heterogeneous systems. Here are the arguements I saw for and against.
+Against
+Adding support for heterogeneous systems will be a big change. There are many systems of m5 that aren&amp;rsquo;t ready to support something that&amp;rsquo;s not alpha, let alone two things.</description>
+    </item>
+    
+    <item>
+      <title>Integrating m5 and gems</title>
+      <link>http://localhost/deprecated/integrating-m5-gems/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/integrating-m5-gems/</guid>
+      <description>{|style=&amp;ldquo;width:100%;text-align:center;white-space:nowrap;color:#000&amp;rdquo; |
+The GEMS/M5 integration project  |}
+Sprint We&amp;rsquo;re having a coding sprint on January 13, 2009. The sprint begins at 9AM PST/11AM CST. We will begin with a phone call on Nate&amp;rsquo;s conference line and use IRC throughout the day.
+Goal To get a &amp;ldquo;working&amp;rdquo; unified simulator by the end of the day.
+Tasks  Unified build environment using scons &amp;ndash; Arka w/ Nate and Steve supervising Support system call emulation mode Support full system mode  atomic support, especially load locked/store conditional &amp;ndash; Derek pio support  Deal with lack of first-class data support in Ruby Configuration management  Option 1: Configuration checks between m5 and RubyConfig Option 2: M5 front-end directly modifying ruby parameters  Testing infrastructure base on m5 infrastructure  Which tests?</description>
+    </item>
+    
+    <item>
+      <title>Legacy ARM files</title>
+      <link>http://localhost/deprecated/legacy-arm-files/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/legacy-arm-files/</guid>
+      <description>This page contains full-system files that have been distributed with gem5 in the past, but are deprecated/legacy files. The files linked on the Download page should be used instead of these. They are here to simply document what has been available in the past.
+ Tarballs of generic file systems are available from Linaro. Scroll down to the Developers and Community Builds section. Some work will be required to make these suitable for simulation, but they&amp;rsquo;re a reasonable starting point.</description>
+    </item>
+    
+    <item>
+      <title>Linux kernel</title>
+      <link>http://localhost/deprecated/linux-kernel/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/linux-kernel/</guid>
+      <description>Depending on what ISA you&amp;rsquo;re using with gem5 the instructions for compiling a Linux kernel differ slightly. Ultimately, we&amp;rsquo;d like to have a single unified way to compile all these kernels, but it will take some work to happen. If you&amp;rsquo;d like to help, please let us know.
+Alpha Currently we have a patch queue for Alpha that can be applied on top of a linux mercurial repository. This patch queue adds various debugging, performance, introspection capabilities and increases the number of simulated processors the Alpha implementation in gem5 can support from 4 to 64.</description>
+    </item>
+    
+    <item>
+      <title>Linux-dist</title>
+      <link>http://localhost/deprecated/linux-dist/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/linux-dist/</guid>
+      <description>This documentation is relevant only for those desiring to use the full-system aspect of M5. When running in full-system, M5 reads a raw disk image as the hard disk. This tells you how to compile both the linux binary and the disk image for full-system simulation.
+There is a general 3 step process for doing this:
+ compile a cross-compiler capable of building alpha binaries. compile a kernel using this cross-compiler use linux-dist to build binaries for the M5 disk image, and create the image.</description>
+    </item>
+    
+    <item>
+      <title>Mercurial Queues</title>
+      <link>http://localhost/deprecated/mercurial-queues/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/mercurial-queues/</guid>
+      <description>Repository Management Problem gem5 users typically opt to freeze their repository at a particular changeset when starting a new research project. This approach has several downsides:
+ It discourages users from contributing back any useful changes they may develop. If a useful change is added upstream, it&amp;rsquo;s a long, tedious process to update.  If a user chooses to keep their local repository up-to-date with the source tree they typically use named branches and merge any upstream changes into their branches.</description>
+    </item>
+    
+    <item>
+      <title>Nate&#39;s wishlest</title>
+      <link>http://localhost/deprecated/nates-wish-list/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/nates-wish-list/</guid>
+      <description>Framework  Parallelize M5  Converting everything to support the new Params mechanism is a prerequisite Make various global structures thread safe (e.g. Instruction cache, Statistics, etc.)  Unify full system and syscall emulation modes into a single build Unify all ISAs into a single build  This requires fixes to the way endianness is handled in the memory system. Add a NOISA option that doesn&amp;rsquo;t have CPUs till this happens.</description>
+    </item>
+    
+    <item>
+      <title>New regression framework</title>
+      <link>http://localhost/deprecated/new-regression/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/new-regression/</guid>
+      <description>We&amp;rsquo;d like to revamp the regression tests by moving to a new framework. This page is intended to host a discussion of features and design for the new framework.
+Ali&amp;rsquo;s plan for a new implementation  Use pytest It has, by far, the best documentation of any of the python testing frameworks and seems to be the most active Seems to be completely extensible via python plugins and hooks Supports outputting JUnit XML incase we want to use a continuous integration solution such as Jenkins or Hudson The pytest xdist and plugin support running tests on multiple-cpus or multiple machines Good collection of tasks and tutorials  How things would work  Marks may be assigned to tests either with python decorators or a class attribute if we want to stay python 2.</description>
+    </item>
+    
+    <item>
+      <title>Old documentation</title>
+      <link>http://localhost/deprecated/old-documentation/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/old-documentation/</guid>
+      <description>This page is an archive of old M5 documentation predating the GEMS merger and subsequent gem5 renaming. See the Documentation page for the current documentation.
+Complementary information from our tutorials, including about three hours of video from our last tutorial, is available here. The tutorials provide basic information about using M5 and are time well spent for anyone new to the simulator.
+Starting Out  Source Tree - Brief tour of the source tree Compiling M5 - How to compile the simulator Running M5 - How to run the simulator Debugging - Debugging tips and strategies Reporting Problems - What to do before you report a problem Adding Functionality - How to extend M5 (and update to new versions with almost no work)  Starting out in Full System  Running M5 in Full-System Mode - How to run in full-system mode m5term - How to use the m5term m5ops - Pseudo instructions and a command line interface to them Using linux-dist to Create Disk Images and Kernels for M5  How to create a Linux disk image/kernel   Simulator Internals  Doxygen &amp;ndash; Doxygen documentation Memory System - Overview of M5&amp;rsquo;s new memory system Simulation Scripts Explained - Overview of simulation scripts Using the Statistics Package - Using the statistics package ISA description system - The new ISA description primer CPU Models - Overview of the various CPU models in M5 Sampling - Overview of how to use sampling.</description>
+    </item>
+    
+    <item>
+      <title>Parallelize gem5</title>
+      <link>http://localhost/deprecated/parallelize/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/parallelize/</guid>
+      <description>Parallelizing the simulation engine to run on shared-memory multicore systems has long been a goal for several of us. Unfortunately, it rarely makes it to the top of anyone&amp;rsquo;s to-do list. This page tries to summarize where we&amp;rsquo;re at and which direction we&amp;rsquo;re headed so that others who would like to help can jump in and help (or provide feedback on our future direction).
+Goals  Our primary goal is to get decent speedup modeling moderate-size parallel configurations (say 16-64 cores) on small-scale shared-memory multi-core systems (say 4-8 cores).</description>
+    </item>
+    
+    <item>
+      <title>Running gem5</title>
+      <link>http://localhost/deprecated/running/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/running/</guid>
+      <description>THIS IS AN OBSOLETE PAGE. DO NOT EDIT. for the most recent version of this documentation.
+ Quick Start We&amp;rsquo;ll assume that you&amp;rsquo;ve already built an ALPHA_FS version of the M5 simulator, and downloaded and installed the full-system binary and disk image files. Then you can just run the fs.py configuration file in the m5/configs/examples directory. For example:
+% build/ALPHA_FS/m5.debug -d /tmp/output configs/example/fs.py M5 Simulator System Copyright (c) 2001-2006 The Regents of The University of Michigan All Rights Reserved M5 compiled Aug 16 2006 18:51:57 M5 started Wed Aug 16 21:53:38 2006 M5 executing on zeep command line: .</description>
+    </item>
+    
+    <item>
+      <title>Full-system Ubuntu Image</title>
+      <link>http://localhost/deprecated/ubuntu-disk/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/ubuntu-disk/</guid>
+      <description>This content is out-of-date.
+ This page describes how to build a serial-console filesystem of Ubuntu Linux for ARM ISA simulation after the bare image file is created. An example Ubuntu Natty ARM image is available on the Download page.
+Using Rootstock and Qemu to build the filesystem One way to create a disk image is to use the rootstock tool provided in older versions of Ubuntu to build an ARM filesystem.</description>
+    </item>
+    
+    <item>
+      <title>SPEComp</title>
+      <link>http://localhost/deprecated/spec-omp/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/spec-omp/</guid>
+      <description>How to run SpecOMP on M5  build cross-compiler  download crosstool-0.43.tar.gz from http://kegel.com/crosstool/#download (http://kegel.com/crosstool/crosstool-0.43.tar.gz) untar it edit demo-alpha.sh  RESULT_TOP=&amp;ldquo;your_alpha_compiler&amp;rdquo; GCC_LANGUAGE=&amp;ldquo;c,c++&amp;rdquo; &amp;ndash;&amp;gt; GCC_LANGUAGE=&amp;ldquo;c,c++,fortran&amp;rdquo; eval `cat &amp;hellip;dat &amp;hellip;dat` sh all.sh &amp;ndash;&amp;gt; eval `cat alpha.dat gcc-4.2.4-glibc-2.3.6-tls.dat` sh all.sh &amp;ndash;notest  set gcc to gcc-3.4 instead of gcc-4.3 (when I use gcc-4.3 to build the cross-compiler, there is a segmentation fault) run demo-alpha.sh there may be some errors (a header file (.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/deprecated/code-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/deprecated/code-locations/</guid>
+      <description>Full system code locations are as follows:
+ /sim/system - Architecture and OS independent code /arch//system.(cc|hh) - Architecture dependent, OS independent code /arch///system.(cc|hh) - - Architecture dependent, OS dependent code /kern//* - Architecture independent, OS dependent code  Very little of the code that was in /kern/ was actually architecture independent. Even things that at first glance appeared to be, actually patched architecture dependent parts of the kernel. Since there wasn&amp;rsquo;t much shared code, I didn&amp;rsquo;t feel any any large amount of effort should be put into sharing litterally 3 lines so unless we find a place where there is a lot of code, os dependent architecture independent code should go in it&amp;rsquo;s proper directory in a namespace for that OS and simply be called by the source architecture and os dependend files.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contributing on gem5</title>
+    <link>http://localhost/contributing/</link>
+    <description>Recent content in Contributing on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 May 2018 21:26:31 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/contributing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>High-level flow</title>
+      <link>http://localhost/contributing/high-level/</link>
+      <pubDate>Sat, 12 May 2018 21:26:55 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/high-level/</guid>
+      <description>+-------------+ | Make change | +------+------+ | | v +------+------+ | Post review | +------+------+ | v +--------+---------+ | Wait for reviews | &amp;lt;--------+ +--------+---------+ | | | | | v | +----+----+ No +------+------+ |Reviewers+---------&amp;gt;+ Update code | |happy? | +------+------+ +----+----+ ^ | | | Yes | v | +----+-----+ No | |Maintainer+----------------+ |happy? | +----+-----+ | | Yes v +------+------+ | Submit code | +-------------+   After creating your change to gem5, you can post a review on our Gerrit code-review site: https://gem5-review.</description>
+    </item>
+    
+    <item>
+      <title>Cloning the repo to contribute</title>
+      <link>http://localhost/contributing/cloning/</link>
+      <pubDate>Sat, 12 May 2018 21:27:05 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/cloning/</guid>
+      <description>If you plan on contributing, it is strongly encouraged for you to clone the repository directly from our gerrit instance at https://gem5.googlesource.com/.
+To clone the master gem5 repository:
+ git clone https://gem5.googlesource.com/public/gem5  Other gem5 repositories There are a few repositories other than the main gem5 development repository.
+ public/m5threads: The code for a pthreads implementation that works with gem5&amp;rsquo;s syscall emulation mode.  Other gem5 branches None right now.</description>
+    </item>
+    
+    <item>
+      <title>Making changes to gem5</title>
+      <link>http://localhost/contributing/changes/</link>
+      <pubDate>Sat, 12 May 2018 21:27:14 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/changes/</guid>
+      <description>It is strongly encouraged to use git branches when making changes to gem5. Additionally, keeping changes small and concise and only have a single logical change per commit.
+Unlike our previous flow with Mercurial and patch queues, when using git, you will be committing changes to your local branch. By using separate branches in git, you will be able to pull in and merge changes from mainline and simply keep up with upstream changes.</description>
+    </item>
+    
+    <item>
+      <title>Posting a review</title>
+      <link>http://localhost/contributing/posting-review/</link>
+      <pubDate>Sat, 12 May 2018 21:27:22 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/posting-review/</guid>
+      <description>If you have not signed up for an account on the Gerrit review site (https://gem5-review.googlesource.com), you first have to create an account.
+Setting up an account  Go to https://gem5.googlesource.com/ Click &amp;ldquo;Sign In&amp;rdquo; in the upper right corner. Note: You will need a Google account to contribute. After signing in, click &amp;ldquo;Generate Password&amp;rdquo; and follow the instructions.  Submitting a change In gerrit, to submit a review request, you can simply push your git commits to a special named branch.</description>
+    </item>
+    
+    <item>
+      <title>Reviewing patches</title>
+      <link>http://localhost/contributing/reviewing-patches/</link>
+      <pubDate>Sat, 12 May 2018 21:27:38 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/reviewing-patches/</guid>
+      <description>Reviewing patches is done on our gerrit instance at https://gem5-review.googlesource.com/.
+After logging in with your Google account, you will be able to comment, review, and push your own patches as well as review others&amp;rsquo; patches. All gem5 users are encouraged to review patches. The only requirement to review patches is to be polite and respectful of others.
+There are multiple labels in Gerrit that can be applied to each review detailed below.</description>
+    </item>
+    
+    <item>
+      <title>Committing</title>
+      <link>http://localhost/contributing/committing/</link>
+      <pubDate>Sat, 12 May 2018 21:27:47 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/committing/</guid>
+      <description>Each patch must meet the following criteria to be merged:
+ At least one review with +2 At least one maintainer with +1 At least +1 from the CI tests (gem5 must build and run) At least +1 from the style checker  Once a patch meets the above criteria, the submitter of the patch will be able to merge the patch by pressing the &amp;ldquo;Submit&amp;rdquo; button on Gerrit. When the patch is submitted, it is merged into the public gem5 branch.</description>
+    </item>
+    
+    <item>
+      <title>Governance</title>
+      <link>http://localhost/contributing/governance/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/governance/</guid>
+      <description>Overview gem5 is a meritocratic, consensus-based community project. Anyone with an interest in the project can join the community, contribute to the project design and participate in the decision-making process. Historically, gem5 development has been carried out both in industry and in academia. This document describes how that participation takes place and how to set about earning merit within the project community.
+The document is broken into a number of sections.</description>
+    </item>
+    
+  </channel>
+</rss>

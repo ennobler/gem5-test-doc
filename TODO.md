@@ -1,0 +1,5 @@
+- [ ] Update robots.txt
+- [ ] Make Contributing/HighLevel.md use MERMAID for the flow chart
+- [ ] Copy gem5 101 from uwisc
+- [ ] Move details in supported architectures elsewhere?
+- 

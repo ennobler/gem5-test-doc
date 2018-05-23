@@ -1,0 +1,1653 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gem5</title>
+    <link>http://localhost/</link>
+    <description>Recent content on gem5</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 May 2018 22:49:29 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost/getting-started/intro/</link>
+      <pubDate>Sat, 12 May 2018 22:49:29 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/intro/</guid>
+      <description>gem5 is a modular discrete event driven computer system simulator platform. That means that:
+ gem5&amp;rsquo;s components can be rearranged, parameterized, extended or replaced easily to suit your needs. It simulates the passing of time as a series of discrete events. Its intended use is to simulate one or more computer systems in various ways. It&amp;rsquo;s more than just a simulator; it&amp;rsquo;s a simulator platform that lets you use as many of its premade components as you want to build up your own simulation system.</description>
+    </item>
+    
+    <item>
+      <title>High-level flow</title>
+      <link>http://localhost/contributing/high-level/</link>
+      <pubDate>Sat, 12 May 2018 21:26:55 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/high-level/</guid>
+      <description>+-------------+ | Make change | +------+------+ | | v +------+------+ | Post review | +------+------+ | v +--------+---------+ | Wait for reviews | &amp;lt;--------+ +--------+---------+ | | | | | v | +----+----+ No +------+------+ |Reviewers+---------&amp;gt;+ Update code | |happy? | +------+------+ +----+----+ ^ | | | Yes | v | +----+-----+ No | |Maintainer+----------------+ |happy? | +----+-----+ | | Yes v +------+------+ | Submit code | +-------------+   After creating your change to gem5, you can post a review on our Gerrit code-review site: https://gem5-review.</description>
+    </item>
+    
+    <item>
+      <title>Build System</title>
+      <link>http://localhost/docs/build-system/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/build-system/</guid>
+      <description>Build System gem5&amp;rsquo;s build system is based on SCons, an open source build system implemented in Python. You can find more information about scons at http://www.scons.org. The main scons file is called SConstruct and is found in the root of the source tree. Additional scons files are named SConscript and are found throughout the tree, usually near the files they&amp;rsquo;re associated with.
+Build targets In gem5, scons build targets are of the form //.</description>
+    </item>
+    
+    <item>
+      <title>Debugging</title>
+      <link>http://localhost/docs/debugging/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/debugging/</guid>
+      <description>Introduction The simplest method of debugging is to have gem5 print out traces of what it&amp;rsquo;s doing. The simulator contains many DPRINTF statements that print trace messages describing potentially interesting events. Each DPRINTF is associated with a debug flag (e.g., Bus, Cache, Ethernet, Disk, etc.). To turn on the messages for a particular flag, use the --debug-flags command line argument. Multiple flags can be specified by giving a list of strings, e.</description>
+    </item>
+    
+    <item>
+      <title>ISCA 2018</title>
+      <link>http://localhost/tutorials/isca-2018/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/tutorials/isca-2018/</guid>
+      <description>AMD gem5 APU Simulator: Modeling GPUs Using the Machine ISA  Held in conjunction with [ISCA 2018](http://iscaconf.org/isca2018/). June 2nd, 2018.  Important Dates The tutorial will be held on day one of the conference - June 2nd, 2018
+ISCA 2018 early registration and hotel reservation deadline - April 16th, 2018
+Abstract AMD Research has developed an APU (Accelerated Processing Unit) model that extends gem5 [1] with a GPU timing model that executes the GCN (Graphics Core Next) generation 3 machine ISA [2, 3].</description>
+    </item>
+    
+    <item>
+      <title>SPEC2000</title>
+      <link>http://localhost/benchmarks/spec-2000/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/spec-2000/</guid>
+      <description>This is a work in-progress. Everyone should feel free to extend this page with their experiences to help new users get started.
+ cpu2000.py Input sets and Binaries Several of the cpu2000 benchmarks for our regression tests. Unfortunately because of licensing restrictions we can&amp;rsquo;t provide the binaries or input files, however to make this a bit easier we have created cpu2000.py. Currently the script is tailored to our particular organization of the binaries and input files.</description>
+    </item>
+    
+    <item>
+      <title>Address space</title>
+      <link>http://localhost/arch/x86/address_space/</link>
+      <pubDate>Sun, 13 May 2018 18:14:38 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/address_space/</guid>
+      <description>X86_64 is defined to support physical memory addresses up to 52 bits long. Because M5 uses 64 bit integers for addresses, every physical address has 12 extra bits which aren&amp;rsquo;t directly accessible to the software running on the simulated CPU. M5 uses those bits to differentiate between different physical address spaces which are allocated for various purposes. In order to maximize the space given to the actual address portion of the address, the bits that select the address space grown down from the MSB as they&amp;rsquo;re allocated.</description>
+    </item>
+    
+    <item>
+      <title>ISCA2017 - distributed gem5</title>
+      <link>http://localhost/tutorials/dist-gem5/</link>
+      <pubDate>Sun, 13 May 2018 17:02:19 -0400</pubDate>
+      
+      <guid>http://localhost/tutorials/dist-gem5/</guid>
+      <description>Title: dist-gem5: Modeling and Simulating a Distributed Computer System Using Multiple Simulation
+Sunday, June 25, 9:00 to 12:30
+44thInternationalSymposiumonComputer Architecture,June24-28,2017,Toronto,ON, Canada
+
+
+TOC
+List of organisers/presenters  Nam Sung Kim, University of Illinois, Urbana-Champaign Mohammad Alian, University of Illinois, Urbana-Champaign Nikos Nikoleris, ARM Ltd. Radhika Jagtap, ARM Ltd. Gabor Dozsa, ARM Ltd. Stephan Diestelhorst, ARM Ltd.  Abstract The single-thread performance improvement of processors has been sluggish for the past decade as Dennard’s scaling is approaching its fundamental physical limit.</description>
+    </item>
+    
+    <item>
+      <title>Cloning the repo to contribute</title>
+      <link>http://localhost/contributing/cloning/</link>
+      <pubDate>Sat, 12 May 2018 21:27:05 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/cloning/</guid>
+      <description>If you plan on contributing, it is strongly encouraged for you to clone the repository directly from our gerrit instance at https://gem5.googlesource.com/.
+To clone the master gem5 repository:
+ git clone https://gem5.googlesource.com/public/gem5  Other gem5 repositories There are a few repositories other than the main gem5 development repository.
+ public/m5threads: The code for a pthreads implementation that works with gem5&amp;rsquo;s syscall emulation mode.  Other gem5 branches None right now.</description>
+    </item>
+    
+    <item>
+      <title>Dependencies</title>
+      <link>http://localhost/getting-started/dependencies/</link>
+      <pubDate>Sat, 12 May 2018 21:14:19 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/dependencies/</guid>
+      <description>Building gem5 requires the following components to be installed. Ubuntu 16.04 and newer includes the required versions:
+ git g++ or clang scons python swig protbuf  sudo apt install git build-essential scons python-dev swig sudo apt install libprotobuf-dev python-protobuf protobuf-compiler libgoogle-perftools-dev  While gem5 runs on Linux and Mac OS X, these instructions are written assuming Ubuntu 16.04 or newer. For installing the required dependencies for other platforms see Dependencies.</description>
+    </item>
+    
+    <item>
+      <title>SPECcpu2006</title>
+      <link>http://localhost/benchmarks/spec-2006/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/spec-2006/</guid>
+      <description>This is a work in-progress. Everyone should feel free to extend this page with their experiences to help new users get started.
+ Input sets and Binaries We can&amp;rsquo;t provide the binaries or input files because of licensing restrictions, but It&amp;rsquo;s not hard to build the binaries by yourself. In this short article, we will share our experiences about what we have done so far.
+Build the cross-compiler for alpha machine It is suggested that you use crosstool-ng available here, a new tool based on Dan Kegel&amp;rsquo;s cross tool that is more up to date.</description>
+    </item>
+    
+    <item>
+      <title>Decoder</title>
+      <link>http://localhost/arch/x86/decoder/</link>
+      <pubDate>Sun, 13 May 2018 18:15:42 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/decoder/</guid>
+      <description>Requirements The decoder must handle:
+ Variable length instructions Misaligned instructions Instructions that span fetch buffer/cache line/page boundaries Microcoded instructions Instructions longer than native data types Self modifying code Externally modified memory and page mappings Instructions beginning &amp;ldquo;inside&amp;rdquo; other instructions  Current Design The decoder process will happen in several stages.
+First, the native variable length instructions will be translated into &amp;ldquo;fixed width&amp;rdquo; instructions. These instructions will be too large to represent with native data types, so they will be stored as structures.</description>
+    </item>
+    
+    <item>
+      <title>Making changes to gem5</title>
+      <link>http://localhost/contributing/changes/</link>
+      <pubDate>Sat, 12 May 2018 21:27:14 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/changes/</guid>
+      <description>It is strongly encouraged to use git branches when making changes to gem5. Additionally, keeping changes small and concise and only have a single logical change per commit.
+Unlike our previous flow with Mercurial and patch queues, when using git, you will be committing changes to your local branch. By using separate branches in git, you will be able to pull in and merge changes from mainline and simply keep up with upstream changes.</description>
+    </item>
+    
+    <item>
+      <title>Dependencies</title>
+      <link>http://localhost/docs/dependencies/</link>
+      <pubDate>Sat, 12 May 2018 21:14:19 -0400</pubDate>
+      
+      <guid>http://localhost/docs/dependencies/</guid>
+      <description>gem5 runs on Linux and Mac OS X, but should be easily portable to other Unix-like OSes. At times in the past gem5 has worked on OpenBSD and Microsoft Windows (under Cygwin), but these platforms are not regularly tested. Cygwin in particular is no longer actively supported; if you must run on a Windows host, we recommend installing Linux (e.g., Ubuntu Server) under a VM and running gem5 there. Free virtualization solutions such as VirtualBox and VMware Player work well for this usage.</description>
+    </item>
+    
+    <item>
+      <title>Source Code</title>
+      <link>http://localhost/getting-started/source-code/</link>
+      <pubDate>Sat, 12 May 2018 21:14:19 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/source-code/</guid>
+      <description>Official git repository Steps for getting a copy of the source code:
+ Install git. This is available in the git package on Ubuntu and Redhat and OS X macports or home-brew.
+ Clone the development repository git clone https://gem5.googlesource.com/public/gem5
+ After you clone the repository you can update it by typing git pull. Read the documentation on this page for more info on using git.
+  More general Git and Gerrit information:  https://git-scm.</description>
+    </item>
+    
+    <item>
+      <title>Configuration Scripts</title>
+      <link>http://localhost/getting-started/config-script/</link>
+      <pubDate>Sat, 12 May 2018 22:42:14 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/config-script/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Instruction decoding</title>
+      <link>http://localhost/arch/x86/instruction_decoding/</link>
+      <pubDate>Sun, 13 May 2018 17:06:33 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/instruction_decoding/</guid>
+      <description>Overview http://m5sim.org/graphics/InstructionExecution.png
+X86 instruction encodings have several unique characteristics which make them harder to deal with than the encodings for the other ISAs M5 supports. Despite that, x86 is decoded using the same basic mechanisms as the other ISAs.
+At the lowest level, instructions can take any number of bytes (up to a maximum) and can have any alignment. That means that when a CPU brings in bytes of memory to decode, it may contain several instructions, the end of one and the start of the next, the middle of an instruction, etc.</description>
+    </item>
+    
+    <item>
+      <title>Posting a review</title>
+      <link>http://localhost/contributing/posting-review/</link>
+      <pubDate>Sat, 12 May 2018 21:27:22 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/posting-review/</guid>
+      <description>If you have not signed up for an account on the Gerrit review site (https://gem5-review.googlesource.com), you first have to create an account.
+Setting up an account  Go to https://gem5.googlesource.com/ Click &amp;ldquo;Sign In&amp;rdquo; in the upper right corner. Note: You will need a Google account to contribute. After signing in, click &amp;ldquo;Generate Password&amp;rdquo; and follow the instructions.  Submitting a change In gerrit, to submit a review request, you can simply push your git commits to a special named branch.</description>
+    </item>
+    
+    <item>
+      <title>Building</title>
+      <link>http://localhost/getting-started/build/</link>
+      <pubDate>Sat, 12 May 2018 21:14:19 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/build/</guid>
+      <description>Let’s start by building a basic x86 system. Currently, you must compile gem5 separately for every ISA that you want to simulate. Additionally, if using ruby, you have to have separate compilations for every cache coherence protocol.
+To build gem5, we will use SCons. SCons uses the SConstruct file (gem5/SConstruct) to set up a number of variables and then uses the SConscript file in every subdirectory to find and compile all of the gem5 source.</description>
+    </item>
+    
+    <item>
+      <title>Running</title>
+      <link>http://localhost/getting-started/running/</link>
+      <pubDate>Sat, 12 May 2018 22:42:18 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/running/</guid>
+      <description> Modes \= System-call Emulation (SE) mode is one of the two modes of gem5 and the most basic. gem5 simulates your program and traps any system calls made to the host then emulates them. In the older versions of gem5, only statically linked binaries were allowed to be simulated in SE mode however, gem5 2.0 now supports dynamically linked binaries. Not all architecutres support dynamically linked binaries
+ </description>
+    </item>
+    
+    <item>
+      <title>Micro Code</title>
+      <link>http://localhost/arch/x86/micro-code/</link>
+      <pubDate>Sun, 13 May 2018 18:16:25 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/micro-code/</guid>
+      <description>Microop Parameter Specialization Microops are not, in general, written in an absolute sense. They are templates which provide an implementation for a macroop, but need to be specialized using the arguments of the original instruction. In hardware, this appears to be handled in two different ways depending on the origin of the microop. In the case of combinationally generated microops, the instructions are actually generated with the correct parameters in place.</description>
+    </item>
+    
+    <item>
+      <title>Adding cache</title>
+      <link>http://localhost/getting-started/adding-cache/</link>
+      <pubDate>Sat, 12 May 2018 22:42:45 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/adding-cache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reviewing patches</title>
+      <link>http://localhost/contributing/reviewing-patches/</link>
+      <pubDate>Sat, 12 May 2018 21:27:38 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/reviewing-patches/</guid>
+      <description>Reviewing patches is done on our gerrit instance at https://gem5-review.googlesource.com/.
+After logging in with your Google account, you will be able to comment, review, and push your own patches as well as review others&amp;rsquo; patches. All gem5 users are encouraged to review patches. The only requirement to review patches is to be polite and respectful of others.
+There are multiple labels in Gerrit that can be applied to each review detailed below.</description>
+    </item>
+    
+    <item>
+      <title>Stats</title>
+      <link>http://localhost/getting-started/stats/</link>
+      <pubDate>Sat, 12 May 2018 22:42:51 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/stats/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Micro-op ISA</title>
+      <link>http://localhost/arch/x86/micro-op-isa/</link>
+      <pubDate>Sun, 13 May 2018 18:17:13 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/micro-op-isa/</guid>
+      <description>Register Ops These microops typically take two sources and produce one result. Most have a version that operates on only registers and a version which operates on registers and an immediate value. Some optionally set flags according to their operation. Some of them can be predicated.
+Add Addition.
+add Dest, Src1, Src2 Dest = Dest &amp;lt;- Src1 + Src2
+Adds the contents of the Src1 and Src2 registers and puts the result in the Dest register.</description>
+    </item>
+    
+    <item>
+      <title>Default Configuration Files</title>
+      <link>http://localhost/getting-started/default-configs/</link>
+      <pubDate>Sat, 12 May 2018 22:42:59 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/default-configs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Segmentation</title>
+      <link>http://localhost/arch/x86/segmentation/</link>
+      <pubDate>Sun, 13 May 2018 18:17:58 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/segmentation/</guid>
+      <description>Segment bases When computing an address for a load or store, the segment base is added in before the address is sent to the CPU to actually perform the access. This has several advantages. First, because there are no alignment restrictions on segment bases, the virtual (pre-segmentation) address for an access could be aligned but produce an unaligned linear (post-segmentation) address. The opposite could also happen where an unaligned access becomes aligned.</description>
+    </item>
+    
+    <item>
+      <title>Committing</title>
+      <link>http://localhost/contributing/committing/</link>
+      <pubDate>Sat, 12 May 2018 21:27:47 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/committing/</guid>
+      <description>Each patch must meet the following criteria to be merged:
+ At least one review with +2 At least one maintainer with +1 At least +1 from the CI tests (gem5 must build and run) At least +1 from the style checker  Once a patch meets the above criteria, the submitter of the patch will be able to merge the patch by pressing the &amp;ldquo;Submit&amp;rdquo; button on Gerrit. When the patch is submitted, it is merged into the public gem5 branch.</description>
+    </item>
+    
+    <item>
+      <title>Asking for help</title>
+      <link>http://localhost/getting-started/asking-for-help/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/asking-for-help/</guid>
+      <description>Many of the people on the gem5-users mailing list are happy to help when someone has a problem or something doesn&amp;rsquo;t work. However, please keep in mind that it&amp;rsquo;s not our job to help. We all have other commitments, so before we spend time helping someone we like to see that they have put some effort into solving the problem themselves.
+ Before posting a question to the list, please check if the question is already answered.</description>
+    </item>
+    
+    <item>
+      <title>Todo list</title>
+      <link>http://localhost/arch/x86/todo/</link>
+      <pubDate>Sun, 13 May 2018 17:08:16 -0400</pubDate>
+      
+      <guid>http://localhost/arch/x86/todo/</guid>
+      <description>This todo list is likely out-of-date
+ Highest priority Flesh out and debug 64-bit modern ISA (what&amp;rsquo;s needed by users) FS-mode core timing issues Debug TimingSimpleCPU issues? In-order pipeline core model support Out-of-order core model (O3) support  Multiprocessor timing support: need to enforce atomicity of locked load/op/store sequences in timing cache models Ruby and M5 classic?  Performance correlation With real hardware and/or existing correlated simulator Micro-op counts for functional implementation Timing for out-of-order core (requires O3 support)  Complete x87 support AVX support  Useful but not strictly necessary Split up ISA output for faster compiling Improve ISA description language support for x86  To do eventually but not right away ACPI support KVM-based fast functional CPU model Virtualization extensions support (AMD SVM, etc.</description>
+    </item>
+    
+    <item>
+      <title>Mailing Lists</title>
+      <link>http://localhost/getting-started/mailing-lists/</link>
+      <pubDate>Sat, 12 May 2018 22:50:45 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/mailing-lists/</guid>
+      <description>gem5 has two main mailing lists where you can ask for help or advice. Before posting a problem to the mailing list please read Reporting Problems and follow the guidelines listed. Doing so will get your question answered far faster and more precisely.
+There are two mailing lists for gem5 hosted on gem5.org:
+ gem5-dev (subscribe) - gem5-dev is for developers who are working on the main version of gem5.</description>
+    </item>
+    
+    <item>
+      <title>ISCA 2015 - 2nd User Workshop</title>
+      <link>http://localhost/tutorials/isca-2015/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/tutorials/isca-2015/</guid>
+      <description>Second gem5 User Workshop
+ June 14th, 2015; Portland, OR
+       Following up from a successful 2012 workshop, it is time for the 2015 edition of the gem5 user workshop. The primary objective of this workshop is to bring together groups across the community who are actively using gem5. Discussion topics will include the activity of the gem5 community, how we can best leverage each others contributions, and how we continue to make gem5 a successful, community-supported simulation framework.</description>
+    </item>
+    
+    <item>
+      <title>Adding Functionality</title>
+      <link>http://localhost/getting-started/adding-functionality/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/getting-started/adding-functionality/</guid>
+      <description>This section needs to be updated; no mercurial; should reference Contribuing
+ If you find the need to modify or extend gem5, you may be tempted to just start editing files in your local gem5 repository. While this approach will work initially, it will cause problems if/when you decide to update your copy of gem5 with changes that have been made since you originally cloned the repository. It&amp;rsquo;s very likely that you will want to update your code to get bug fixes and new features.</description>
+    </item>
+    
+    <item>
+      <title>Howto add a CPU model</title>
+      <link>http://localhost/docs/adding-cpu-model/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/adding-cpu-model/</guid>
+      <description>should be updated for gem5
+ Overview First, make sure you have basic understanding of how the CPU models function within the M5 framework. A good start is the CPU Models page.
+This brief tutorial will show you how to create a custom CPU model called &amp;lsquo;MyCPU&amp;rsquo;, which will just be a renamed version of the AtomicSimpleCPU. After you learn how to compile and build &amp;lsquo;MyCPU&amp;rsquo;, then you have the liberty to edit the &amp;lsquo;MyCPU&amp;rsquo; code at your heart&amp;rsquo;s content without worrying about breaking any existing M5 CPU Models.</description>
+    </item>
+    
+    <item>
+      <title>MISCO 2012 - 1st user workshop</title>
+      <link>http://localhost/tutorials/micro-2012/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/tutorials/micro-2012/</guid>
+      <description>First gem5 User Workshop
+ December 2012; Vancouver, BC
+       The primary objective of this workshop is to bring together groups across the community who are actively using gem5, discuss what is going on in the gem5 community, how we can best leverage each others contributions, and how we continue to make gem5 a successful community-supported simulation framework. Those who will get the most out of the conference are current users of gem5, although anyone is welcome to attend.</description>
+    </item>
+    
+    <item>
+      <title>Workload Automation</title>
+      <link>http://localhost/docs/workload-automation/</link>
+      <pubDate>Sun, 13 May 2018 18:31:30 -0400</pubDate>
+      
+      <guid>http://localhost/docs/workload-automation/</guid>
+      <description>It&amp;rsquo;s not clear if this is still up-to-date
+ To run workloads in gem5, we advise you to use Workload Automation (WA). This framework allows you to run workloads automatically on Android and Linux platforms. More information can be found here: https://github.com/ARM-software/workload-automation
+What do I need? To use WA together with gem5 you will need to make changes to the host system and the guest system. These changes will enable 9P over virtio, which will allow for files to be transported into the simulation.</description>
+    </item>
+    
+    <item>
+      <title>ISCA 2011</title>
+      <link>http://localhost/tutorials/isca-2011/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/tutorials/isca-2011/</guid>
+      <description>Call for Participation: ISCA 2011 Tutorial gem5: A Multiple-ISA Full System Simulator with Detailed Memory Modeling Sunday, June 5, 2011 8:30 am http://www.gem5.org The gem5 simulator is a merger of two of the computer architecture community’s most popular, open source simulators: M5 and GEMS. The best features of each simulator have been combined to provide an infrastructure capable of simulating multiple ISAs, CPU models, memory system components, cache coherence protocols and interconnection networks.</description>
+    </item>
+    
+    <item>
+      <title>ISCA 2006</title>
+      <link>http://localhost/tutorials/isca-2006/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/tutorials/isca-2006/</guid>
+      <description>Using the M5 Simulator ISCA 2006 Tutorial Sunday June 18th, 2006
+Introduction This half-day tutorial will introduce participants to the M5 simulator system. M5 is a modular platform for computer system architecture research, encompassing system-level architecture as well as processor microarchitecture.
+We will be releasing version 2.0 of M5 in conjunction with this tutorial. Features new in 2.0 include:
+ Multiple ISA support (Alpha, MIPS, and SPARC) An all-new, execute-in-execute out-of-order SMT CPU timing model, with no SimpleScalar license encumbrance All-new, message-oriented interface for memory system objects, designed to simplify the development of non-bus interconnects More extensive Python integration and scripting support  Because the primary focus of the M5 development team has been simulation of network-oriented server workloads, M5 incorporates several features not commonly found in other simulators.</description>
+    </item>
+    
+    <item>
+      <title>ARM research summit 2017</title>
+      <link>http://localhost/tutorials/arm-summit-2017/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/tutorials/arm-summit-2017/</guid>
+      <description>The ARM Research Summit is an academic summit to discuss future trends and disruptive technologies across all sectors of computing. On the first day of the Summit, ARM Research will host a gem5 workshop to give a brief overview of gem5 for computer engineers who are new to gem5 and dive deeper into some of gem5&amp;rsquo;s more advanced capabilities. The attendees will learn what gem5 can and cannot do, how to use and extend gem5, as well as how to contribute back to gem5.</description>
+    </item>
+    
+    <item>
+      <title>ASPLOS 2008</title>
+      <link>http://localhost/tutorials/asplos-2008/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/tutorials/asplos-2008/</guid>
+      <description>Using the M5 Simulator ASPLOS 2008 Tutorial Sunday March 2nd, 2008
+Introduction This half-day tutorial will introduce participants to the M5 simulator system. M5 is a modular platform for computer system architecture research, encompassing system-level architecture as well as processor microarchitecture.
+We will be discussing version 2.0 of the M5 simulator and specifically its new features including:
+ Multiple ISA support (Alpha, ARM, MIPS, and SPARC) An execute-in-execute out-of-order SMT CPU timing model, with no SimpleScalar license encumbrance Message-oriented interface for memory system objects, designed to simplify the development of non-bus interconnects New caches models that are easier to modify New multi-level bus-based coherence protocol More extensive Python integration and scripting support Performance improvements Generating checkpoints for simpoints  Because the primary focus of the M5 development team has been simulation of network-oriented server workloads, M5 incorporates several features not commonly found in other simulators.</description>
+    </item>
+    
+    <item>
+      <title>Adding Files to Build</title>
+      <link>http://localhost/docs/extras/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/extras/</guid>
+      <description>The EXTRAS SCons option is a way to add functionality in gem5 without adding your files to the gem5 source tree. Specifically, it allows you to identify one or more directories that will get compiled in with gem5 as if they appeared under the &amp;lsquo;src&amp;rsquo; part of the gem5 tree, without requiring the code to be actually located under &amp;lsquo;src&amp;rsquo;. It&amp;rsquo;s present to allow user to compile in additional functionality (typically additional SimObject classes) that isn&amp;rsquo;t or can&amp;rsquo;t be distributed with gem5.</description>
+    </item>
+    
+    <item>
+      <title>Alpha Dependencies</title>
+      <link>http://localhost/deprecated/alpha-dependencies/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/alpha-dependencies/</guid>
+      <description>Purpose The purpose of this page is to list the areas where M5 is dependent on the alpha architecture, and discuss ways to remove or quarantine the dependencies.
+Dependencies VPtr class The VPtr class uses the page size for Alpha in an assert which determines whether or not to an access spans page boundaries. Other than this, this file is not alpha specific, and can be moved somewhere else. My suggestion is that it moves to sim.</description>
+    </item>
+    
+    <item>
+      <title>Android Marshmallow</title>
+      <link>http://localhost/benchmarks/android-mashmellow/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/android-mashmellow/</guid>
+      <description>These instructions expect that the user will be using ARM support of gem5
+ Overview To successfully run Android in gem5, an image, a compatible kernel and a device tree blob .dtb) file configured for the simulator are necessary. This guide shows how to build Android Marshmallow 32bit version using a 3.14 kernel with Mali support. An extra section will be added in the future on how to build the 4.</description>
+    </item>
+    
+    <item>
+      <title>Architectural State</title>
+      <link>http://localhost/docs/arch-state/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/arch-state/</guid>
+      <description>Registers Register types - float, int, misc Indexing - register spaces stuff See Register Indexing for a more thorough treatment.
+A &amp;ldquo;nickle tour&amp;rdquo; of flattening and register indexing in the CPU models.
+First, an instruction has identified that it needs register such and such as determined by its encoding (or the fact that it always uses a certain register, or &amp;hellip;). For the sake of argument, lets say we&amp;rsquo;re talking about SPARC, the register is %g1, and the second bank of globals is active.</description>
+    </item>
+    
+    <item>
+      <title>BBench</title>
+      <link>http://localhost/benchmarks/bbench/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/bbench/</guid>
+      <description>Note that the ICS images are deprecated. Please see the instructions for running Android on gem5 and how to use workload automation.
+Tips for Making Your Disk Image gem5 Friendly Speeding Up the Boot Process When a fresh Android image is booted it generates a lot of files and does a lot of JIT compiling; this can slow down the boot process significantly. gem5 uses a copy-on-write (COW) layer between the simulator and the actual disk image, because of this COW layer none of the changes are stored to the disk image.</description>
+    </item>
+    
+    <item>
+      <title>Bad names</title>
+      <link>http://localhost/deprecated/bad-names/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/bad-names/</guid>
+      <description>We may have a couple of classes, variables, and functions that aren&amp;rsquo;t named too well. Some are too long, aren&amp;rsquo;t descriptive, etc. List the things that you don&amp;rsquo;t like here, and try to give some suggestions for alternates.
+Function names  setMiscRegWithEffect - setMiscReg (will have to rename current setMiscReg to setMiscRegNoEffect or something similar); setMisc readMiscRegWithEffect - same as above  Class names Variable names Command to replace string find .</description>
+    </item>
+    
+    <item>
+      <title>Branch-delay slots</title>
+      <link>http://localhost/docs/branch-delay-slots/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/branch-delay-slots/</guid>
+      <description>Since MIPS and SPARC use branch delay slots, we&amp;rsquo;re faced with an interesting issue on how to implement them correctly. There are two issues: basic support for branch delay slots, and support for conditionally executed delay-slot instructions (SPARC &amp;ldquo;annulled&amp;rdquo; delay slots).
+Basic functionality In the context of M5 instruction execution, PC is the current instruction&amp;rsquo;s PC and NPC is the PC of the next instruction. Conventional non-delayed branches (as in Alpha) write to NPC to change the next instruction executed.</description>
+    </item>
+    
+    <item>
+      <title>Cache Coherence Protocols</title>
+      <link>http://localhost/ruby/cache-coherence-protocols/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/cache-coherence-protocols/</guid>
+      <description>Common Notations and Data Structures Coherence Messages These are described in the &amp;lt;protocol-name&amp;gt;-msg.sm file for each protocol.
+   Message Description     ACK/NACK positive/negative acknowledgement for requests that wait for the direction of resolution before deciding on the next action. Examples are writeback requests, exclusive requests.   GETS request for shared permissions to satisfy a CPU&amp;rsquo;s load or IFetch.   GETX request for exclusive access.</description>
+    </item>
+    
+    <item>
+      <title>Cache Replacement Policies</title>
+      <link>http://localhost/docs/cache-replacement-policies/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/cache-replacement-policies/</guid>
+      <description>gem5 has multiple implemented replacement policies. Each one uses its specific replacement data to determine a replacement victim on evictions.
+All of the replacement policies prioritize victimizing invalid blocks.
+Altough most of the replacement policies don&amp;rsquo;t need a counter of the number of references to an entry, or the insertion timestamp, they are by default updated by every replacement policy, due to their usage in the statistics.
+Random The simplest replacement policy; it does not need replacement data, as it randomly selects a victim among the candidates.</description>
+    </item>
+    
+    <item>
+      <title>Checker CPU</title>
+      <link>http://localhost/developer/checker-cpu/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/checker-cpu/</guid>
+      <description>The Checker allows for dynamic verification of any CPUs that use DynInst. Currently it does not support SMT or MP systems. Extending the Checker for those systems should not be difficult, but makes it impossible to verify memory value of loads.
+What it verifies The Checker can verify:
+ Correct instruction path Correct fetched instruction Correct execution results Correct PC redirection due to branches, faults, or PC events  What it can&amp;rsquo;t verify The Checker cannot verify:</description>
+    </item>
+    
+    <item>
+      <title>Checkpoints</title>
+      <link>http://localhost/docs/checkpoints/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/checkpoints/</guid>
+      <description>Checkpoints Checkpoints are essentially snapshops of a simulation. You would want to use a checkpoint when your simulation takes an extremely long time (which is almost always the case) so you can resume from that checkpoint at a later time with the DerivO3CPU.
+Creation First of all, you need to create a checkpoint. Each checkpoint as saved in a new directory named &amp;lsquo;cpt.TICKNUMBER&amp;rsquo;, where TICKNUMBER refers to the tick value at which this checkpoint was created.</description>
+    </item>
+    
+    <item>
+      <title>Classic Memory System</title>
+      <link>http://localhost/developer/classic-memory-system/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/classic-memory-system/</guid>
+      <description>MemObjects Caches The default cache is a non-blocking cache with MSHR (miss status holding register) and WB (Write Buffer) for read and write misses. The Cache can also be enabled with prefetch (typically in the last level of cache). The default replacement policy for the cache lines is LRU (least recently used).
+Hooking them up test
+Parameters Interconnects Crossbars The two types of traffic in the crossbar are memory-mapped packets and snooping packets.</description>
+    </item>
+    
+    <item>
+      <title>Classic memory system</title>
+      <link>http://localhost/docs/classic-mem-system/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/classic-mem-system/</guid>
+      <description>M5&amp;rsquo;s new memory system (introduced in the first 2.0 beta release) was designed with the following goals:
+ Unify timing and functional accesses in timing mode. With the old memory system the timing accesses did not have data and just accounted for the time it would take to do an operation. Then a separate functional access actually made the operation visible to the system. This method was confusing, it allowed simulated components to accidentally cheat, and prevented the memory system from returning timing-dependent values, which isn&amp;rsquo;t reasonable for an execute-in-execute CPU model.</description>
+    </item>
+    
+    <item>
+      <title>Coding Sytle</title>
+      <link>http://localhost/developer/coding-style/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/coding-style/</guid>
+      <description>We strive to maintain a consistent coding style in the M5 source code to make the source more readable and maintainable. This necessarily involves compromise among the multiple developers who work on this code. We feel that we have been successful in finding such a compromise, as each of the primary M5 developers is annoyed by at least one of the rules below. We ask that you abide by these guidelines as well if you develop code that you would like to contribute back to M5.</description>
+    </item>
+    
+    <item>
+      <title>Compiling Linux</title>
+      <link>http://localhost/deprecated/compiling-linux/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/compiling-linux/</guid>
+      <description>If you&amp;rsquo;re interested in ARM Linux kernels, please see this page: ARM Linux Kernel
+We supply a repository of patches against the Linux kernel that enables some M5 features and provides default configuration files that work with M5. The repository is a Mercurial Queue (MQ) that is intended to be applied on top of a Linux repository. To compile a kernel using our patches repository you&amp;rsquo;ll need to get a copy of the linux-2.</description>
+    </item>
+    
+    <item>
+      <title>Compiling M5</title>
+      <link>http://localhost/deprecated/compiling-m5/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/compiling-m5/</guid>
+      <description>gem5 runs on Linux and Mac OS X, but should be easily portable to other Unix-like OSes. At times in the past gem5 has worked on OpenBSD and Microsoft Windows (under Cygwin), but these platforms are not regularly tested. Cygwin in particular is no longer actively supported; if you must run on a Windows host, we recommend installing Linux (e.g., Ubuntu Server) under a VM and running gem5 there. Free virtualization solutions such as VirtualBox and VMware Player work well for this usage.</description>
+    </item>
+    
+    <item>
+      <title>Compiling Workloads</title>
+      <link>http://localhost/deprecated/compiling-workloads/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/compiling-workloads/</guid>
+      <description>Cross Compilers A cross compiler is a compiler set up to run on one ISA but generate binaries which run on another. You may need one if you intend to simulate a system which uses a particular ISA, Alpha for instance, but don&amp;rsquo;t have access to actual Alpha hardware. There are various sources for cross compilers, listed here in roughly recommended order:
+ Some architectures have professionally build cross-compilers available from Code Sourcery.</description>
+    </item>
+    
+    <item>
+      <title>Config scripts ideas</title>
+      <link>http://localhost/deprecated/scripts/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/scripts/</guid>
+      <description>Background The configurations we have work, but are really hard to learn and the code is getting harder and harder to effectively maintain
+Issues A extensible configuration system is one of the road blocks to a better regression system Asymmetric configurations are problematic with the current system as we need to come up with a way to set CPUID information for each cluster and size them independently Having clocks to emulate some sort of DVFS (just frequency scaling) is hard.</description>
+    </item>
+    
+    <item>
+      <title>DaCapo</title>
+      <link>http://localhost/deprecated/dacapo/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/dacapo/</guid>
+      <description>This page describes how to get the Oracle-Sun JRE version 7 working on a disk image for use with ARM gem5. This will allow you to use the DaCapo benchmarks, which are on the Ubuntu image for gem5 ARM in the /benchmarks/dacapo directory.
+Installing Oracle-Sun Java on an Ubuntu Image for ARM gem5 Download the standard edition(SE) of Java 7; the SE version is the free version of Java available from Oracle.</description>
+    </item>
+    
+    <item>
+      <title>Debugging simulated code</title>
+      <link>http://localhost/docs/debugging-simulated/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/debugging-simulated/</guid>
+      <description>gem5 has built-in support for gdb&amp;rsquo;s remote debugger interface. If you are interested in monitoring what the code on the simulated machine is doing&amp;mdash;the kernel (in FS mode) or program (in SE mode)&amp;mdash;you can fire up gdb on the host platform and have it talk to the simulated gem5 system as if it were a real machine/process (only better, since gem5 executions are deterministic and gem5&amp;rsquo;s remote debugger interface is guaranteed not to perturb execution on the simulated system).</description>
+    </item>
+    
+    <item>
+      <title>Debugging w/gdb</title>
+      <link>http://localhost/docs/debugging-gdb/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/debugging-gdb/</guid>
+      <description>If traces alone are not sufficient, you&amp;rsquo;ll need to inspect what gem5 is doing in detail using a debugger (e.g., gdb). You definitely want to use the gem5.debug binary if you reach this point. Ideally, looking at traces should at least allow you to narrow down the range of cycles in which you think something is going wrong. The fastest way to reach that point is to use a DebugEvent, which goes on gem5&amp;rsquo;s event queue and forces entry into the debugger when the specified cycle is reached by sending the process a SIGTRAP signal.</description>
+    </item>
+    
+    <item>
+      <title>Defining CPU models</title>
+      <link>http://localhost/developer/defining-cpu-models/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/defining-cpu-models/</guid>
+      <description>Overview First, make sure you have basic understanding of how the CPU models function within the M5 framework. A good start is the CPU Models page.
+This brief tutorial will show you how to create a custom CPU model called &amp;lsquo;MyCPU&amp;rsquo;, which will just be a renamed version of the AtomicSimpleCPU. After you learn how to compile and build &amp;lsquo;MyCPU&amp;rsquo;, then you have the liberty to edit the &amp;lsquo;MyCPU&amp;rsquo; code at your heart&amp;rsquo;s content without worrying about breaking any existing M5 CPU Models.</description>
+    </item>
+    
+    <item>
+      <title>Defining an ISa</title>
+      <link>http://localhost/developer/defining-isa/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/defining-isa/</guid>
+      <description>Overview First, make sure you have basic understanding of how an ISA description generates instructions within the M5 framework. A good start is the The M5 ISA description language page.
+For this example, we will be constructing an ISA called MyISA which will just be a renamed version of the MIPS ISA. We will go through the steps of creating the files and configuration opions for an M5 ISA description.</description>
+    </item>
+    
+    <item>
+      <title>Deprecated</title>
+      <link>http://localhost/ruby/memory-components/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/memory-components/</guid>
+      <description>System This is a high level container for few of the important components of the Ruby which may need to be accessed from various parts and components of Ruby. Only ONE instance of this class is created. The instance of this class is globally available through a pointer named g_system_ptr. It holds pointer to the Ruby&amp;rsquo;s profiler object. This allows any component of Ruby to get hold of the profiler and collect statistics in a central location by accessing it though g_system_ptr.</description>
+    </item>
+    
+    <item>
+      <title>Deprecated submitting contributions</title>
+      <link>http://localhost/deprecated/submitting-contributions/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/submitting-contributions/</guid>
+      <description>OLD CONTRIBUTION DOCUMENTATION All of the contribution details have been moved into the gem5 source tree. The information below is out of date!
+If you&amp;rsquo;ve made changes to gem5 that might benefit others, we strongly encourage you to contribute those changes to the public gem5 repository. There are several reasons to do this:
+ Once your changes are part of the main repo, you no longer have to merge them back in every time you update your local repo.</description>
+    </item>
+    
+    <item>
+      <title>Derivative projects</title>
+      <link>http://localhost/publications/projects/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/publications/projects/</guid>
+      <description>Below is a list of projects that are based on gem5, are extensions of gem5, or use gem5.
+MV5  MV5 is a reconfigurable simulator for heterogeneous multicore architectures. It is based on M5v2.0 beta 4. Typical usage: simulating data-parallel applications on SIMT cores that operate over directory-based cache hierarchies. You can also add out-of-order cores to have a heterogeneous system, and all different types of cores can operate under the same address space through the same cache hierarchy.</description>
+    </item>
+    
+    <item>
+      <title>Directed tests</title>
+      <link>http://localhost/ruby/directed-tests/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/directed-tests/</guid>
+      <description>The Directed Tester is for generating a stream of requests, where two consecutive requests are separated by a fixed number of bytes. The requests can be a mix of reads and writes, or they can be invalidations. This can be useful in testing a prefetcher or for generally testing a coherence protocol implemented in Ruby. The source files related to the tester are present in the directory src/cpu/testers/directedtest. The file configs/examples/ruby_direct_test.</description>
+    </item>
+    
+    <item>
+      <title>Disk images</title>
+      <link>http://localhost/docs/disk-images/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/disk-images/</guid>
+      <description>Background   Disk image basics A disk device in gem5 gets its initial contents from a file called a disk image. This file stores all the bytes present on the disk just as you would find them on an actual device. Some other systems also use disk images which are in more complicated formats and which provide compression, encryption, etc. gem5 currently only supports raw images, so if you have an image in one of those other formats, you&amp;rsquo;ll have to convert it into a raw image before you can use it in a simulation.</description>
+    </item>
+    
+    <item>
+      <title>Events</title>
+      <link>http://localhost/developer/events/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/events/</guid>
+      <description>This page provides some high-level information about Events in M5 including how to create, schedule, and remove them.
+The simplest way to use events is to create an EventWrapper which lets you wrap an arbitrary function (that is based on a SimObject with an event that can occur). An illustrative example is probably the easiest way to describe the issue:
+class Bar : public SimObject { void foo(); EventWrapper&amp;lt;Bar, &amp;amp;Bar::foo&amp;gt; fooEvent; };  When the class Bar is constructed the SimObject (this) pointer must be passed to the fooEvent initializer.</description>
+    </item>
+    
+    <item>
+      <title>Execution Basics</title>
+      <link>http://localhost/developer/execution-basics/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/execution-basics/</guid>
+      <description>Predecoding StaticInsts The StaticInst provides all static information and methods for a binary instruction.
+It holds the following information/methods:
+ Flags to tell what kind of instruction it is (integer, floating point, branch, memory barrier, etc.) The op class of the instruction The number of source and destination registers The number of integer and FP registers used Method to decode a binary instruction into a StaticInst Virtual function execute(), which defines how the specific architectural actions taken for an instruction (e.</description>
+    </item>
+    
+    <item>
+      <title>Execution Tracing</title>
+      <link>http://localhost/developer/execution-tracing/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/execution-tracing/</guid>
+      <description>Tracing Interface Each cpu/thread has a &amp;ldquo;tracer&amp;rdquo; sim object. This defaults to an object which will write to the the same file descriptor as DPRINTFs. If you want, you can nullify the tracer to disable tracing for that cpu/thread. For output you want to be interleaved, use the same trace object (or maybe file?) You could also set up several different files to catch information from each cpu/thread.
+There would be other tracer objects you could use instead if you wanted to do something else at each instruction boundary.</description>
+    </item>
+    
+    <item>
+      <title>GEMS transition to gem5</title>
+      <link>http://localhost/ruby/gems-transition/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/gems-transition/</guid>
+      <description>This page covers the relevant changes that have been made to SLICC since the last and final GEMS release (2.1). It can be used as a guide to port SLICC protocols that formerly worked in GEMS to gem5.
+Reasoning Most changes to the SLICC language were made in order to support new features of gem5, including the parameterized object model (SimObject), atomic instruction support, and others. All syntactic changes are relatively simple and mechanical.</description>
+    </item>
+    
+    <item>
+      <title>GPU Models</title>
+      <link>http://localhost/docs/gpu/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/gpu/</guid>
+      <description>AMD&amp;rsquo;s Compute-GPU Model MICRO-48 Tutoral A tutorial was held in conjunction with MICRO-48. We have made the slides available from our 2015 tutorial titled: The AMD gem5 APU Simulator: Modeling Heterogeneous Systems in gem5.
+Compute GPU Workloads Emualted CL Runtime  Download the emulated OpenCL runtime.  OpenCL Compiler CLOC is used to compile OpenCL kernels for use with gem5&amp;rsquo;s GPU compute model. The most recent revision of CLOC that is known to work with gem5 is:</description>
+    </item>
+    
+    <item>
+      <title>Garnet</title>
+      <link>http://localhost/ruby/garnet/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/garnet/</guid>
+      <description>More details of the gem5 Ruby Interconnection Network are here.
+Garnet Network Model &amp;rdquo;&amp;lsquo;Note: This model of garnet is no longer supported in gem5. The updated model is garnet2.0.
+Garnet is a detailed interconnection network model inside gem5. The details can be found in the ISPASS 2009 Paper.
+If your use of Garnet contributes to a published paper, please cite the following paper:
+@inproceedings{garnet, title={GARNET: A detailed on-chip network model inside a full-system simulator}, author={Agarwal, Niket and Krishna, Tushar and Peh, Li-Shiuan and Jha, Niraj K}, booktitle={Performance Analysis of Systems and Software, 2009.</description>
+    </item>
+    
+    <item>
+      <title>Garnet 2.0</title>
+      <link>http://localhost/ruby/garnet-2/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/garnet-2/</guid>
+      <description>More details of the gem5 Ruby Interconnection Network are here.
+Garnet2.0: An On-Chip Network Model for Heterogeneous SoCs Garnet2.0 is a detailed interconnection network model inside gem5. It is in active development, and patches with more features will be periodically pushed into gem5. Additional garnet-related patches and tool support under development (not part of the repo) can be found at the Garnet page at Georgia Tech.
+Garnet2.0 builds upon the original Garnet model which was published in 2009.</description>
+    </item>
+    
+    <item>
+      <title>Garnet standalone</title>
+      <link>http://localhost/ruby/garnet-standalone/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/garnet-standalone/</guid>
+      <description>This is a dummy cache coherence protocol that is used to operate Garnet in a standalone manner. This protocol works in conjunction with the Garnet Synthetic Traffic injector.
+Related Files  src/mem/protocols  Garnet_standalone-cache.sm: cache controller specification Garnet_standalone-dir.sm: directory controller specification Garnet_standalone-msg.sm: message type specification Garnet_standalone.slicc: container file   Cache Hierarchy This protocol assumes a 1-level cache hierarchy. The role of the cache is to simply send messages from the cpu to the appropriate directory (based on the address), in the appropriate virtual network (based on the message type).</description>
+    </item>
+    
+    <item>
+      <title>Governance</title>
+      <link>http://localhost/contributing/governance/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/contributing/governance/</guid>
+      <description>Overview gem5 is a meritocratic, consensus-based community project. Anyone with an interest in the project can join the community, contribute to the project design and participate in the decision-making process. Historically, gem5 development has been carried out both in industry and in academia. This document describes how that participation takes place and how to set about earning merit within the project community.
+The document is broken into a number of sections.</description>
+    </item>
+    
+    <item>
+      <title>Heterogenous Systems</title>
+      <link>http://localhost/deprecated/hetrogenous/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/hetrogenous/</guid>
+      <description>(from Gabe)
+I was thinking about how to set up m5 to support other architectures, and decision which has a major impact on that is whether we want to support heterogeneous systems. Here are the arguements I saw for and against.
+Against
+Adding support for heterogeneous systems will be a big change. There are many systems of m5 that aren&amp;rsquo;t ready to support something that&amp;rsquo;s not alpha, let alone two things.</description>
+    </item>
+    
+    <item>
+      <title>How to create an ISA</title>
+      <link>http://localhost/developer/new-isa/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/new-isa/</guid>
+      <description>arguments.hh Move out of isa?
+faults.hh ISA specific fault classes to be used in the ISA.
+Functions I&amp;rsquo;d like to get rid of
+ genMachineCheckFault genAlignmentFault  interrupts.hh Interrupts class Interrupt Level Shouldn&amp;rsquo;t be capitalized. Gets a request to set the interrupt level and returns what the interrupt level was actually set to.
+post Request that an interrupt happen. Like asserting the interrupt line.
+clear Request that an interrupt not happen.</description>
+    </item>
+    
+    <item>
+      <title>ISA code parsing</title>
+      <link>http://localhost/developer/isa-code-parsing/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/isa-code-parsing/</guid>
+      <description>To a large extent, the power and flexibility of the ISA description mechanism stem from the fact that the mapping from a brief instruction definition provided in the decode block to the resulting C++ code is performed in a general-purpose programming language (Python). (This function is performed by the &amp;ldquo;instruction format&amp;rdquo; definition described above in Format definitions.) Technically, the ISA description language allows any arbitrary Python code to perform this mapping.</description>
+    </item>
+    
+    <item>
+      <title>ISA description system</title>
+      <link>http://localhost/developer/isa-description-system/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/isa-description-system/</guid>
+      <description>The purpose of the M5 ISA description system is to generate a decoder function that takes a binary machine instruction and returns a C++ object representing that instruction. The returned object encapsulates all of the information (data and code) needed by the M5 simulator related to that specific machine instruction. By making the object as specific as possible to the machine instruction, the decoding overhead is paid only once; throughout the rest of the simulator, the object makes the needed instruction characteristics accessible easily and with low overhead.</description>
+    </item>
+    
+    <item>
+      <title>ISA parser</title>
+      <link>http://localhost/developer/isa-parser/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/isa-parser/</guid>
+      <description>The M5 ISA description language is a custom language designed specifically for generating the class definitions and decoder function needed by M5. This section provides a practical, informal overview of the language itself. A formal grammar for the language is embedded in the &amp;ldquo;yacc&amp;rdquo; portion of the parser (look for the functions starting with p_ in isa_parser.py). A second major component of the parser processes C-like code specifications to extract instruction characteristics; this aspect is covered in the section Code parsing.</description>
+    </item>
+    
+    <item>
+      <title>ISC-2018 Vector Architecture Exploration</title>
+      <link>http://localhost/tutorials/ics-2018/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/tutorials/ics-2018/</guid>
+      <description>Vector Architecture Exploration with gem5 (Arm) Abstract The Arm Scalable Vector Extension (SVE) is a key enabling technology to accelerate HPC and machine learning workloads on future Arm-based processors. SVE does not set a specific vector length, which is microarchitecture-specific. This vector-length agnosticism increases design space complexity and exacerbates the importance of having flexible and accurate modeling tools.
+gem5 is an open-source full-system microarchitectural simulator that is widely used in academia and industry.</description>
+    </item>
+    
+    <item>
+      <title>Instruction schedules &amp; pipeline definition</title>
+      <link>http://localhost/cpu-models/inorder/inst-schedules/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/cpu-models/inorder/inst-schedules/</guid>
+      <description>Instruction Schedules &amp;amp; Pipeline Definitions Overview At the heart of the InOrderCPU model is the concept of Instruction Schedules (IS). Instruction schedules create the generic framework that allow for developer&amp;rsquo;s to make a custom pipeline. A pipeline definition can be seen as a collection of instruction schedules that govern what an instruction will do in any given stage and what stage that instruction will go to next.
+In general, each instruction has a stage-by-stage list of tasks that need to be accomplished before moving on to the next stage.</description>
+    </item>
+    
+    <item>
+      <title>Integrating m5 and gems</title>
+      <link>http://localhost/deprecated/integrating-m5-gems/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/integrating-m5-gems/</guid>
+      <description>{|style=&amp;ldquo;width:100%;text-align:center;white-space:nowrap;color:#000&amp;rdquo; |
+The GEMS/M5 integration project  |}
+Sprint We&amp;rsquo;re having a coding sprint on January 13, 2009. The sprint begins at 9AM PST/11AM CST. We will begin with a phone call on Nate&amp;rsquo;s conference line and use IRC throughout the day.
+Goal To get a &amp;ldquo;working&amp;rdquo; unified simulator by the end of the day.
+Tasks  Unified build environment using scons &amp;ndash; Arka w/ Nate and Steve supervising Support system call emulation mode Support full system mode  atomic support, especially load locked/store conditional &amp;ndash; Derek pio support  Deal with lack of first-class data support in Ruby Configuration management  Option 1: Configuration checks between m5 and RubyConfig Option 2: M5 front-end directly modifying ruby parameters  Testing infrastructure base on m5 infrastructure  Which tests?</description>
+    </item>
+    
+    <item>
+      <title>Interconnection network</title>
+      <link>http://localhost/ruby/interconnection-network/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/interconnection-network/</guid>
+      <description>The various components of the interconnection network model inside gem5&amp;rsquo;s ruby memory system are described here.
+How to invoke the network Simple Network:
+./build/ALPHA/gem5.debug \ configs/example/ruby_random_test.py \ --num-cpus=16 \ --num-dirs=16 \ --network=simple --topology=Mesh_XY \ --mesh-rows=4  The default network is simple, and the default topology is crossbar.
+Garnet network:
+./build/ALPHA/gem5.debug \ configs/example/ruby_random_test.py \ --num-cpus=16 \ --num-dirs=16 \ --network=garnet2.0 \ --topology=Mesh_XY \ --mesh-rows=4  Topology The connection between the various controllers are specified via python files.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost/docs/introduction/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/introduction/</guid>
+      <description>What is gem5? gem5 is a modular discrete event driven computer system simulator platform. That means that:
+ gem5&amp;rsquo;s components can be rearranged, parameterized, extended or replaced easily to suit your needs. It simulates the passing of time as a series of discrete events. Its intended use is to simulate one or more computer systems in various ways. It&amp;rsquo;s more than just a simulator; it&amp;rsquo;s a simulator platform that lets you use as many of its premade components as you want to build up your own simulation system.</description>
+    </item>
+    
+    <item>
+      <title>Legacy ARM files</title>
+      <link>http://localhost/deprecated/legacy-arm-files/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/legacy-arm-files/</guid>
+      <description>This page contains full-system files that have been distributed with gem5 in the past, but are deprecated/legacy files. The files linked on the Download page should be used instead of these. They are here to simply document what has been available in the past.
+ Tarballs of generic file systems are available from Linaro. Scroll down to the Developers and Community Builds section. Some work will be required to make these suitable for simulation, but they&amp;rsquo;re a reasonable starting point.</description>
+    </item>
+    
+    <item>
+      <title>Linux kernel</title>
+      <link>http://localhost/deprecated/linux-kernel/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/linux-kernel/</guid>
+      <description>Depending on what ISA you&amp;rsquo;re using with gem5 the instructions for compiling a Linux kernel differ slightly. Ultimately, we&amp;rsquo;d like to have a single unified way to compile all these kernels, but it will take some work to happen. If you&amp;rsquo;d like to help, please let us know.
+Alpha Currently we have a patch queue for Alpha that can be applied on top of a linux mercurial repository. This patch queue adds various debugging, performance, introspection capabilities and increases the number of simulated processors the Alpha implementation in gem5 can support from 4 to 64.</description>
+    </item>
+    
+    <item>
+      <title>Linux-dist</title>
+      <link>http://localhost/deprecated/linux-dist/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/linux-dist/</guid>
+      <description>This documentation is relevant only for those desiring to use the full-system aspect of M5. When running in full-system, M5 reads a raw disk image as the hard disk. This tells you how to compile both the linux binary and the disk image for full-system simulation.
+There is a general 3 step process for doing this:
+ compile a cross-compiler capable of building alpha binaries. compile a kernel using this cross-compiler use linux-dist to build binaries for the M5 disk image, and create the image.</description>
+    </item>
+    
+    <item>
+      <title>MESI two level</title>
+      <link>http://localhost/ruby/mesi-two-level/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/mesi-two-level/</guid>
+      <description>Protocol Overview  This protocol models two-level cache hierarchy. The L1 cache is private to a core, while the L2 cache is shared among the cores. L1 Cache is split into Instruction and Data cache. Inclusion is maintained between the L1 and L2 cache. At high level the protocol has four stable states, M, E, S and I. A block in M state means the blocks is writable (i.e. has exclusive permission) and has been dirtied (i.</description>
+    </item>
+    
+    <item>
+      <title>MI example</title>
+      <link>http://localhost/ruby/mi-example/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/mi-example/</guid>
+      <description>Protocol Overview  This is a simple cache coherence protocol that is used to illustrate protocol specification using SLICC. This protocol assumes a 1-level cache hierarchy. The cache is private to each node. The caches are kept coherent by a directory controller. Since the hierarchy is only 1-level, there is no inclusion/exclusion requirement. This protocol does not differentiate between loads and stores. This protocol cannot implement the semantics of LL/SC instructions, because external GETS requests that hit a block within a LL/SC sequence steal exclusive permissions, thus causing the SC instruction to fail.</description>
+    </item>
+    
+    <item>
+      <title>MOESI CMP directory</title>
+      <link>http://localhost/ruby/moesi-cmp-directory/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/moesi-cmp-directory/</guid>
+      <description>Protocol Overview  TODO: cache hierarchy   In contrast with the MESI protocol, the MOESI protocol introduces an additional Owned state. The MOESI protocol also includes many coalescing optimizations not available in the MESI protocol.  Related Files  src/mem/protocols  MOESI_CMP_directory-L1cache.sm: L1 cache controller specification MOESI_CMP_directory-L2cache.sm: L2 cache controller specification MOESI_CMP_directory-dir.sm: directory controller specification MOESI_CMP_directory-dma.sm: dma controller specification MOESI_CMP_directory-msg.sm: message type specification MOESI_CMP_directory.slicc: container file   L1 Cache Controller  Stable States and Invariants     States Invariants     MM The cache block is held exclusively by this node and is potentially modified (similar to conventional &amp;ldquo;M&amp;rdquo; state).</description>
+    </item>
+    
+    <item>
+      <title>MOESI CMP token</title>
+      <link>http://localhost/ruby/moesi-cmp-token/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/moesi-cmp-token/</guid>
+      <description>Protocol Overview  This protocol also models a 2-level cache hierarchy.   It maintains coherence permission by explicitly exchanging and counting tokens.   A fix number of token are assigned to each cache block in the beginning, the number of token remains unchanged.   To write a block, the processor must have all the token for that block. For reading at least one token is required.   The protocol also has a persistent message support to avoid starvation.</description>
+    </item>
+    
+    <item>
+      <title>MOESI hammer</title>
+      <link>http://localhost/ruby/moesi-hammer/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/moesi-hammer/</guid>
+      <description>This is an implementation of AMD&amp;rsquo;s Hammer protocol, which is used in AMD&amp;rsquo;s Hammer chip (also know as the Opteron or Athlon 64). The protocol implements both the original a HyperTransport protocol, as well as the more recent ProbeFilter protocol. The protocol also includes a full-bit directory mode.
+Related Files  src/mem/protocols  MOESI_hammer-cache.sm: cache controller specification MOESI_hammer-dir.sm: directory controller specification MOESI_hammer-dma.sm: dma controller specification MOESI_hammer-msg.sm: message type specification MOESI_hammer.</description>
+    </item>
+    
+    <item>
+      <title>Memory system</title>
+      <link>http://localhost/docs/memory-system/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/memory-system/</guid>
+      <description>gem5&amp;rsquo;s memory system was designed to enable:
+ Modularity and compartmentalisation through standard interfaces. Suitable interfaces for loosely-timed, approximately-timed and untimed transaction-level modelling. Flexibility to allow other memory interconnects besides a crossbar. A comprehensive set of building blocks, ranging from caches, crossbars, to full-blown DRAM controllers.  Ports system MemObjects All objects within a memory system inherit from MemObject. This class adds the pure virtual functions getMasterPort(const std::string &amp;amp;name) and getSlavePort(const std::string &amp;amp;name) which returns a port corresponding to the given name.</description>
+    </item>
+    
+    <item>
+      <title>Mercurial Queues</title>
+      <link>http://localhost/deprecated/mercurial-queues/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/mercurial-queues/</guid>
+      <description>Repository Management Problem gem5 users typically opt to freeze their repository at a particular changeset when starting a new research project. This approach has several downsides:
+ It discourages users from contributing back any useful changes they may develop. If a useful change is added upstream, it&amp;rsquo;s a long, tedious process to update.  If a user chooses to keep their local repository up-to-date with the source tree they typically use named branches and merge any upstream changes into their branches.</description>
+    </item>
+    
+    <item>
+      <title>Micro-code assembler</title>
+      <link>http://localhost/developer/microcode-assembler/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/microcode-assembler/</guid>
+      <description>Syntax The assembler is responsible for taking listings similar to traditional assembly and processing it into a set of python objects. The listing is broken into sections which represent macroops or sections of a microcode ROM. In each section, there can be assembler directives and microops. Microops can be preceeded with labels which may be local, or in the case of the ROM, global. The distinction is to allow local labels to be duplicated between sections, but global labels to globally mark a position to, for instance, branch into the ROM or amongst sections of the ROM.</description>
+    </item>
+    
+    <item>
+      <title>Moby</title>
+      <link>http://localhost/benchmarks/moby/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/moby/</guid>
+      <description>AsimBench is renamed as Moby!
+ This page describes all the necessary files and modifications to run Android and Moby on gem5 using the ARM ISA. BBench-gem5 introduces more detailed information about how to set Android running on gem5, and how to build Android File System and Kernel.
+Android Full-System Files These files contain everything you need to get Android, and Moby, up and running on gem5.
+All these files can be downloaded from here.</description>
+    </item>
+    
+    <item>
+      <title>Modular coherence</title>
+      <link>http://localhost/ruby/modular-coherence/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/modular-coherence/</guid>
+      <description>Introduction We need a way to add/extend/replace cache coherence protocols in a modular fashion. The original cache module had coherence factored out into a separate object, but the interface was totally inadequate for doing anything interesting. The redesigned memory system from 2.0 integrated coherence back in to the cache module as a temporary step to eliminate the useless bloat caused by the original separation. It&amp;rsquo;s now time to go back and re-introduce this modularity, but to do it right this time.</description>
+    </item>
+    
+    <item>
+      <title>Multi-programmed workloads</title>
+      <link>http://localhost/docs/multi-programmed-workloads/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/multi-programmed-workloads/</guid>
+      <description>Running In SE mode, simply create a system with multiple CPUs and assign a different workload object to each CPU&amp;rsquo;s workload parameter. If you&amp;rsquo;re using the O3 model, you can also assign a vector of workload objects to one CPU, in which case the CPU will run all of the workloads concurrently in SMT mode. Note that SE mode has no thread scheduling; if you need a scheduler, run in FS mode and use the fine scheduler built into the Linux kernel.</description>
+    </item>
+    
+    <item>
+      <title>NIC devices</title>
+      <link>http://localhost/docs/nic-devices/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/nic-devices/</guid>
+      <description>The gem5 simulator has two different Network Interface Cards (NICs) devices that can be used to connect together two simulation instances over a simulated ethernet link.
+Getting an list of packets on the ethernet link You can get a list of the packet on the ethernet link by creating a Etherdump object, setting it&amp;rsquo;s file parameter, and setting the dump parameter on the EtherLink to it. This is easily accomplished with our fs.</description>
+    </item>
+    
+    <item>
+      <title>Nate&#39;s wishlest</title>
+      <link>http://localhost/deprecated/nates-wish-list/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/nates-wish-list/</guid>
+      <description>Framework  Parallelize M5  Converting everything to support the new Params mechanism is a prerequisite Make various global structures thread safe (e.g. Instruction cache, Statistics, etc.)  Unify full system and syscall emulation modes into a single build Unify all ISAs into a single build  This requires fixes to the way endianness is handled in the memory system. Add a NOISA option that doesn&amp;rsquo;t have CPUs till this happens.</description>
+    </item>
+    
+    <item>
+      <title>Network test</title>
+      <link>http://localhost/ruby/network-test/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/network-test/</guid>
+      <description>This is a dummy cache coherence protocol that is used to operate the ruby network tester. The details about running the network tester can be found here.
+Related Files  src/mem/protocols  Network_test-cache.sm: cache controller specification Network_test-dir.sm: directory controller specification Network_test-msg.sm: message type specification Network_test.slicc: container file   Cache Hierarchy This protocol assumes a 1-level cache hierarchy. The role of the cache is to simply send messages from the cpu to the appropriate directory (based on the address), in the appropriate virtual network (based on the message type).</description>
+    </item>
+    
+    <item>
+      <title>New regression framework</title>
+      <link>http://localhost/deprecated/new-regression/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/new-regression/</guid>
+      <description>We&amp;rsquo;d like to revamp the regression tests by moving to a new framework. This page is intended to host a discussion of features and design for the new framework.
+Ali&amp;rsquo;s plan for a new implementation  Use pytest It has, by far, the best documentation of any of the python testing frameworks and seems to be the most active Seems to be completely extensible via python plugins and hooks Supports outputting JUnit XML incase we want to use a continuous integration solution such as Jenkins or Hudson The pytest xdist and plugin support running tests on multiple-cpus or multiple machines Good collection of tasks and tutorials  How things would work  Marks may be assigned to tests either with python decorators or a class attribute if we want to stay python 2.</description>
+    </item>
+    
+    <item>
+      <title>Old documentation</title>
+      <link>http://localhost/deprecated/old-documentation/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/old-documentation/</guid>
+      <description>This page is an archive of old M5 documentation predating the GEMS merger and subsequent gem5 renaming. See the Documentation page for the current documentation.
+Complementary information from our tutorials, including about three hours of video from our last tutorial, is available here. The tutorials provide basic information about using M5 and are time well spent for anyone new to the simulator.
+Starting Out  Source Tree - Brief tour of the source tree Compiling M5 - How to compile the simulator Running M5 - How to run the simulator Debugging - Debugging tips and strategies Reporting Problems - What to do before you report a problem Adding Functionality - How to extend M5 (and update to new versions with almost no work)  Starting out in Full System  Running M5 in Full-System Mode - How to run in full-system mode m5term - How to use the m5term m5ops - Pseudo instructions and a command line interface to them Using linux-dist to Create Disk Images and Kernels for M5  How to create a Linux disk image/kernel   Simulator Internals  Doxygen &amp;ndash; Doxygen documentation Memory System - Overview of M5&amp;rsquo;s new memory system Simulation Scripts Explained - Overview of simulation scripts Using the Statistics Package - Using the statistics package ISA description system - The new ISA description primer CPU Models - Overview of the various CPU models in M5 Sampling - Overview of how to use sampling.</description>
+    </item>
+    
+    <item>
+      <title>Packet command attributes</title>
+      <link>http://localhost/developer/packet-command-attribute/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/packet-command-attribute/</guid>
+      <description>Each packet contains a command, which consists of an a set of attributes. The following table indicates per command type, the type of response required (or InvalidCmd if none), and a set of flags. The contents of this table is based on src/mem/packet.hh (containing all command types) and src/mem/packet.cc (defining attributes per command type).
+                        Command response IsRead IsWrite IsUpgrade IsInvalidate NeedsExclusive IsRequest IsResponse NeedsResponse IsSWPrefetch IsHWPrefetch IsLlsc HasData IsError IsPrint IsFlush   InvalidCmd InvalidCmd                  ReadReq ReadResp IsRead     IsRequest  NeedsResponse          ReadResp InvalidCmd IsRead      IsResponse     HasData      ReadRespWithInvalidate InvalidCmd IsRead   IsInvalidate   IsResponse     HasData      WriteReq WriteResp  IsWrite   NeedsExclusive IsRequest  NeedsResponse    HasData      WriteResp InvalidCmd  IsWrite   NeedsExclusive  IsResponse           Writeback InvalidCmd  IsWrite   NeedsExclusive IsRequest      HasData      SoftPFReq SoftPFResp IsRead     IsRequest  NeedsResponse IsSWPrefetch         HardPFReq HardPFResp IsRead     IsRequest  NeedsResponse  IsHWPrefetch        SoftPFResp InvalidCmd IsRead      IsResponse  IsSWPrefetch   HasData      HardPFResp InvalidCmd IsRead      IsResponse   IsHWPrefetch  HasData      UpgradeReq UpgradeResp   IsUpgrade IsInvalidate NeedsExclusive IsRequest  NeedsResponse          SCUpgradeReq UpgradeResp   IsUpgrade IsInvalidate NeedsExclusive IsRequest  NeedsResponse   IsLlsc       UpgradeResp InvalidCmd   IsUpgrade  NeedsExclusive  IsResponse           SCUpgradeFailReq UpgradeFailResp    IsInvalidate NeedsExclusive IsRequest  NeedsResponse   IsLlsc       UpgradeFailResp InvalidCmd     NeedsExclusive  IsResponse           ReadExReq ReadExResp IsRead   IsInvalidate NeedsExclusive IsRequest  NeedsResponse          ReadExResp InvalidCmd IsRead    NeedsExclusive  IsResponse     HasData      LoadLockedReq ReadResp IsRead     IsRequest  NeedsResponse   IsLlsc       StoreCondReq StoreCondResp  IsWrite   NeedsExclusive IsRequest  NeedsResponse   IsLlsc HasData      StoreCondFailReq StoreCondResp  IsWrite   NeedsExclusive IsRequest  NeedsResponse   IsLlsc HasData      StoreCondResp InvalidCmd  IsWrite   NeedsExclusive  IsResponse    IsLlsc       SwapReq SwapResp IsRead IsWrite   NeedsExclusive IsRequest  NeedsResponse    HasData      SwapResp InvalidCmd IsRead IsWrite   NeedsExclusive  IsResponse     HasData      IntReq MessageResp  IsWrite    IsRequest  NeedsResponse    HasData      IntResp InvalidCmd  IsWrite     IsResponse           NetworkNackError InvalidCmd       IsResponse      IsError     InvalidDestError InvalidCmd       IsResponse      IsError     BadAddressError InvalidCmd       IsResponse      IsError     FunctionalReadError InvalidCmd IsRead      IsResponse      IsError     FunctionalWriteError InvalidCmd  IsWrite     IsResponse      IsError     PrintReq InvalidCmd      IsRequest        IsPrint    Flush Request InvalidCmd     NeedsExclusive IsRequest         IsFlush   Invalidation Request InvalidCmd    IsInvalidate NeedsExclusive IsRequest             </description>
+    </item>
+    
+    <item>
+      <title>Parallelize gem5</title>
+      <link>http://localhost/deprecated/parallelize/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/parallelize/</guid>
+      <description>Parallelizing the simulation engine to run on shared-memory multicore systems has long been a goal for several of us. Unfortunately, it rarely makes it to the top of anyone&amp;rsquo;s to-do list. This page tries to summarize where we&amp;rsquo;re at and which direction we&amp;rsquo;re headed so that others who would like to help can jump in and help (or provide feedback on our future direction).
+Goals  Our primary goal is to get decent speedup modeling moderate-size parallel configurations (say 16-64 cores) on small-scale shared-memory multi-core systems (say 4-8 cores).</description>
+    </item>
+    
+    <item>
+      <title>Pipeline stages</title>
+      <link>http://localhost/cpu-models/inorder/pipeline-stages/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/cpu-models/inorder/pipeline-stages/</guid>
+      <description>Overview Pipeline stages in the InOrder CPU are implemented as abstract implementations of what a pipeline stage would be in any CPU model. Typically, one would imagine a particularly pipeline stage being responsible for:
+(1) Performing specific operations such as &amp;ldquo;Decode&amp;rdquo; or &amp;ldquo;Execute&amp;rdquo; and either
+(2a) Sending that instruction to the next stage if that operation was successful and the next stage&amp;rsquo;s buffer has room for incoming instructions
+or</description>
+    </item>
+    
+    <item>
+      <title>Python Parameter Types</title>
+      <link>http://localhost/developer/python-params/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/python-params/</guid>
+      <description>The information below came from src/python/m5/params.py and src/python/m5/util/convert.py. Reference those files for the most up to date information.
+  Python Type Name
+ C++ Type
+ Format
+ Notes
+    String
+ std::string
+    Int
+ int
+  32 bits
+  Unsigned
+ unsigned
+  32 bits
+  Int8
+ int8_t
+    UInt8
+ uint8_t
+    Int16</description>
+    </item>
+    
+    <item>
+      <title>Refcounted Pointers</title>
+      <link>http://localhost/developer/ref-counting/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/ref-counting/</guid>
+      <description>I&amp;rsquo;m putting this in a wiki because I keep asking Nate and I keep forgetting his answer.
+Question: Which STL structures might have problems with calling ref counted pointer destructors? Or is it just certain operations like clear()?
+Answer: It&amp;rsquo;s with operations like clear. There may be references on them, or when you remove an element from a datastructure like a deque or a queue. If they&amp;rsquo;re implemented in terms of vector, they don&amp;rsquo;t get freed until they&amp;rsquo;re reallocated.</description>
+    </item>
+    
+    <item>
+      <title>Register Indexing</title>
+      <link>http://localhost/developer/register-indexing/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/register-indexing/</guid>
+      <description>CPU register indexing in gem5 is a complicated by the need to support multiple ISAs with sometimes very different register semantics (register windows, condition codes, mode-based alternate register sets, etc.). In addition, this support has evolved gradually as new ISAs have been added, so older code may not take advantage of newer features or terminology.
+Types of Register Indices There are three types of register indices used internally in the CPU models: relative, unified, and flattened.</description>
+    </item>
+    
+    <item>
+      <title>Register Windows</title>
+      <link>http://localhost/developer/register-windows/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/register-windows/</guid>
+      <description>Register windows prove to be a bit problematic with the current model of StaticInsts and the read/write register methods. The issue is that based on the register&amp;rsquo;s index, it is possible that it will be one of the registers whose actual index is determined by a combination of its index and the Current Window Pointer (CWP). In SPARC, r0-r7 are non-windowed registers, while r8-r31 are windowed registers.
+StaticInst Register windows provide a form of dynamic renaming that is troublesome with our current StaticInst.</description>
+    </item>
+    
+    <item>
+      <title>Regression Tests</title>
+      <link>http://localhost/developer/regression/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/regression/</guid>
+      <description>Running Regressions Running the M5 regression tests is the recommended way to make sure that any changes to the simulator still comply with M5. Regression Testing is performed using SCons to help guide which tests are run. All current tests are located in the: tests/ directory. The command for running regression tests has the following
+format: % scons build/&amp;lt;arch&amp;gt;/tests/&amp;lt;binary_type&amp;gt;/&amp;lt;test_directory&amp;gt;/&amp;lt;mode&amp;gt;/&amp;lt;test directory&amp;gt;/&amp;lt;ISA&amp;gt;/linux/&amp;lt;config script&amp;gt;  Here is an example of running all of the &amp;lsquo;quick&amp;rsquo; regression tests for the ALPHA architecture in syscall-emulation (SE) mode.</description>
+    </item>
+    
+    <item>
+      <title>Resource request model</title>
+      <link>http://localhost/cpu-models/inorder/resource-request-model/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/cpu-models/inorder/resource-request-model/</guid>
+      <description>Overview Resources consists of any CPU object that an instruction wants to access. This could be a branch predictor, a cache, a execution unit, etc. In the InOrder CPU model we abstract what a resource is into a generic &amp;ldquo;Resource&amp;rdquo; class that all specific resources must derive from. In any given pipeline stage, an instruction will request that a resource perform a specific operation on it&amp;rsquo;s behalf. If an instruction can complete all it&amp;rsquo;s resource requests for a given stage, then it may pass to the next stage.</description>
+    </item>
+    
+    <item>
+      <title>Ruby</title>
+      <link>http://localhost/ruby/ruby/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/ruby/</guid>
+      <description>High level components of Ruby Ruby implements a detailed simulation model for the memory subsystem. It models inclusive/exclusive cache hierarchies with various replacement policies, coherence protocol implementations, interconnection networks, DMA and memory controllers, various sequencers that initiate memory requests and handle responses. The models are modular, flexible and highly configurable. Three key aspects of these models are:
+ Separation of concerns &amp;ndash; for example, the coherence protocol specifications are separate from the replacement policies and cache index mapping, the network topology is specified separately from the implementation.</description>
+    </item>
+    
+    <item>
+      <title>Ruby Network Tester</title>
+      <link>http://localhost/ruby/ruby-network-test/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/ruby-network-test/</guid>
+      <description>The Ruby Network Tester provides a framework for simulating the interconnection network with controlled inputs. This is useful for network testing/debugging, or for network-only simulations with synthetic traffic (especially with the garnet network). The tester works in conjunction with the Network_test coherence protocol.
+Related Files  configs/example/ruby_network_test.py: file to invoke the network tester src/cpu/testers/networktest: files implementing the tester.  NetworkTest.py networktest.hh networktest.cc   How to run First build gem5 with the Network_test coherence protocol:</description>
+    </item>
+    
+    <item>
+      <title>Ruby Random Tester</title>
+      <link>http://localhost/ruby/ruby-random-test/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/ruby-random-test/</guid>
+      <description>A cache coherence protocol usually has several different types of state machines, with state machine having several different states. For example, the MESI CMP directory protocol has four different state machines (L1, L2, directory, dma). Testing such a protocol for functional correctness is a challenging task. gem5 provides a random tester for testing coherence protocols. It is called the Ruby Random Tester. The source files related to the tester are present in the directory src/cpu/testers/rubytest.</description>
+    </item>
+    
+    <item>
+      <title>Running gem5</title>
+      <link>http://localhost/deprecated/running/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/running/</guid>
+      <description>THIS IS AN OBSOLETE PAGE. DO NOT EDIT. for the most recent version of this documentation.
+ Quick Start We&amp;rsquo;ll assume that you&amp;rsquo;ve already built an ALPHA_FS version of the M5 simulator, and downloaded and installed the full-system binary and disk image files. Then you can just run the fs.py configuration file in the m5/configs/examples directory. For example:
+% build/ALPHA_FS/m5.debug -d /tmp/output configs/example/fs.py M5 Simulator System Copyright (c) 2001-2006 The Regents of The University of Michigan All Rights Reserved M5 compiled Aug 16 2006 18:51:57 M5 started Wed Aug 16 21:53:38 2006 M5 executing on zeep command line: .</description>
+    </item>
+    
+    <item>
+      <title>Running gem5</title>
+      <link>http://localhost/docs/running/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/running/</guid>
+      <description>Usage The gem5 command line has four parts, the gem5 binary, options for the binary, a simulation script, and options for the script. The options that are passed to the gem5 binary and those passed to the script are handled separately, so be sure any options you use are being passed to the right component.
+% &amp;lt;gem5 binary&amp;gt; [gem5 options] &amp;lt;simulation script&amp;gt; [script options]  gem5 Options Running gem5 with the &amp;ldquo;-h&amp;rdquo; flag prints a help message that includes all of the supported simulator options.</description>
+    </item>
+    
+    <item>
+      <title>SCons</title>
+      <link>http://localhost/developer/scons/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/scons/</guid>
+      <description>This page provides some tips on using M5&amp;rsquo;s build system.
+M5&amp;rsquo;s build system uses SCons, a powerful replacement for make (and autoconf, and ccache). SCons uses standard Python to describe the software build process, enabling some very sophisticated &amp;amp; complex build procedures.
+This page is not an attempt to fully document the build system. Because many people aren&amp;rsquo;t familiar with SCons, and because gem5&amp;rsquo;s build system in some areas takes advantage of the complexity that SCons enables, this page tries to collect useful pointers that might not otherwise be obvious.</description>
+    </item>
+    
+    <item>
+      <title>SLICC</title>
+      <link>http://localhost/ruby/slicc/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/slicc/</guid>
+      <description>SLICC is a domain specific language for specifying cache coherence protocols. The SLICC compiler generates C++ code for different controllers, which can work in tandem with other parts of Ruby. The compiler also generates an HTML specification of the protocol. HTML generation is turned off by default. To enable HTML output, pass the option &amp;ldquo;SLICC_HTML=True&amp;rdquo; to scons when compiling.
+Input To the Compiler The SLICC compiler takes, as input, files that specify the controllers involved in the protocol.</description>
+    </item>
+    
+    <item>
+      <title>Simple</title>
+      <link>http://localhost/ruby/simple/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/ruby/simple/</guid>
+      <description>More details of the gem5 Ruby Interconnection Network are here.
+Simple Network The default network model in Ruby is the simple network.
+ Related Files:  src/mem/ruby/network/Network.py src/mem/ruby/network/simple src/mem/ruby/network/simple/SimpleNetwork.py   Configuration Simple network uses the generic network parameters in Network.py:
+ - number_of_virtual_networks: This is the maximum number of virtual networks. The actual number of active virtual networks is determined by the protocol.  control_msg_size: The size of control messages in bytes.</description>
+    </item>
+    
+    <item>
+      <title>SimpleThread</title>
+      <link>http://localhost/developer/simple-thread/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/simple-thread/</guid>
+      <description>The SimpleThread class derives from the ThreadState class, and is used to provide all architectural state for models that don&amp;rsquo;t need anything more complex. It is basically the context of a hardware thread, and provides all necessary functions needed to access it as defined by the ThreadContext class. However, SimpleThread does not actually derive from ThreadContext, but rather uses a proxy class to forward all ThreadContext function calls to its own functions.</description>
+    </item>
+    
+    <item>
+      <title>Simulation Scripts</title>
+      <link>http://localhost/docs/scripts/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/scripts/</guid>
+      <description>Simulation scripts control the configuration and execution of gem5 simulations. The gem5 simulator itself is basically passive; on invoking gem5, it simply executes the user&amp;rsquo;s simulation script, and performs actions only when called by the script.
+Simulation scripts are written in Python and executed by the Python interpreter. Currently, the interpreter is linked into the gem5 executable, but for most purposes the script&amp;rsquo;s execution should be indistinguishable from invoking the Python interpreter directly.</description>
+    </item>
+    
+    <item>
+      <title>TODO</title>
+      <link>http://localhost/cpu-models/inorder/todo/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/cpu-models/inorder/todo/</guid>
+      <description>Python Configurability  Resource Configuration - How can we specify what resources are instantiated via the Python config files?  ResourceType - Type of resource (Enum type)  ResourceParams - Parameters for this type of resource Request - List of requests for this type of resource (Enum type)  Latency - operation latency and issue latency (intra/inter thread)  Count - Number of such resource type     Pipeline Description  InstSchedule - Instruction schedule specified as a vector of InstClassSchedule  InstClassSchedule - Vector of schedules per instruction class - load/store, Int execute, FP execute, specialized inst, etc.</description>
+    </item>
+    
+    <item>
+      <title>ThreadContext</title>
+      <link>http://localhost/developer/thread-context/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/thread-context/</guid>
+      <description>ThreadContext is the interface to all state of a thread for anything outside of the CPU. It provides methods to read or write state that might be needed by external objects, such as the PC, next PC, integer and FP registers, and IPRs. It also provides functions to get pointers to important thread-related classes, such as the ITB, DTB, System, kernel statistics, and memory ports. It is an abstract base class; the CPU must create its own ThreadContext by either deriving from it, or using the templated ProxyThreadContext class.</description>
+    </item>
+    
+    <item>
+      <title>ThreadState</title>
+      <link>http://localhost/developer/thread-state/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/thread-state/</guid>
+      <description>The ThreadState class is used to hold thread state that is common across CPU models, such as the thread ID, thread status, kernel statistics, memory port pointers, and some statistics of number of instructions completed. Each CPU model can derive from ThreadState and build upon it, adding in thread state that is deemed appropriate. An example of this is SimpleThread, where all of the thread&amp;rsquo;s architectural state has been added in.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost/cpu-models/inorder/tutorial/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/cpu-models/inorder/tutorial/</guid>
+      <description>From Instruction Fetch to Instruction Graduation TBD</description>
+    </item>
+    
+    <item>
+      <title>m5ops</title>
+      <link>http://localhost/docs/m5ops/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/m5ops/</guid>
+      <description>This page explains the special opcodes that can be used in M5 to do checkpoints etc. The m5 utility program (on our disk image and in util/m5/*) provides some of this functionality on the command line. In many cases it is best to insert the operation directly in the source code of your application of interest. You should be able to link with the appropriate m5op_ARCH.o file and the m5op.</description>
+    </item>
+    
+    <item>
+      <title>m5term</title>
+      <link>http://localhost/docs/m5term/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/m5term/</guid>
+      <description>The m5term program allows the user to connect to the simulated console interface that full-system m5 provides. Simply change into the util/term directory and build m5term:
+ % cd m5/util/term % make gcc -o m5term term.c % make install sudo install -o root -m 555 m5term /usr/local/bin  The usage of m5term is:
+ ./m5term &amp;lt;host&amp;gt; &amp;lt;port&amp;gt; &amp;lt;host&amp;gt; is the host that is running m5 &amp;lt;port&amp;gt; is the console port to connect to.</description>
+    </item>
+    
+    <item>
+      <title>ASPLOS 2017</title>
+      <link>http://localhost/tutorials/asplos-2017/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/tutorials/asplos-2017/</guid>
+      <description>Architectural Exploration with gem5
+Abstract This tutorial will give a brief introduction to gem5 for computer engineers who are new to gem5. The attendees will learn what gem5 can and can not do, how to use and extend gem5, as well as how to contribute back to gem5.
+Target Audience The primary audience is junior computer architecture engineers (e.g., first or second year graduate students, as well as junior engineers) who are planning on using gem5 for future architecture research.</description>
+    </item>
+    
+    <item>
+      <title>Android KitKat</title>
+      <link>http://localhost/benchmarks/android-kitkat/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/android-kitkat/</guid>
+      <description>Building Android KitKat for gem5 Overview The easiest way to build Android for gem5 is to base the system on a the emulated Goldfish device. The main difference between the actual qemu-based Goldfish model and gem5 is a small number of gem5-specific configuration files. These files are mainly related to differences in block device naming and scripts to start use gem5&amp;rsquo;s pseudo-op interface to start experiments.
+Build Instructions Follow the directions on Android Open Source to download and build Android.</description>
+    </item>
+    
+    <item>
+      <title>Doxygen Code Documentation</title>
+      <link>http://localhost/docs/doxygen/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/doxygen/</guid>
+      <description>Introduction Doxygen allows users to quickly create documentation for our code by extracting the relavent information from the code and comments. It is able to document all the code structures including classes, namespaces, files, members, defines, etc. Most of these are quite simple to document, you only need to place a special documentation block before the declaration. The Doxygen documentation within gem5 is processed every night and the following web pages are generated: Doxygen</description>
+    </item>
+    
+    <item>
+      <title>DynInst</title>
+      <link>http://localhost/docs/dyn-inst/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/dyn-inst/</guid>
+      <description>The DynInst is used to hold dynamic information about instructions. This is necessary for more detailed models or out-of-order models, both of which may need extra information beyond the StaticInst in order to correctly execute instructions.
+Some of the dynamic information that it stores includes:
+ The PC of the instruction The renamed register indices of the source and destination registers The predicted next-PC The instruction result The thread number of the instruction The CPU the instruction is executing on Whether or not the instruction is squashed  Additionally the DynInst provides the ExecContext interface.</description>
+    </item>
+    
+    <item>
+      <title>Full-system Ubuntu Image</title>
+      <link>http://localhost/deprecated/ubuntu-disk/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/ubuntu-disk/</guid>
+      <description>This content is out-of-date.
+ This page describes how to build a serial-console filesystem of Ubuntu Linux for ARM ISA simulation after the bare image file is created. An example Ubuntu Natty ARM image is available on the Download page.
+Using Rootstock and Qemu to build the filesystem One way to create a disk image is to use the rootstock tool provided in older versions of Ubuntu to build an ARM filesystem.</description>
+    </item>
+    
+    <item>
+      <title>Future Serialization</title>
+      <link>http://localhost/developer/future-serialization/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/future-serialization/</guid>
+      <description>The current serialization system uses a .ini file format. Each section refers to a specific object instance, and the values within a section are the serialized data for that instance. The section heading is the name() of the object and all hierarchy is essentially flattened.
+During the serialization process, the file is directly written out as objects are serialized, without any intermediate buffering. The serialization proceeds by doing the global serialization then by serializing each SimObject.</description>
+    </item>
+    
+    <item>
+      <title>ISA Description</title>
+      <link>http://localhost/developer/isa/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/isa/</guid>
+      <description>The gem5 ISA description language is a custom language designed specifically for generating the class definitions and decoder function needed by M5. This section provides a practical, informal overview of the language itself. A formal grammar for the language is embedded in the &amp;ldquo;yacc&amp;rdquo; portion of the parser (look for the functions starting with p_ in isa_parser.py). A second major component of the parser processes C-like code specifications to extract instruction characteristics; this aspect is covered in the section Code parsing.</description>
+    </item>
+    
+    <item>
+      <title>Looking to help? </title>
+      <link>http://localhost/developer/todo/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/todo/</guid>
+      <description>This page contains ideas for projects to work on during the gem5 coding sprint held in conjunction with HPCA 2017. For more information on the sprint, see: http://learning.gem5.org/tutorial/index.html.
+Below are three categories of projects: small, medium, and large. I expect that only the &amp;ldquo;small&amp;rdquo; can be easily completed in an afternoon. For medium projects, you should be able to get a good start on them in an afternoon and finish up with a few extra hours of work after the sprint.</description>
+    </item>
+    
+    <item>
+      <title>PARSEC</title>
+      <link>http://localhost/benchmarks/parsec/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/benchmarks/parsec/</guid>
+      <description>PARSEC v2.1 The PARSEC benchmarks have been built to run in the gem5 full-system simulation mode. The following section details references and the process for building and running the suite.
+Download Pre-built M5 Disk Image PARSEC has been built to run on gem5 with the ALPHA ISA, and disk images are available at Running PARSEC 2.1 on M5 from The University of Texas. You can download a disk image there and unzip it.</description>
+    </item>
+    
+    <item>
+      <title>SPARC Curiousities</title>
+      <link>http://localhost/developer/sparc/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/sparc/</guid>
+      <description>Ancillary State Registers  Floating-Point State Register (FSR) - holds 4 sets of condition codes, exception status, trap enable, rounding direction, etc. Which means we need to rename it, but we need to copy parts of the previous state into it every time.   Y Register - Why ohh why did the make this register. Holds upper 32 bits for some multiple/div operations. For multiply the upper 32 bits of the result is placed in here and the entire result is placed in the dest register.</description>
+    </item>
+    
+    <item>
+      <title>SPEComp</title>
+      <link>http://localhost/deprecated/spec-omp/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/deprecated/spec-omp/</guid>
+      <description>How to run SpecOMP on M5  build cross-compiler  download crosstool-0.43.tar.gz from http://kegel.com/crosstool/#download (http://kegel.com/crosstool/crosstool-0.43.tar.gz) untar it edit demo-alpha.sh  RESULT_TOP=&amp;ldquo;your_alpha_compiler&amp;rdquo; GCC_LANGUAGE=&amp;ldquo;c,c++&amp;rdquo; &amp;ndash;&amp;gt; GCC_LANGUAGE=&amp;ldquo;c,c++,fortran&amp;rdquo; eval `cat &amp;hellip;dat &amp;hellip;dat` sh all.sh &amp;ndash;&amp;gt; eval `cat alpha.dat gcc-4.2.4-glibc-2.3.6-tls.dat` sh all.sh &amp;ndash;notest  set gcc to gcc-3.4 instead of gcc-4.3 (when I use gcc-4.3 to build the cross-compiler, there is a segmentation fault) run demo-alpha.sh there may be some errors (a header file (.</description>
+    </item>
+    
+    <item>
+      <title>Serialization</title>
+      <link>http://localhost/developer/serialization/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/serialization/</guid>
+      <description>Saving/Restoring object state Dealing with Events Handling SimObject Pointers Phases of Object Initialization If restoring from a checkpoint, loadState(ckpt) is called on each SimObject. The default implementation simply calls unserialize() if there is a corresponding checkpoint section, so we get backward compatibility for existing objects. However, objects can override loadState() to get other behaviors, e.g., doing other programmed initializations after unserialize(), or complaining if no checkpoint section is found. (Note that the default warning for a missing checkpoint section is now gone.</description>
+    </item>
+    
+    <item>
+      <title>SimObjects</title>
+      <link>http://localhost/developer/sim-objects/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/sim-objects/</guid>
+      <description>SimObjects The python side Param types Inheritance Special attribute names Rules for importing - how to get what Pro tips - avoiding cycles, always descend from root, etc. The C++ side create functions Stages of initialization The basic order of C++ SimObject construction and initialization is controlled by the instantiate() and simulate() Python functions in src/python/m5/simulate.py. This process was revised in changeset 3f6413fc37a2. This page documents the process as of that changeset.</description>
+    </item>
+    
+    <item>
+      <title>SimpleCPU</title>
+      <link>http://localhost/developer/simple-cpu/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/simple-cpu/</guid>
+      <description>The SimpleCPU is a purely functional, in-order model that is suited for cases where a detailed model is not necessary. This can include warm-up periods, client systems that are driving a host, or just testing to make sure a program works.
+It has recently been re-written to support the new memory system, and is now broken up into three classes.
+BaseSimpleCPU The BaseSimpleCPU serves several purposes:
+ Holds architected state, stats common across the SimpleCPU models.</description>
+    </item>
+    
+    <item>
+      <title>Simpoints w/gem5</title>
+      <link>http://localhost/docs/simpoints/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/simpoints/</guid>
+      <description>Steps to profile, generate, and use SimPoints with gem5:
+Profiling and Generating BBV To profile a workload and generate a SimPoint BBV file, use the following
+command: % build/ARM/gem5.opt &amp;lt;base options&amp;gt; configs/example/fs.py --simpoint-profile [--simpoint-interval &amp;lt;interval length&amp;gt;] &amp;lt;rest of fs.py options&amp;gt;  This will generate a SimPoint Basic Block Vector file (named simpoint.bb.gz) in the gem5 run folder. SimPoint profiling should be run with a single AtomicSimpleCPU configuration and fastmem. Multicore simulation is not supported.</description>
+    </item>
+    
+    <item>
+      <title>Splash</title>
+      <link>http://localhost/docs/splash/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/splash/</guid>
+      <description>It is possible to run the SPLASH-2 benchmarks on M5 in two different ways, each with their own caveats.
+Using full-system mode The most robust approach is to compile the benchmarks using a Pthreads implementation of the PARMACS macros, then link with the standard Linux Pthreads library and run this binary on M5 under full-system mode.
+Advantages:
+ Realistic: you&amp;rsquo;re getting the actual Linux thread scheduler to schedule your threads Robust (in contrast to current SE-mode approaches&amp;hellip; see below) You can build a cross-compiler to compile the binaries on non-Alpha platforms (see Using linux-dist to Create Disk Images and Kernels for M5&amp;hellip; note that you don&amp;rsquo;t need to build a kernel, just the cross-compiler).</description>
+    </item>
+    
+    <item>
+      <title>StaticInst</title>
+      <link>http://localhost/developer/static-inst/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/developer/static-inst/</guid>
+      <description>This section describes the static instruction objects. These objects are what a decoder function instantiates for each machine instruction fetched during simulation. It has information such as opcode, source and destination register, immediate value, of the machine instruction it was generated from.
+The definitive documentation for these objects is associated with the source code (particularly in static_inst.hh). The purpose of this section is to provide an overview of the static instruction class hierarchy and how it is used to factor the common portions of instruction descriptions.</description>
+    </item>
+    
+    <item>
+      <title>Tour of sourcecode</title>
+      <link>http://localhost/docs/source-code/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/source-code/</guid>
+      <description>Source Browsing Tools The gem5 source code is browsable online via several methods. You can browse the latest version or the developmen history in our Mercurial repository, search the code using our OpenGrok installation, or look at the Doxygen-generated documentation (note that the class list is perhaps the most useful starting point).
+Once you have your own local copy of the tree, you use other tools to index and search that copy.</description>
+    </item>
+    
+    <item>
+      <title>Using a non-default Python</title>
+      <link>http://localhost/docs/non-default-python/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/non-default-python/</guid>
+      <description>The particular installation of the Python interpreter that executes the SCons build scripts is also linked with M5 to execute runtime Python simulation scripts. (This correspondence is necessary since some Python code is shared between the build process and runtime execution.) As a result, you can get M5 to link with a non-default installation of the Python interpreter by using that instance of the interpreter to execute the SCons scripts.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing w/Streamline</title>
+      <link>http://localhost/docs/streamline/</link>
+      <pubDate>Sun, 13 May 2018 18:51:37 -0400</pubDate>
+      
+      <guid>http://localhost/docs/streamline/</guid>
+      <description>What is Streamline? ARM Streamline™ Performance Analyzer, is a component of ARM Development Studio 5, DS-5™, intended to provide in-depth visibilities to the software execution of the system and counters/statistics. Streamline can be used to visualize a gem5 simulation, with Linux/Android process information and gem5 statistics, with the help of some post-processing.
+How do I get Streamline? ARM provides a Community Edition of Streamline to all active members of the gem5 community, as long as they agree to use it for analyzing gem5 outputs only and not use the license for commercial purposes.</description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>http://localhost/developer/statistics/</link>
+      <pubDate>Sun, 13 May 2018 18:43:03 -0400</pubDate>
+      
+      <guid>http://localhost/developer/statistics/</guid>
+      <description>If you&amp;rsquo;re looking at this page, we&amp;rsquo;ll assume you sort of know the ins and outs of the simulator and are looking to instrument it in some way that is not already there. In that case, we have a nice stats package built into the simulator for you. One really good place to look for examples of usage is src/unittest/stattest.cc. This has lots of examples of every type of stat.</description>
+    </item>
+    
+    <item>
+      <title>Utility Code</title>
+      <link>http://localhost/developer/utility/</link>
+      <pubDate>Sun, 13 May 2018 18:43:03 -0400</pubDate>
+      
+      <guid>http://localhost/developer/utility/</guid>
+      <description>Bitfield functions BitUnion classes FastAlloc FastAlloc has been removed from the code base since late May 2012. Instead the build scripts will pick up tcmalloc (a malloc() version used also at Google), the observed performance gain of replacing tcmalloc over fastalloc is around 6%.
+IntMath panic, fatal, warn, inform, hack: which? There are error and warning functions defined in src/base/misc.hh: panic(), fatal(), warn(), inform(), and hack(). The first two functional have nearly the same effect (printing an error message and terminating the simulation), and the latter three print a message and continue.</description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>http://localhost/cpu-models/o3/visualization/</link>
+      <pubDate>Sun, 13 May 2018 18:33:49 -0400</pubDate>
+      
+      <guid>http://localhost/cpu-models/o3/visualization/</guid>
+      <description>This page contains information about different types of information visualization that is integrated or can be used with gem5.
+O3 Pipeline Viewer The o3 pipeline viewer is a text based viewer of the out-of-order CPU pipeline. It shows when instructions are fetched (f), decoded (d), renamed (n), dispatched (p), issued (i), completed &amp;copy;, and retired &amp;reg;. It is very useful for understanding where the pipeline is stalling or squashing in a reasonable small sequence of code.</description>
+    </item>
+    
+    <item>
+      <title>Linux Kernel</title>
+      <link>http://localhost/arch/arm/linux_kernel/</link>
+      <pubDate>Sun, 13 May 2018 16:54:44 -0400</pubDate>
+      
+      <guid>http://localhost/arch/arm/linux_kernel/</guid>
+      <description>This page contains instructions for building up-to-date kernels for gem5 running on ARM.
+Prerequisites These instructions are for running headless systems. That is a more &amp;ldquo;server&amp;rdquo; style system where there is no frame-buffer. The description has been created using the latest known-working tag in the repositories linked below, however the tables in each section list previous tags that are known to work. To built the kernels on an x86 host you&amp;rsquo;ll need ARM cross compilers and the device tree compiler.</description>
+    </item>
+    
+    <item>
+      <title>Useful external docs</title>
+      <link>http://localhost/docs/useful-external/</link>
+      <pubDate>Sun, 13 May 2018 16:51:05 -0400</pubDate>
+      
+      <guid>http://localhost/docs/useful-external/</guid>
+      <description>External ARM Documents  ARM Assembly Reference Sheet Thumb Assembler Reference Sheet GNU assembler Reference Sheet  External X86 documentation  AMD documentation Intel documentation Sandpile.org &amp;ndash; Handy collection of documentation about x86 INT 15h,AX=E820 &amp;ndash; Information about the INT 15h,AX=E820 BIOS service routine  External SPARC documentation  SPARCV9.pdf &amp;ndash; SPARC v9 architecture manual UA2005-current-draft-HP-EXT.pdf &amp;ndash; UltraSPARC Architecture 2005, Hyperprivileged edition UA2005-current-draft-P-EXT.pdf &amp;ndash; UltraSPARC Architecture 2005, Privileged edition T1 Specific Docs UA2007-current-draft-HP-EXT.</description>
+    </item>
+    
+    <item>
+      <title>Software not in git</title>
+      <link>http://localhost/docs/software_not_in_git/</link>
+      <pubDate>Sat, 12 May 2018 21:19:58 -0400</pubDate>
+      
+      <guid>http://localhost/docs/software_not_in_git/</guid>
+      <description>Full-System Stuff You would need one or more of the following files to full system simulations using gem5. If you download these files, read this page for instructions on how to install these files.
+ ARM  ARM Full-System Files &amp;ndash; Pre-compiled kernel and disk images for 32-bit and 64-bit ARM simulation. Updated October 2014. There kernels all support PCIe devices and the 64-bit kernels support &amp;gt;2GB of DRAM. Legacy ARM Full System Files &amp;ndash; A collection of previous ARM files that have been distributed.</description>
+    </item>
+    
+    <item>
+      <title>Alternate Sources</title>
+      <link>http://localhost/docs/alternate_source/</link>
+      <pubDate>Sat, 12 May 2018 21:16:55 -0400</pubDate>
+      
+      <guid>http://localhost/docs/alternate_source/</guid>
+      <description>The latest gem5 source code is available via our Git repository host at https://gem5.googlesource.com. It is strongly recommend that you get a copy of gem5 by using git. You can get more info about the repository and git here. In additional to the main git repository, there is a mirror on GitHub (we can&amp;rsquo;t currently accept pull requests on GitHub) and a Mercurial mirror. Keep in mind that the mirrors are read only.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/deprecated/code-locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/deprecated/code-locations/</guid>
+      <description>Full system code locations are as follows:
+ /sim/system - Architecture and OS independent code /arch//system.(cc|hh) - Architecture dependent, OS independent code /arch///system.(cc|hh) - - Architecture dependent, OS dependent code /kern//* - Architecture independent, OS dependent code  Very little of the code that was in /kern/ was actually architecture independent. Even things that at first glance appeared to be, actually patched architecture dependent parts of the kernel. Since there wasn&amp;rsquo;t much shared code, I didn&amp;rsquo;t feel any any large amount of effort should be put into sharing litterally 3 lines so unless we find a place where there is a lot of code, os dependent architecture independent code should go in it&amp;rsquo;s proper directory in a namespace for that OS and simply be called by the source architecture and os dependend files.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/developer/io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/developer/io/</guid>
+      <description>title: &amp;ldquo;I/O Base Classes&amp;rdquo; date: 2018-05-13T18:51:37-04:00
+draft: false The base classes in src/dev/io_device.* allow devices to be created with reasonable ease. The classes and virtual functions that must be implemented are listed below. Before reading the following it will help to be familiar with the Memory_System.
+PioPort The PioPort class is a programmed I/O port that all devices that are sensitive to an address range use. The port takes all the memory access types and roles them into one read() and write() call that the device must respond to.</description>
+    </item>
+    
+  </channel>
+</rss>
